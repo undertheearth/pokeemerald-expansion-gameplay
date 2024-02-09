@@ -5,7 +5,7 @@ mapscripts LittlerootTown_House4_1F_MapScripts {
 script Littleroot_House4_Zig {
 lock
 faceplayer
-format(msgbox("Zig-a-zig-a-zig!"))
+msgbox(format("Zig-a-zig-a-zig!"))
 waitmessage
 release
 end

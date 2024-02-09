@@ -4,7 +4,7 @@ mapscripts LittlerootTown_House3_1F_MapScripts {
 
 script LittlerootTown_House3F_Mother {
     lock
-    format(msgbox("Let's see...\n"
+    msgbox(format("Let's see...\n"
     "I'll have to go to OLDALE for that, since the bridge to LITTLEROOT LAKE is out again"))
     release
     end

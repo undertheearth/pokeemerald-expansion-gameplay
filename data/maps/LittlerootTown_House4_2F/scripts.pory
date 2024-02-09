@@ -5,7 +5,7 @@ mapscripts LittlerootTown_House4_2F_MapScripts {
 script Littleroot_House4_2F_Girl {
     lock
     faceplayer
-    format(msgbox("I love Pokémon!"))
+    msgbox(format("I love Pokémon!"))
     waitmessage
     release
     end
@@ -14,7 +14,7 @@ script Littleroot_House4_2F_Girl {
 script Littleroot_House4_2F_Skitty {
     lock
     faceplayer
-    format(msgbox("Skreeeow!"))
+    msgbox(format("Skreeeow!"))
     waitmessage
     release
     end

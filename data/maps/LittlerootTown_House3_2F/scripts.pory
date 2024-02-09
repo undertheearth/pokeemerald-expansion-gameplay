@@ -5,7 +5,7 @@ mapscripts LittlerootTown_House3_2F_MapScripts {
 script LittlerootTown_House3_2F_Boy {
     lock
     faceplayer
-    format(msgbox("My dad's always just wandering around outside."))
+    msgbox(format("My dad's always just wandering around outside."))
     waitmessage
     release
     end

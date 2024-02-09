@@ -2075,6 +2075,66 @@ LittlerootTown_EventScript_MayRivalBattle::
 	end
 
 
+LittlerootTown_Mailbox::
+# 1055 "data/maps/LittlerootTown/scripts.pory"
+	lock
+# 1056 "data/maps/LittlerootTown/scripts.pory"
+	msgbox LittlerootTown_Mailbox_Text_0
+# 1057 "data/maps/LittlerootTown/scripts.pory"
+	waitmessage
+# 1058 "data/maps/LittlerootTown/scripts.pory"
+	release
+	end
+
+
+LittlerootTown_SkittyOutside::
+# 1063 "data/maps/LittlerootTown/scripts.pory"
+	lock
+# 1064 "data/maps/LittlerootTown/scripts.pory"
+	faceplayer
+# 1065 "data/maps/LittlerootTown/scripts.pory"
+	msgbox LittlerootTown_SkittyOutside_Text_0
+# 1066 "data/maps/LittlerootTown/scripts.pory"
+	waitmessage
+# 1067 "data/maps/LittlerootTown/scripts.pory"
+	msgbox LittlerootTown_SkittyOutside_Text_1
+# 1068 "data/maps/LittlerootTown/scripts.pory"
+	waitmessage
+# 1069 "data/maps/LittlerootTown/scripts.pory"
+	release
+	end
+
+
+LittlerootTown_ZigOutside::
+# 1074 "data/maps/LittlerootTown/scripts.pory"
+	lock
+# 1075 "data/maps/LittlerootTown/scripts.pory"
+	faceplayer
+# 1076 "data/maps/LittlerootTown/scripts.pory"
+	msgbox LittlerootTown_ZigOutside_Text_0
+# 1077 "data/maps/LittlerootTown/scripts.pory"
+	waitmessage
+# 1078 "data/maps/LittlerootTown/scripts.pory"
+	release
+	end
+
+
+LittlerootTown_Mailbox_Text_0:
+# 1056 "data/maps/LittlerootTown/scripts.pory"
+	.string "There's no mail in here.$"
+
+LittlerootTown_SkittyOutside_Text_0:
+# 1065 "data/maps/LittlerootTown/scripts.pory"
+	.string "???$"
+
+LittlerootTown_SkittyOutside_Text_1:
+# 1067 "data/maps/LittlerootTown/scripts.pory"
+	.string "Ski?$"
+
+LittlerootTown_ZigOutside_Text_0:
+# 1076 "data/maps/LittlerootTown/scripts.pory"
+	.string "Zag!$"
+
 May_Intro::
 # 1042 "data/maps/LittlerootTown/scripts.pory"
 	.string "Oh, hi, {PLAYER}{KUN}!\p…Oh, I see, my dad gave you\na POKéMON as a gift.\nSince we're here, let's have a quick\nbattle!\pI'll give you a taste of what being\na TRAINER is like.$"
