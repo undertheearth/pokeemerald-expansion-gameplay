@@ -1,0 +1,213 @@
+Pokemon Added
+
+Route 104 (Swimming)
+	Slowpoke
+Route 104 (Grass)
+	Farfetch'd
+	Roselia
+	Sunkern
+	Yanma
+Route 114 
+	Doduo
+	Chansey
+	Ditto
+
+Granite Cave
+1F
+	Machop
+	Phanpy
+	Meditite
+Pettleburg Woods
+	Ledyba
+	Tailow
+	Mankey
+	Weedle
+	Caterpie
+	Bellsprout
+	Hopip
+	
+Pettleburg City - New grass patch by mart.
+	Eevee
+	Spearow
+	Pidgey
+	Rattata
+
+Rustboro City 
+	Grimer
+	Spoink
+	Weedle
+	Chikorita
+
+Granite Cave - 1F
+	Machop
+
+Slateport City - Grass by lighthouse
+	Chinchou
+	Ekans
+	Nidoran (M+F)
+	Spearow
+	Bulbasaur
+	Seel
+	Krabby
+Slateport City - (Surfing)
+	Seel
+	Shellder
+	Krabby
+Mauville City - By gym
+	Aron
+	Sudowoodo
+	Larvitar
+	Shuckle
+	Porygon
+
+Fiery Path
+	Houndour
+	Ponyta
+	Charmander
+
+Fortree City
+	Paras
+	Parasect
+	Venonat
+	Pineco
+	Dunsparce
+
+Jagged Pass
+	Growlithe
+	Cyndaquill
+	
+Mt. Pyre
+1F
+	Gastly
+2F	
+	Gastly
+3F
+	Gastly
+	Misdrevious
+4F
+	Gastly
+	Misdrevious
+	Haunter
+	Drifloon
+5F
+	Drifloon
+	Misdrevious
+	Haunter
+	Gastly
+6F
+	Spiritomb (1%)
+	Sableye (1%)
+Exterior
+	Sneasel
+	Gastly
+	Absol
+	Vulpix Alolan
+	Scyther
+	Cubone
+	Stantler
+Summit
+	Rotom (1%)
+	
+Magma Hideout
+1F
+	Onix
+	Golem
+4F
+	Steelix
+
+Route 117
+	Drowzee
+	Tauros
+	Mareep
+	
+Route 120
+	Exeggcute
+	Kecelon
+	-Seedot
+	Croconaw
+
+Rusturf Tunnel
+	Tyrogue
+	
+Route 116
+	Lickitung
+	Khangashkan
+	Miltank
+
+Route 113
+	Rhyhorn
+
+Pacifidlog Town (Surfing)
+	Horsea
+	Octillary
+
+Dewford
+	Goldeen
+	Staryu
+
+Shoal Cave (Ice)
+	Jynx
+	Lapras
+	Delibird
+	
+New Mauvile
+	Electabuzz
+
+Stevens Cave
+	Lunatone
+	Magmar
+
+Victory Road
+1F
+	Pinsir
+	Swampert
+B1F
+	Pinsir
+	Snorlax
+B2F
+	Blaziken
+B2F (Surfing)
+	Dratini
+	Dragonair
+B2F (Fishing)
+	Qwilfish
+	
+Seafloor Cavern
+Room 1
+	Gligar
+Room 7 (Surfing)
+	Omastar
+	Kabutops
+Room 8 
+	Aerodactyl
+
+Lavaridge Town
+	Togepi
+	Clefa
+	Pichu
+	Igglypuff
+	Smoochum
+	Elekid
+	Magby
+	Tyrogue
+	
+Cave of Origin
+	Unown
+
+Route 121
+	Teddiursa
+	Heracross
+	
+Route 127
+	Mantine
+	
+Route 118
+	Grovyle
+	
+Route 123
+	Zangoose
+	
+Meteor Falls
+1F
+	Lunatone
+	

@@ -5622,55 +5622,6 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
     },
 #endif //P_FAMILY_FRILLISH
 
-#if P_FAMILY_ALOMOMOLA
-    [SPECIES_ALOMOMOLA] =
-    {
-        .baseHP        = 165,
-        .baseAttack    = 75,
-        .baseDefense   = 80,
-        .baseSpeed     = 65,
-        .baseSpAttack  = 40,
-        .baseSpDefense = 45,
-        .types = { TYPE_WATER, TYPE_WATER },
-        .catchRate = 75,
-        .expYield = 165,
-        .evYield_HP = 2,
-        .genderRatio = PERCENT_FEMALE(50),
-        .eggCycles = 40,
-        .friendship = STANDARD_FRIENDSHIP,
-        .growthRate = GROWTH_FAST,
-        .eggGroups = { EGG_GROUP_WATER_1, EGG_GROUP_WATER_2 },
-        .abilities = { ABILITY_HEALER, ABILITY_HYDRATION, ABILITY_REGENERATOR },
-        .bodyColor = BODY_COLOR_PINK,
-        .speciesName = _("Alomomola"),
-        .cryId = CRY_ALOMOMOLA,
-        .natDexNum = NATIONAL_DEX_ALOMOMOLA,
-        .categoryName = _("Caring"),
-        .height = 12,
-        .weight = 316,
-        .description = COMPOUND_STRING(
-            "When they find a wounded Pokémon,\n"
-            "they embrace it and bring it to shore.\n"
-            "The special membrane enveloping\n"
-            "Alomomola has the ability to heal wounds."),
-        .pokemonScale = 282,
-        .pokemonOffset = 4,
-        .trainerScale = 256,
-        .trainerOffset = 0,
-        FRONT_PIC(Alomomola, 32, 64),
-        .frontPicYOffset = 0,
-        .frontAnimFrames = sAnims_Alomomola,
-        .frontAnimId = ANIM_SWING_CONCAVE,
-        BACK_PIC(Alomomola, 48, 64),
-        .backPicYOffset = 0,
-        .backAnimId = BACK_ANIM_CONVEX_DOUBLE_ARC,
-        PALETTES(Alomomola),
-        ICON(Alomomola, 0),
-        .footprint = gMonFootprint_Alomomola,
-        LEARNSETS(Alomomola),
-    },
-#endif //P_FAMILY_ALOMOMOLA
-
 #if P_FAMILY_JOLTIK
     [SPECIES_JOLTIK] =
     {

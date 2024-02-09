@@ -1,0 +1,60 @@
+mapscripts MossdeepCity_BattleShop_MapScripts {
+
+}
+
+script Mossdeep_Battle_Shop_1 {
+    lock
+    faceplayer
+    message("Need any battle items?")
+    waitmessage
+    pokemart(MOSSDEEP_BATTLE_SHOP_1)
+    msgbox("Thanks!")
+    release
+    end
+}
+
+script Mosddeep_Battle_Shop_2 {
+    lock
+    faceplayer
+    message("For trainers, by trainers!")
+    waitmessage
+    pokemart(MOSSEEP_BATTLE_SHOP_2)
+    msgbox("Come back soon!")
+    release
+    end
+}
+
+mart MOSSDEEP_BATTLE_SHOP_1 {
+	ITEM_CHOICE_BAND
+	ITEM_CHOICE_SCARF
+	ITEM_CHOICE_SPECS
+	ITEM_DAMP_ROCK
+	ITEM_HEAT_ROCK
+	ITEM_ICY_ROCK
+	ITEM_SMOOTH_ROCK
+	ITEM_SOUL_DEW
+	ITEM_LIGHT_CLAY
+}
+
+mart MOSSEEP_BATTLE_SHOP_2 {
+	ITEM_LONELY_MINT
+	ITEM_ADAMANT_MINT	
+	ITEM_NAUGHTY_MINT
+	ITEM_BRAVE_MINT
+	ITEM_BOLD_MINT
+	ITEM_IMPISH_MINT
+	ITEM_LAX_MINT
+	ITEM_RELAXED_MINT
+	ITEM_MODEST_MINT
+	ITEM_MILD_MINT
+	ITEM_RASH_MINT
+	ITEM_QUIET_MINT
+	ITEM_CALM_MINT
+	ITEM_GENTLE_MINT
+	ITEM_CAREFUL_MINT
+	ITEM_SASSY_MINT
+	ITEM_TIMID_MINT
+	ITEM_HASTY_MINT
+	ITEM_JOLLY_MINT
+	ITEM_NAIVE_MINT
+}

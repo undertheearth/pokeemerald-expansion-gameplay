@@ -3944,7 +3944,7 @@ const struct Trainer gTrainers[] = {
         .trainerName = _("CALVIN"),
         .items = {},
         .doubleBattle = FALSE,
-        .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_SETUP_FIRST_TURN | AI_FLAG_HP_AWARE | AI_FLAG_SMART_SWITCHING | AI_FLAG_SMART_MON_CHOICES,
         .party = TRAINER_PARTY(sParty_Calvin2),
     },
 
@@ -3956,7 +3956,7 @@ const struct Trainer gTrainers[] = {
         .trainerName = _("CALVIN"),
         .items = {},
         .doubleBattle = FALSE,
-        .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_SMART_MON_CHOICES | AI_FLAG_SMART_SWITCHING | AI_FLAG_HP_AWARE | AI_FLAG_SETUP_FIRST_TURN | AI_FLAG_TRY_TO_FAINT,
         .party = TRAINER_PARTY(sParty_Calvin3),
     },
 
@@ -7244,7 +7244,7 @@ const struct Trainer gTrainers[] = {
         .trainerName = _("TIANA"),
         .items = {},
         .doubleBattle = FALSE,
-        .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_SMART_SWITCHING,
         .party = TRAINER_PARTY(sParty_Tiana),
     },
 
@@ -7460,7 +7460,7 @@ const struct Trainer gTrainers[] = {
         .trainerName = _("JAMES"),
         .items = {},
         .doubleBattle = FALSE,
-        .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_PREFER_STATUS_MOVES,
         .party = TRAINER_PARTY(sParty_James1),
     },
 
@@ -7472,7 +7472,7 @@ const struct Trainer gTrainers[] = {
         .trainerName = _("JAMES"),
         .items = {},
         .doubleBattle = FALSE,
-        .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_SETUP_FIRST_TURN | AI_FLAG_PREFER_BATON_PASS | AI_FLAG_SMART_SWITCHING,
         .party = TRAINER_PARTY(sParty_James2),
     },
 
@@ -7578,7 +7578,7 @@ const struct Trainer gTrainers[] = {
         .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_HIKER,
         .trainerPic = TRAINER_PIC_HIKER,
         .trainerName = _("CLARK"),
-        .items = {},
+        .items = {ITEM_POTION, ITEM_NONE, ITEM_NONE, ITEM_NONE},
         .doubleBattle = FALSE,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Clark),

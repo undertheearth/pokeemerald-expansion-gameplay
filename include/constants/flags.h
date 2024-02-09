@@ -1219,12 +1219,12 @@
 #define FLAG_ITEM_SAFARI_ZONE_SOUTH_EAST_BIG_PEARL                  0x492
 
 #define FLAG_UNUSED_0x493                                           0x493 // Unused Flag
-#define FLAG_UNUSED_0x494                                           0x494 // Unused Flag
-#define FLAG_UNUSED_0x495                                           0x495 // Unused Flag
-#define FLAG_UNUSED_0x496                                           0x496 // Unused Flag
-#define FLAG_UNUSED_0x497                                           0x497 // Unused Flag
-#define FLAG_UNUSED_0x498                                           0x498 // Unused Flag
-#define FLAG_UNUSED_0x499                                           0x499 // Unused Flag
+#define EXP_ALL_POKEMON                                             0x494 // Unused Flag
+#define SMART_WILD_BATTLES                                          0x495 // Unused Flag
+#define CELEBI_EVENT_FLAG                                           0x496 // Unused Flag
+#define NO_OLD_SEA_MAP                                              0x497 // Unused Flag
+#define VS_SEEKER_CHARGING                                          0x498 // Unused Flag
+#define CELEBI_CAUGHT                                               0x499 // Unused Flag
 #define FLAG_UNUSED_0x49A                                           0x49A // Unused Flag
 #define FLAG_UNUSED_0x49B                                           0x49B // Unused Flag
 #define FLAG_UNUSED_0x49C                                           0x49C // Unused Flag

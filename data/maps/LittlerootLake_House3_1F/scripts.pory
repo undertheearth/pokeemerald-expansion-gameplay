@@ -1,0 +1,23 @@
+mapscripts LittlerootLake_House3_1F_MapScripts {
+
+}
+
+script LittlerootLakeHouse3_Boy {
+    lock
+    message(format("How am I losing again? I've been practicing for hours!"))
+    waitmessage
+    release
+    end
+}
+
+script LittlerootLakeHouse3_Woman {
+    lock
+    msgbox(format("I just wish he'd go outside more."))
+    waitmessage
+    faceplayer
+    msgbox(format("...Huh? Do you need something?"))
+    waitmessage
+    release
+    end
+}
+

@@ -875,6 +875,7 @@ gBattleAnims_Moves::
 	.4byte Move_PSYCHIC_NOISE
 	.4byte Move_UPPER_HAND
 	.4byte Move_MALIGNANT_CHAIN
+	.4byte Move_SYLPH_SONG
 @@@@ Z MOVES
 	.4byte Move_BREAKNECK_BLITZ
 	.4byte Move_ALL_OUT_PUMMELING
@@ -9210,12 +9211,13 @@ Boomburst_Doubles:
 	goto Boomburst_Last
 
 Move_FAIRY_LOCK::
-	loadspritegfx ANIM_TAG_FAIRY_LOCK_CHAINS
+	loadspritegfx ANIM_TAG_CHAIN_LINK @Chain Colour
+	loadspritegfx ANIM_TAG_FAIRY_LOCK_CHAINS @AnimTask is missing for Fairy Lock Chain
 	setalpha 8, 8
 	monbg ANIM_ATK_PARTNER
 	createvisualtask AnimTask_BlendBattleAnimPal, 0xa, F_PAL_BG, 0x1, 0x0, 0x8, 0x6B1F
 	waitforvisualfinish
-	loopsewithpan SE_M_SCRATCH, SOUND_PAN_TARGET, 0x6, 0x9
+	loopsewithpan SE_M_SCRATCH, SOUND_PAN_TARGET, 0x6, 0x4
 	createvisualtask AnimTask_VoltTackleBolt, 0x5, 0x7
 	createvisualtask AnimTask_VoltTackleBolt, 0x5, 0x33
 	createvisualtask AnimTask_VoltTackleBolt, 0x5, 0x2
@@ -26525,6 +26527,74 @@ WeatherBallIce:
 	playsewithpan SE_M_ICY_WIND, SOUND_PAN_TARGET
 	call IceCrystalEffectShort
 	waitforvisualfinish
+	end
+
+Move_SYLPH_SONG:
+	loadspritegfx ANIM_TAG_PINK_CLOUD
+	loadspritegfx ANIM_TAG_JAGGED_MUSIC_NOTE
+	loadspritegfx ANIM_TAG_THIN_RING
+	loadspritegfx ANIM_TAG_MUSIC_NOTES
+	loadspritegfx ANIM_TAG_IMPACT
+	monbg ANIM_DEF_PARTNER
+	setalpha 12, 8
+	createvisualtask AnimTask_MusicNotesRainbowBlend, 0x2
+	waitforvisualfinish
+	createvisualtask SoundTask_PlayCryWithEcho, 2, FALSE
+	createvisualtask AnimTask_BlendBattleAnimPal, 0xa, F_PAL_BG, 0x1, 0x0, 0x8, 0x6e7d
+	createsprite gFairyWindCloudTemplate, ANIM_TARGET, 3, 0x14, 0xfff6, 0x14, 0x0, 0x16, 0x14, 0x1
+	createsprite gJaggedMusicNoteSpriteTemplate, ANIM_ATTACKER, 2, 0x0, 0xfff4, 0xffe3, 0x1
+	delay 0x5
+	waitforvisualfinish
+	playsewithpan SE_M_GUST, SOUND_PAN_TARGET
+	createvisualtask AnimTask_ShakeMon2, 2, ANIM_TARGET, 2, 0, 18, 1
+	delay 0x5
+	createsprite gJaggedMusicNoteSpriteTemplate, ANIM_ATTACKER, 2, 0x0, 0xfff4, 0xffe3, 0x1
+	createsprite gFairyWindCloudTemplate, ANIM_TARGET, 3, 0x14, 0xfff6, 0x14, 0x0, 0x16, 0xffec, 0x1
+	createsprite gUproarRingSpriteTemplate, ANIM_ATTACKER, 3, 0x0, 0x0, 0x0, 0x0, 0x1f, 0x8
+	delay 0x5
+	createsprite gJaggedMusicNoteSpriteTemplate, ANIM_ATTACKER, 2, 0x0, 0xfff4, 0xffe3, 0x1
+	createsprite gFairyWindCloudTemplate, ANIM_TARGET, 3, 0x14, 0xfff6, 0x14, 0x0, 0x16, 0xc, 0x1
+	createsprite gUproarRingSpriteTemplate, ANIM_ATTACKER, 3, 0x0, 0x0, 0x0, 0x0, 0x1f, 0x8
+	delay 0x5
+	playsewithpan SE_M_GUST2, SOUND_PAN_TARGET
+	createvisualtask AnimTask_BlendBattleAnimPal, 0xa, F_PAL_BG, 0x1, 0x8, 0x0, 0x6e7d
+	waitforvisualfinish
+	createsprite gJaggedMusicNoteSpriteTemplate, ANIM_ATTACKER, 2, 0x0, 0xfff4, 0xffe3, 0x1
+	createsprite gFairyWindCloudTemplate, ANIM_TARGET, 3, 0x14, 0xfff6, 0x14, 0x0, 0x16, 0xffec, 0x1
+	createsprite gJaggedMusicNoteSpriteTemplate, ANIM_ATTACKER, 2, 0x0, 0x1d, 0xfff4, 0x0
+	createsprite gFairyWindCloudTemplate, ANIM_TARGET, 3, 0x14, 0xfff6, 0x14, 0x0, 0x16, 0xffec, 0x1
+	createsprite gJaggedMusicNoteSpriteTemplate, ANIM_ATTACKER, 2, 0x0, 0xfff4, 0xffe3, 0x1
+	createsprite gFairyWindCloudTemplate, ANIM_TARGET, 3, 0x14, 0xfff6, 0x14, 0x0, 0x16, 0xffec, 0x1
+	createsprite gWavyMusicNotesSpriteTemplate, ANIM_TARGET, 2, 0x7, 0x0, 0xc
+	createsprite gFairyWindCloudTemplate, ANIM_TARGET, 3, 0x14, 0xfff6, 0x14, 0x0, 0x16, 0xffec, 0x1
+	createsprite gJaggedMusicNoteSpriteTemplate, ANIM_ATTACKER, 2, 0x0, 0xfff4, 0xffe3, 0x1
+	createsprite gUproarRingSpriteTemplate, ANIM_ATTACKER, 3, 0x0, 0x0, 0x0, 0x0, 0x1f, 0x8
+	createsprite gFairyWindCloudTemplate, ANIM_TARGET, 3, 0x14, 0xfff6, 0x14, 0x0, 0x16, 0xffec, 0x1
+	createsprite gJaggedMusicNoteSpriteTemplate, ANIM_ATTACKER, 2, 0x0, 0x1d, 0xfff4, 0x0
+	createsprite gFairyWindCloudTemplate, ANIM_TARGET, 3, 0x14, 0xfff6, 0x14, 0x0, 0x16, 0xffec, 0x1
+	createsprite gJaggedMusicNoteSpriteTemplate, ANIM_ATTACKER, 2, 0x0, 0xfff4, 0xffe3, 0x1
+	delay 0x5
+	waitforvisualfinish
+	stopsound
+	createsprite gBasicHitSplatSpriteTemplate, ANIM_TARGET, 3, 0xffe0, 0xfff0, 0x1, 0x3
+	playsewithpan SE_M_COMET_PUNCH, SOUND_PAN_TARGET
+	createvisualtask AnimTask_ShakeMonInPlace, 2, ANIM_TARGET, 3, 0, 12, 1
+	createvisualtask AnimTask_ShakeMonInPlace, 2, ANIM_DEF_PARTNER, 3, 0, 12, 1
+	delay 0x5
+	createsprite gRandomPosHitSplatSpriteTemplate, ANIM_TARGET, 3, 0x1, 0x3
+	playsewithpan SE_M_COMET_PUNCH, SOUND_PAN_TARGET
+	delay 0x5
+	createsprite gRandomPosHitSplatSpriteTemplate, ANIM_TARGET, 3, 0x1, 0x3
+	playsewithpan SE_M_COMET_PUNCH, SOUND_PAN_TARGET
+	delay 0x5
+	createsprite gBasicHitSplatSpriteTemplate, ANIM_TARGET, 3, 0x20, 0x14, 0x1, 0x3
+	playsewithpan SE_M_COMET_PUNCH, SOUND_PAN_TARGET
+	waitforvisualfinish
+	clearmonbg ANIM_DEF_PARTNER
+	createvisualtask AnimTask_MusicNotesClearRainbowBlend, 0x2
+	waitforvisualfinish
+	clearmonbg ANIM_DEF_PARTNER
+	blendoff
 	end
 
 Move_COUNT:

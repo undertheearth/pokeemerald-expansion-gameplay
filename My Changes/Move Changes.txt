@@ -1,0 +1,451 @@
+Cut
+Type: Normal - Bug
+Power: 50 - 60
+Accuracy: 95 - 100
+
+Comet Punch
+Power: 18 - 20
+Type: Normal - Fighting
+Accuracy: 85 - 100
+
+Mega Punch
+Power: 80
+Accuracy: 85 - 100
+Effect: None - 30% to raise attack by 1 stage
+
+Pay Day
+Power: 40 - 60
+
+Vise Grip
+Type: Normal - Bug
+
+Razor Wind
+Power: 80 - 70
+Type: Normal - Flying
+PP: 10 - 15
+Effect: 2 Turns - Always Crits
+
+Fly
+Power: 90 - 100
+Accuracy: 95 - 100
+
+Slam
+Power: 80 - 70
+Accuracy: 75 - 90
+
+Mega Kick
+Power: 120 - 130
+Accuracy: 75 - 85
+Effect: None - Reduces target defence by 1 stage
+
+Rolling Kick
+Power: 60 - 65
+Accuracy: 85 - 100
+
+Heabutt
+Power: 70 - 80
+
+Fury Attack
+Power: 15 - 16
+Accuracy: 85 - 100
+
+Tail Slap
+Accuracy: 85 - 100
+
+Take Down
+Power: 90 - 100
+Accuracy: 85 - 100
+PP: 20 - 15
+
+Double Edge
+Power: 120 - 130
+PP: 15 - 10
+
+Poison Sting
+Power: 15 - 30
+
+Poison Tail
+Power: 50 - 70
+Effect Chance: 10 - 30
+
+Twineedle
+Power: 25 - 40
+
+Pin Missle
+Accuracy: 95 - 100
+
+Sing
+Accuracy: 55 - 70
+
+Supersonic
+Accuracy: 55 - 70
+
+Acid
+Effect Chance: 10 - 30
+
+Blizzard
+Accuracy: 70 - 85
+
+Psybeam
+Effect Chance: 10 - 20
+
+Bubblebeam
+Effect Chance: 10 - 20
+
+Aurora Beam
+Effect Chance: 10 - 20
+
+Submission
+Power: 80 - 90
+Accuracy: 80 - 100
+
+Razor Leaf
+Accuracy: 95 - 100
+
+Solarbeam
+Power: 120 - 130
+
+Rock Throw
+Accuracy: 90 - 100
+
+Rock Blast
+Accuracy: 90 - 100
+
+Screech
+Accuracy: 85 - 100
+
+Withdraw
+Effect: Raises Defence by 1 Stage - Raises Defence and Sp.Def by 1 Stage
+
+Scale Shot
+Accuracy: 90 - 100
+
+Metronome
+PP: 30
+
+Egg Bomb
+Accuracy: 75 - 100
+
+Smog:
+Accuracy: 70 - 80
+
+Bone Club:
+Accuracy: 85 - 90
+Effect Chance: 10 - 20
+
+Spike Cannon
+Type: Normal - Poison
+Power: 20 - 25
+
+Constrict
+Power: 10 - 20
+Effect Chance: 10 - 100
+PP: 35 - 25
+
+Dream Eater
+Power: 100 - 120
+
+Snore
+Power: 50 - 60
+
+Feint
+Power: 30 - 60
+
+Barrage
+Power: 15 - 20
+Accuracy: 85 - 90
+
+Sky Attack
+Power: 130 - 90
+Effect: Two Turns Flinch Chance - Single Turn Flinch Chance
+PP: 5 - 10
+
+Bubble
+Effect Chance: 10 - 20
+
+Dizzy Punch
+Effect Chance: 20 - 50
+Priority: 0 - 1
+
+Fury Swipes
+Accuracy: 80 - 100
+
+Slash
+Effect: Always Crts
+
+Triple Kick
+Accuracy: 90 - 100
+
+Flame Wheel
+Power: 60 - 65
+
+Aeroblast
+Accuracy: 95 - 100
+PP: 5 - 10
+
+Octazooka
+Power: 65 - 80
+Accuracy: 85 - 100
+
+Zap Cannon
+Accuracy: 50 - 75
+
+Bone Rush
+Accuracy: 80 - 100
+
+False Swipe
+Power: 40 - 90
+
+Steel Wing
+Accuracy: 90 - 100
+Effect Chance: 10 - 30
+
+Present
+Accuracy: 90 - 100
+
+Sacred Fire
+Accuracy: 95 - 100
+PP: 5 - 10
+
+Dynamic Punch
+Accuracy: 50 - 75
+
+Iron Tail
+Power: 100 - 120
+Accuracy: 75 - 85
+PP: 15 - 10
+
+Metal Claw
+Power: 50 - 60
+Accuracy: 95 - 100
+Effect Chance: 10 - 20
+PP: 35 - 20
+
+Vital Throw
+Power: 70 - 80
+
+Cross Chop
+Accuracy: 80 - 90
+PP: 5 - 10
+
+Twister
+Power: 40 - 50
+
+Crunch
+Effect Chance: 20 - 30
+
+Ancient Power
+PP: 5 - 10
+Effect Chance: 10 - 15
+
+Rock Smash
+Effect Chance: 50 - 100
+
+Heat Wave
+Accuracy: 90 - 100
+
+Smelling Salts
+Power: 70 - 80
+
+Superpower
+PP: 5 - 10
+
+Revenge
+Power: 60 - 70
+
+Brick Break
+Power: 75 - 80
+
+Secret Power
+Power: 70 - 80
+
+Arm Thrust
+Power: 15 - 20
+
+Luster Purge
+PP: 5 - 10
+
+Mist Ball
+PP: 5 - 10
+
+Blaze Kick
+Accuracy: 90 - 100
+
+Crush Claw
+Accuracy: 95 - 100
+
+Blast Burn
+Power: 150 - 140
+Accuracy: 90 - 100
+Effect: Recharge - Recoil 50%
+
+Hydro Cannon
+Power: 150 - 140
+Accuracy: 90 - 100
+Effect: Recharge - Recoil 50%
+
+Frenzy Plant
+Power: 150 - 140
+Accuracy: 90 - 100
+Effect: Recharge - Recoil 50%
+
+Covet
+Type: Normal - Fairy
+Note: A mid tier physical fairy move, and coverage for some normal type pokemon.
+
+Head Smash
+Accuracy: 80 - 90
+
+Weather Ball
+Power: 50 - 60
+
+Silver wind
+PP: 5 - 10
+Effect Chance: 10 - 20
+
+Metal Sound
+Accuracy: 85 - 100
+
+Grasswhistle
+Accuracy: 55 - 65
+
+Signal Beam
+Effect Chance: 10 - 20
+
+Extrasensory
+Effect Chance: 10 - 20
+
+Sky Uppercut
+Accuracy: 85 - 95
+
+Dragon Claw
+Power: 80 - 85
+
+Bounce
+Power: 85 - 80
+Accuracy: 85 - 100
+
+Volt Tackle
+Power: 120 - 130
+
+Brine
+Power: 65 - 70
+
+Dragon Rush
+Power: 100 - 110
+Accuracy: 75 - 85
+
+Focus Blast
+Power: 120 - 110
+Accuracy: 70 - 85
+
+Thunder Fang
+Power: 65 - 70
+Accuracy: 95 - 100
+Effect Chance: 10 - 15
+
+Ice Fang
+Power: 65 - 70
+Accuracy: 95 - 100
+Effect Chance: 10 - 15
+
+Fire Fang
+Power: 65 - 70
+Accuracy: 95 - 100
+Effect Chance: 10 - 15
+
+Thunder Fang
+Power: 65 - 70
+Accuracy: 95 - 100
+Effect Chance: 10 - 15
+
+Zen Headbutt
+Accuracy: 90 - 100
+
+Stone Edge
+Accuracy: 80 - 85
+
+Chatter
+Power: 65 - 80
+
+Charge Beam
+Accuracy: 90 - 100
+Effect Chance: 70 - 100
+
+Attack Order
+Power: 90 - 100
+
+Magma Storm
+Accuracy: 75 - 85
+
+Dark Void
+Accuracy: 50 - 75
+
+Seed Flare
+Accuracy: 85 - 90
+PP: 5 - 10
+
+Ominious Wind
+PP: 5 - 10
+Effect Chance: 10 - 20
+
+Inferno
+Accuracy: 50 - 75
+
+Frost Breath
+PP: 10 - 15
+Acccuracy: 90 - 100
+
+Razor Shell
+Accuracy: 95 - 100
+PP: 10 - 15
+
+Tail Slap
+Accuracy: 85 - 90
+
+Gear Grind
+Accuracy: 85 - 100
+
+Snarl
+Power: 55 - 60
+
+Phantom Force
+Power: 90 - 110
+
+Play Rough
+Accuracy: 90 - 100
+Effect Chance: 10 - 20
+
+Precipice Blades
+Acccuracy: 85 - 90
+
+Origin Pulse
+Power: 110 - 120
+Accuracy: 85 - 90
+
+Double Iron Bash
+PP: 5 - 10
+
+Ice Burn
+Power: 140 - 120
+
+Double Slap - Early game physical fairy move
+Type Change: Fairy
+Accuracy: 85 - 100
+PP: 10 - 20
+
+New Move: Sylph Song
+Learnt by: Altaria Line, Delcatty, Chimecho, Jigglypuff,
+Type: Fairy
+Power: 100
+Accuracy: 100
+PP: 15
+Effect: 30% chance to sleep target
+Wind Move
+Sound Move
+Doesn't make makes contact
+- Can breed onto: Togepi, Whismur, Jigglypuff, 
+
+Wild Charge
+Power: 90 - 100
+PP: 15 - 10

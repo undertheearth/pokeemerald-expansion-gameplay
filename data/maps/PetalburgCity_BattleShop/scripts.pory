@@ -1,0 +1,99 @@
+mapscripts PetalburgCity_BattleShop_MapScripts {
+
+}
+
+script Petalburg_Battle_Shop_1 {
+    lock
+    faceplayer
+    message("Need any battle items?")
+    waitmessage
+    pokemart(PETALBURG_BATTLE_SHOP_1)
+    msgbox("Thanks!")
+    release
+    end
+}
+
+script Petalburg_Battle_Shop_2 {
+    lock
+    faceplayer
+    message("Need any battle items?")
+    waitmessage
+    pokemart(PETALBURG_BATTLE_SHOP_2)
+    msgbox("Thanks!")
+    release
+    end
+}
+
+mart PETALBURG_BATTLE_SHOP_1 {
+	ITEM_BLACK_BELT
+	ITEM_BLACK_GLASSES
+    ITEM_CHARCOAL
+    ITEM_DRAGON_FANG
+	ITEM_FAIRY_FEATHER
+	ITEM_HARD_STONE
+	ITEM_MAGNET
+	ITEM_METAL_COAT
+	ITEM_MIRACLE_SEED
+	ITEM_MYSTIC_WATER
+    ITEM_MAGNET
+    ITEM_NEVER_MELT_ICE
+	ITEM_POISON_BARB
+	ITEM_SHARP_BEAK
+	ITEM_SILK_SCARF
+	ITEM_SILVER_POWDER
+	ITEM_SOFT_SAND
+	ITEM_SPELL_TAG
+    ITEM_TWISTED_SPOON
+    ITEM_EXPERT_BELT
+}
+
+    mart PETALBURG_BATTLE_SHOP_2 {
+	ITEM_HP_UP
+	ITEM_PROTEIN
+	ITEM_IRON
+	ITEM_CALCIUM
+	ITEM_ZINC
+	ITEM_CARBOS
+	ITEM_PP_UP
+	ITEM_PP_MAX
+	ITEM_HEALTH_FEATHER
+	ITEM_MUSCLE_FEATHER
+	ITEM_RESIST_FEATHER
+	ITEM_GENIUS_FEATHER
+	ITEM_CLEVER_FEATHER
+	ITEM_SWIFT_FEATHER
+	ITEM_FRESH_START_MOCHI
+
+}
+
+script Petalburg_BattleShop_Flavour_1 {
+    lock
+    msgbox(format("Y'know in terms of..."))
+    waitmessage
+    faceplayer
+    msgbox(format("Huh? What? I'm on the phone."))
+    release
+    end
+}
+
+
+//	ITEM_LONELY_MINT
+//	ITEM_ADAMANT_MINT	
+//	ITEM_NAUGHTY_MINT
+//	ITEM_BRAVE_MINT
+//	ITEM_BOLD_MINT
+//	ITEM_IMPISH_MINT
+//	ITEM_LAX_MINT
+//	ITEM_RELAXED_MINT
+//	ITEM_MODEST_MINT
+//	ITEM_MILD_MINT
+//	ITEM_RASH_MINT
+//	ITEM_QUIET_MINT
+//	ITEM_CALM_MINT
+//	ITEM_GENTLE_MINT
+//	ITEM_CAREFUL_MINT
+//	ITEM_SASSY_MINT
+//	ITEM_TIMID_MINT
+//	ITEM_HASTY_MINT
+//	ITEM_JOLLY_MINT
+//	ITEM_NAIVE_MINT

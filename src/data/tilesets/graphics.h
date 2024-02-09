@@ -1634,3 +1634,40 @@ const u16 gTilesetPalettes_UnionRoom[][16] =
 };
 
 const u32 gTilesetTiles_UnionRoom[] = INCBIN_U32("data/tilesets/secondary/union_room/tiles.4bpp.lz");
+const u16 gTilesetPalettes_LittlerootLakeTiles[][16] =
+{
+    INCBIN_U16("data/tilesets/secondary/littleroot_lake_tiles/palettes/00.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/littleroot_lake_tiles/palettes/01.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/littleroot_lake_tiles/palettes/02.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/littleroot_lake_tiles/palettes/03.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/littleroot_lake_tiles/palettes/04.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/littleroot_lake_tiles/palettes/05.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/littleroot_lake_tiles/palettes/06.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/littleroot_lake_tiles/palettes/07.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/littleroot_lake_tiles/palettes/08.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/littleroot_lake_tiles/palettes/09.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/littleroot_lake_tiles/palettes/10.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/littleroot_lake_tiles/palettes/11.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/littleroot_lake_tiles/palettes/12.gbapal"),
+};
+
+const u32 gTilesetTiles_LittlerootLakeTiles[] = INCBIN_U32("data/tilesets/secondary/littleroot_lake_tiles/tiles.4bpp.lz");
+
+const u16 gTilesetPalettes_LittleroootTownTiles[][16] =
+{
+    INCBIN_U16("data/tilesets/secondary/littlerooot_town_tiles/palettes/00.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/littlerooot_town_tiles/palettes/01.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/littlerooot_town_tiles/palettes/02.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/littlerooot_town_tiles/palettes/03.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/littlerooot_town_tiles/palettes/04.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/littlerooot_town_tiles/palettes/05.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/littlerooot_town_tiles/palettes/06.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/littlerooot_town_tiles/palettes/07.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/littlerooot_town_tiles/palettes/08.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/littlerooot_town_tiles/palettes/09.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/littlerooot_town_tiles/palettes/10.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/littlerooot_town_tiles/palettes/11.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/littlerooot_town_tiles/palettes/12.gbapal"),
+};
+
+const u32 gTilesetTiles_LittleroootTownTiles[] = INCBIN_U32("data/tilesets/secondary/littlerooot_town_tiles/tiles.4bpp.lz");

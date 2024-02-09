@@ -1,0 +1,63 @@
+mapscripts LittlerootLake_South_MapScripts {
+
+}
+
+script LittlerootLakeSouth_Locked {
+    lockall
+	msgbox("This door is locked.")
+    waitmessage
+    releaseall
+	end
+}
+
+script LittlerootLakeSouth_Mart {
+    lockall
+	msgbox(format("Tranquil Treasures: Your Lakeside Stop for All Things Essential."))
+    waitmessage
+    releaseall
+	end
+}
+
+script LittlerootLakeSouth_Berry {
+    lockall
+	msgbox(format("Lapras Berry Harbour"))
+    waitmessage
+    releaseall
+	end
+}
+
+script LittlerootLakeWalker_1 {
+    lockall
+    msgbox(format("The guidebook says there's a shrine in the forest across that bridge."))
+    waitmessage
+    releaseall
+    end
+}
+
+script LittlerootLakeWalker_2 {
+    lockall
+    msgbox(format("It sounds so romantic!"))
+    waitmessage
+    releaseall
+    end
+}
+
+script LittlerootLakeWalker_3 {
+    lockall
+    faceplayer
+    msgbox(format("My daily walks keep me young."))
+    waitmessage
+    msgbox(format("They're the secret to staying fit!\p"
+    "...Or so my wife says."))
+    waitmessage
+    releaseall
+    end
+}
+
+script LittlerootWoods_Shrine_Sign {
+    lockall
+    msgbox(format("“Littleroot Lake Shrine”"))
+    waitmessage
+    releaseall
+    end
+}

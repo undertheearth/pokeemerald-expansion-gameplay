@@ -1067,3 +1067,67 @@ EventScript_VsSeekerChargingDone::
 	.include "data/text/frontier_brain.inc"
 	.include "data/text/save.inc"
 	.include "data/text/birch_speech.inc"
+
+	.include "data/maps/DampCave/scripts.inc"
+
+	.include "data/maps/Route123_BerryShop/scripts.inc"
+
+	.include "data/maps/PetalburgCity_Loremaster/scripts.inc"
+
+	.include "data/maps/SlateportCity_BattleShop/scripts.inc"
+
+	.include "data/maps/PetalburgCity_BattleShop/scripts.inc"
+
+	.include "data/maps/MauvilleCity_BattleShop/scripts.inc"
+
+	.include "data/maps/RustboroCity_BattleShop/scripts.inc"
+
+	.include "data/maps/FortreeCity_BattleShop/scripts.inc"
+
+	.include "data/maps/MossdeepCity_BattleShop/scripts.inc"
+
+	.include "data/maps/SootopolisCity_BattleShop/scripts.inc"
+
+	.include "data/maps/Route125Addition/scripts.inc"
+
+	.include "data/maps/Route123_Dungeon/scripts.inc"
+
+	.include "data/maps/Route125_House/scripts.inc"
+
+	.include "data/maps/LittlerootLake/scripts.inc"
+
+	.include "data/maps/LittlerootLake_East/scripts.inc"
+
+	.include "data/maps/LittlerootLake_South/scripts.inc"
+
+	.include "data/maps/LittlerootWoods_Celebi/scripts.inc"
+
+	.include "data/maps/LittlerootTown_House1_1F/scripts.inc"
+
+	.include "data/maps/LittlerootTown_House1_2F/scripts.inc"
+
+	.include "data/maps/LittlerootTown_House2_1F/scripts.inc"
+
+	.include "data/maps/LittlerootTown_House2_2F/scripts.inc"
+
+	.include "data/maps/LittlerootTown_House3_1F/scripts.inc"
+
+	.include "data/maps/LittlerootTown_House3_2F/scripts.inc"
+
+	.include "data/maps/LittlerootTown_House4_1F/scripts.inc"
+
+	.include "data/maps/LittlerootTown_House4_2F/scripts.inc"
+
+	.include "data/maps/LittlerootLake_House1/scripts.inc"
+
+	.include "data/maps/LittlerootLake_House2/scripts.inc"
+
+	.include "data/maps/LittlerootLake_Mart/scripts.inc"
+
+	.include "data/maps/LittlerootLake_BerryShop/scripts.inc"
+
+	.include "data/maps/LittlerootLake_House3_1F/scripts.inc"
+
+	.include "data/maps/LittlerootLake_House3_2F/scripts.inc"
+
+	.include "data/maps/LittlerootLake_OceanConnection/scripts.inc"

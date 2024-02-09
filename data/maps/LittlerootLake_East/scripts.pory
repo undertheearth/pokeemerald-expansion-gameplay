@@ -1,0 +1,12 @@
+mapscripts LittlerootLake_East_MapScripts {
+
+}
+
+script EastLakeFisher {
+    lock
+    faceplayer
+    message("The fish here are superb!")
+    waitmessage
+    release
+    end
+}

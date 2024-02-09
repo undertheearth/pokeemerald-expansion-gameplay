@@ -1,0 +1,164 @@
+{
+  "id": "MAP_LITTLEROOT_LAKE_SOUTH",
+  "name": "LittlerootLake_South",
+  "layout": "LAYOUT_LITTLEROOT_LAKE_SOUTH",
+  "music": "MUS_LITTLEROOT",
+  "region_map_section": "MAPSEC_LITTLEROOT_TOWN",
+  "requires_flash": false,
+  "weather": "WEATHER_SUNNY",
+  "map_type": "MAP_TYPE_ROUTE",
+  "allow_cycling": true,
+  "allow_escaping": false,
+  "allow_running": true,
+  "show_map_name": false,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": [
+    {
+      "map": "MAP_LITTLEROOT_LAKE",
+      "offset": 0,
+      "direction": "up"
+    },
+    {
+      "map": "MAP_LITTLEROOT_LAKE_EAST",
+      "offset": -20,
+      "direction": "right"
+    }
+  ],
+  "object_events": [
+    {
+      "graphics_id": "OBJ_EVENT_GFX_RUNNING_TRIATHLETE_M",
+      "x": 32,
+      "y": 24,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_UP",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "LittlerootLakeWalker_1",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_BEAUTY",
+      "x": 33,
+      "y": 24,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_UP",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "LittlerootLakeWalker_2",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_OLD_MAN",
+      "x": 8,
+      "y": 15,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
+      "movement_range_x": 1,
+      "movement_range_y": 6,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "LittlerootLakeWalker_3",
+      "flag": "0"
+    }
+  ],
+  "warp_events": [
+    {
+      "x": 3,
+      "y": 1,
+      "elevation": 0,
+      "dest_map": "MAP_LITTLEROOT_LAKE_HOUSE2",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 3,
+      "y": 20,
+      "elevation": 0,
+      "dest_map": "MAP_LITTLEROOT_LAKE_MART",
+      "dest_warp_id": "1"
+    },
+    {
+      "x": 21,
+      "y": 22,
+      "elevation": 0,
+      "dest_map": "MAP_LITTLEROOT_LAKE_HOUSE3_1F",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 44,
+      "y": 6,
+      "elevation": 0,
+      "dest_map": "MAP_LITTLEROOT_WOODS_CELEBI",
+      "dest_warp_id": "1"
+    },
+    {
+      "x": 45,
+      "y": 6,
+      "elevation": 0,
+      "dest_map": "MAP_LITTLEROOT_WOODS_CELEBI",
+      "dest_warp_id": "2"
+    },
+    {
+      "x": 43,
+      "y": 6,
+      "elevation": 0,
+      "dest_map": "MAP_LITTLEROOT_WOODS_CELEBI",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 14,
+      "y": 22,
+      "elevation": 0,
+      "dest_map": "MAP_LITTLEROOT_LAKE_BERRY_SHOP",
+      "dest_warp_id": "0"
+    }
+  ],
+  "coord_events": [
+
+  ],
+  "bg_events": [
+    {
+      "type": "sign",
+      "x": 7,
+      "y": 25,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "LittlerootLakeSouth_Locked"
+    },
+    {
+      "type": "sign",
+      "x": 16,
+      "y": 25,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "LittlerootLakeSouth_Locked"
+    },
+    {
+      "type": "sign",
+      "x": 25,
+      "y": 25,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "LittlerootLakeSouth_Locked"
+    },
+    {
+      "type": "sign",
+      "x": 36,
+      "y": 10,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "LittlerootWoods_Shrine_Sign"
+    },
+    {
+      "type": "hidden_item",
+      "x": 39,
+      "y": 28,
+      "elevation": 0,
+      "item": "ITEM_LOVE_BALL",
+      "flag": "FLAG_TEMP_1"
+    }
+  ]
+}

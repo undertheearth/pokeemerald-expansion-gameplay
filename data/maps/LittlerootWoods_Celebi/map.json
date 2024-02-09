@@ -1,0 +1,86 @@
+{
+  "id": "MAP_LITTLEROOT_WOODS_CELEBI",
+  "name": "LittlerootWoods_Celebi",
+  "layout": "LAYOUT_LITTLEROOT_WOODS_CELEBI",
+  "music": "MUS_PETALBURG_WOODS",
+  "region_map_section": "MAPSEC_LITTLEROOT_TOWN",
+  "requires_flash": false,
+  "weather": "WEATHER_SUNNY",
+  "map_type": "MAP_TYPE_ROUTE",
+  "allow_cycling": true,
+  "allow_escaping": false,
+  "allow_running": true,
+  "show_map_name": false,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": 0,
+  "object_events": [
+    {
+      "graphics_id": "OBJ_EVENT_GFX_MEW",
+      "x": 7,
+      "y": 4,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "LittlerootWoodsCelebi",
+      "flag": "CELEBI_EVENT_FLAG"
+    }
+  ],
+  "warp_events": [
+    {
+      "x": 6,
+      "y": 15,
+      "elevation": 0,
+      "dest_map": "MAP_LITTLEROOT_LAKE_SOUTH",
+      "dest_warp_id": "5"
+    },
+    {
+      "x": 7,
+      "y": 15,
+      "elevation": 0,
+      "dest_map": "MAP_LITTLEROOT_LAKE_SOUTH",
+      "dest_warp_id": "3"
+    },
+    {
+      "x": 8,
+      "y": 15,
+      "elevation": 0,
+      "dest_map": "MAP_LITTLEROOT_LAKE_SOUTH",
+      "dest_warp_id": "4"
+    }
+  ],
+  "coord_events": [
+    {
+      "type": "trigger",
+      "x": 6,
+      "y": 14,
+      "elevation": 0,
+      "var": "VAR_CELEBI_WOODS_STATE",
+      "var_value": "0",
+      "script": "CelebiLeftTrigger"
+    },
+    {
+      "type": "trigger",
+      "x": 7,
+      "y": 14,
+      "elevation": 0,
+      "var": "VAR_CELEBI_WOODS_STATE",
+      "var_value": "0",
+      "script": "CelebiTrigger"
+    },
+    {
+      "type": "trigger",
+      "x": 8,
+      "y": 14,
+      "elevation": 0,
+      "var": "VAR_CELEBI_WOODS_STATE",
+      "var_value": "0",
+      "script": "CelebiRightTrigger"
+    }
+  ],
+  "bg_events": [
+
+  ]
+}

@@ -1,0 +1,32 @@
+mapscripts MauvilleCity_BattleShop_MapScripts {
+
+}
+
+
+script Mauville_Battle_Shop {
+    lock
+    faceplayer
+    message("I sell held items.")
+    waitmessage
+    pokemart(MAUVILLE_BATTLE_SHOP)
+    msgbox("Thanks!")
+    release
+    end
+}
+
+mart MAUVILLE_BATTLE_SHOP {
+	ITEM_DEEP_SEA_SCALE
+	ITEM_DEEP_SEA_TOOTH
+	ITEM_DUBIOUS_DISC
+	ITEM_DRAGON_SCALE
+	ITEM_KINGS_ROCK
+	ITEM_LINKING_CORD
+	ITEM_MAGMARIZER
+	ITEM_METAL_COAT
+	ITEM_OVAL_STONE
+	ITEM_PRISM_SCALE
+	ITEM_PROTECTOR
+	ITEM_RAZOR_FANG
+	ITEM_REAPER_CLOTH
+	ITEM_UPGRADE
+}

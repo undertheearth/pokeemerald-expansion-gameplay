@@ -92,14 +92,33 @@
     "Underwater_Route128",
     "Underwater_Route129",
     "Underwater_Route105",
-    "Underwater_Route125"
+    "Underwater_Route125",
+    "Route125Addition",
+    "LittlerootLake",
+    "LittlerootLake_East",
+    "LittlerootLake_South",
+    "LittlerootLake_OceanConnection"
   ],
   "gMapGroup_IndoorLittleroot": [
     "LittlerootTown_BrendansHouse_1F",
     "LittlerootTown_BrendansHouse_2F",
     "LittlerootTown_MaysHouse_1F",
     "LittlerootTown_MaysHouse_2F",
-    "LittlerootTown_ProfessorBirchsLab"
+    "LittlerootTown_ProfessorBirchsLab",
+    "LittlerootTown_House1_1F",
+    "LittlerootTown_House1_2F",
+    "LittlerootTown_House2_1F",
+    "LittlerootTown_House2_2F",
+    "LittlerootTown_House3_1F",
+    "LittlerootTown_House3_2F",
+    "LittlerootTown_House4_1F",
+    "LittlerootTown_House4_2F",
+    "LittlerootLake_House1",
+    "LittlerootLake_House2",
+    "LittlerootLake_BerryShop",
+    "LittlerootLake_Mart",
+    "LittlerootLake_House3_1F",
+    "LittlerootLake_House3_2F"
   ],
   "gMapGroup_IndoorOldale": [
     "OldaleTown_House1",
@@ -162,7 +181,9 @@
     "PetalburgCity_House2",
     "PetalburgCity_PokemonCenter_1F",
     "PetalburgCity_PokemonCenter_2F",
-    "PetalburgCity_Mart"
+    "PetalburgCity_Mart",
+    "PetalburgCity_Loremaster",
+    "PetalburgCity_BattleShop"
   ],
   "gMapGroup_IndoorSlateport": [
     "SlateportCity_SternsShipyard_1F",
@@ -178,7 +199,8 @@
     "SlateportCity_House",
     "SlateportCity_PokemonCenter_1F",
     "SlateportCity_PokemonCenter_2F",
-    "SlateportCity_Mart"
+    "SlateportCity_Mart",
+    "SlateportCity_BattleShop"
   ],
   "gMapGroup_IndoorMauville": [
     "MauvilleCity_Gym",
@@ -188,7 +210,8 @@
     "MauvilleCity_House2",
     "MauvilleCity_PokemonCenter_1F",
     "MauvilleCity_PokemonCenter_2F",
-    "MauvilleCity_Mart"
+    "MauvilleCity_Mart",
+    "MauvilleCity_BattleShop"
   ],
   "gMapGroup_IndoorRustboro": [
     "RustboroCity_DevonCorp_1F",
@@ -207,7 +230,8 @@
     "RustboroCity_Flat2_1F",
     "RustboroCity_Flat2_2F",
     "RustboroCity_Flat2_3F",
-    "RustboroCity_House3"
+    "RustboroCity_House3",
+    "RustboroCity_BattleShop"
   ],
   "gMapGroup_IndoorFortree": [
     "FortreeCity_House1",
@@ -219,7 +243,8 @@
     "FortreeCity_House3",
     "FortreeCity_House4",
     "FortreeCity_House5",
-    "FortreeCity_DecorationShop"
+    "FortreeCity_DecorationShop",
+    "FortreeCity_BattleShop"
   ],
   "gMapGroup_IndoorLilycove": [
     "LilycoveCity_CoveLilyMotel_1F",
@@ -259,7 +284,9 @@
     "MossdeepCity_SpaceCenter_1F",
     "MossdeepCity_SpaceCenter_2F",
     "MossdeepCity_GameCorner_1F",
-    "MossdeepCity_GameCorner_B1F"
+    "MossdeepCity_GameCorner_B1F",
+    "MossdeepCity_BattleShop",
+    "Route125_House"
   ],
   "gMapGroup_IndoorSootopolis": [
     "SootopolisCity_Gym_1F",
@@ -276,7 +303,8 @@
     "SootopolisCity_House7",
     "SootopolisCity_LotadAndSeedotHouse",
     "SootopolisCity_MysteryEventsHouse_1F",
-    "SootopolisCity_MysteryEventsHouse_B1F"
+    "SootopolisCity_MysteryEventsHouse_B1F",
+    "SootopolisCity_BattleShop"
   ],
   "gMapGroup_IndoorEverGrande": [
     "EverGrandeCity_SidneysRoom",
@@ -429,7 +457,10 @@
     "TerraCave_Entrance",
     "TerraCave_End",
     "AlteringCave",
-    "MeteorFalls_StevensCave"
+    "MeteorFalls_StevensCave",
+    "DampCave",
+    "Route123_Dungeon",
+    "LittlerootWoods_Celebi"
   ],
   "gMapGroup_IndoorDynamic": [
     "SecretBase_RedCave1",
@@ -611,7 +642,8 @@
     "Route113_GlassWorkshop"
   ],
   "gMapGroup_IndoorRoute123": [
-    "Route123_BerryMastersHouse"
+    "Route123_BerryMastersHouse",
+    "Route123_BerryShop"
   ],
   "gMapGroup_IndoorRoute119": [
     "Route119_WeatherInstitute_1F",
@@ -620,72 +652,5 @@
   ],
   "gMapGroup_IndoorRoute124": [
     "Route124_DivingTreasureHuntersHouse"
-  ],
-  "connections_include_order": [
-    "LittlerootTown",
-    "OldaleTown",
-    "DewfordTown",
-    "LavaridgeTown",
-    "FallarborTown",
-    "VerdanturfTown",
-    "PacifidlogTown",
-    "PetalburgCity",
-    "SlateportCity",
-    "MauvilleCity",
-    "RustboroCity",
-    "FortreeCity",
-    "LilycoveCity",
-    "MossdeepCity",
-    "SootopolisCity",
-    "EverGrandeCity",
-    "Route101",
-    "Route102",
-    "Route103",
-    "Route104",
-    "Route105",
-    "Route106",
-    "Route107",
-    "Route108",
-    "Route109",
-    "Route110",
-    "Route111",
-    "Route112",
-    "Route113",
-    "Route114",
-    "Route115",
-    "Route116",
-    "Route117",
-    "Route118",
-    "Route119",
-    "Route120",
-    "Route121",
-    "Route122",
-    "Route123",
-    "Route124",
-    "Route125",
-    "Route126",
-    "Route127",
-    "Route128",
-    "Route129",
-    "Route130",
-    "Route131",
-    "Route132",
-    "Route133",
-    "Route134",
-    "Underwater_Route105",
-    "Underwater_Route124",
-    "Underwater_Route125",
-    "Underwater_Route126",
-    "Underwater_Route127",
-    "Underwater_Route128",
-    "Underwater_Route129",
-    "SafariZone_Northwest",
-    "SafariZone_North",
-    "SafariZone_Southwest",
-    "SafariZone_South",
-    "SafariZone_Northeast",
-    "SafariZone_Southeast",
-    "BattleFrontier_OutsideWest",
-    "BattleFrontier_OutsideEast"
   ]
 }

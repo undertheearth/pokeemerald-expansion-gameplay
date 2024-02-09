@@ -1,0 +1,472 @@
+Route 101
+    Wurmple 2 - 2
+    Skitty 2 - 2
+    Sentret 2 - 2
+    Wurmple 3 - 3
+    Sunkern 3 - 3
+    Houndour 3 - 3
+    Wurmple 3 - 3
+    Poochyena 3 - 3
+    Zigazagoon 2 - 2
+    Zigazagoon 2 - 2 
+    Zigazagoon 3 - 3
+    Zigazagoon 3 - 3
+
+Route 103
+    Poochyena 4 - 4
+    Poocheyena 4 - 5
+    Skitty 4 - 6
+    Drowzee 4 - 5
+    Wingull 4 - 5
+    Zigzagoon 3 - 3
+    Houndour 4 - 4
+    Swablu 6 - 6
+    Spearow 6 - 6
+    Wingull 3 - 3
+    Wingull 3 - 4
+
+Route 102
+    Poocheyan 3 - 3
+    Wurmple 3 - 3
+    Charmander 
+    Wurmple 4 - 4
+    Lotad 3 - 3
+    Lotad 4 - 4
+    Houndour 3 - 3
+    Skitty 3 - 3
+    Zigzagoon 4 - 4
+    Ralts 4 - 4
+    Zigzagoon 4 - 4
+    Seedot 3 - 3
+
+Petalburg
+    Pidgey 4 - 6
+    Spearow 6 - 6
+    Eevee 5 - 6
+    Rattata 3 - 6
+    Surskit 4 - 5
+    Bulbasaur 7 - 7
+
+Pettalburg Woods
+    Hopip 10 - 12
+    Wurmple 8 - 14
+    Shroomish 9 - 9
+    Mankey 9 - 13
+    Silcoon 14 - 14
+    Cascoon 14 - 14
+    Caterpie 10 - 10
+    Weedle 12 - 12
+    Ledyba 14 - 14
+    Bellsprout 12 - 12
+    Tailow 11 - 11
+    Slakoth 13 - 13
+
+Route 104
+    Poocheyan 13 - 13
+    Wurmple 14 - 14
+    Oddish 13 - 19
+    Marill 16 - 18
+    Sunkern 7 - 16
+    Yanma 14 - 18
+    Farfetchd 12 - 16
+    Tailow 15 - 15
+    Roselia 9 - 13
+    Wingull 10 - 13
+    Wingull 10 - 14
+    Wingull 10 - 14
+
+Rustboro
+    Grimer 16 - 18
+    Spoink 14 - 17
+    Furret 17 - 19
+    Spinarak 20 - 20
+    Hoothoot 17 - 19
+    Oddish 14 - 16
+    Chikorita 18 - 19
+    Weedle 20 - 20
+    Chikorita 16 - 16
+
+Route 116
+    Poocheyena 6 - 6
+    Whismu  6 - 6
+    Nincada 6 - 6
+    Abra 7 - 7
+    Nincada 7 - 7
+    Tailow 6 - 6
+    Aipom 7 - 7
+    Lickitung 8 - 8
+    Onix 7 - 7
+    Miltank 8 - 8
+    Skitty 7 - 7
+    Kangashkan 8 - 8
+
+Rusturf Tunnel
+    Whismur 6 - 6
+    Whismur 7 - 7
+    Whismur 6 - 6
+    Whismur 6 - 6
+    Whismur 7 - 7
+    Tyrogue 7 - 7
+    Tyrogue 5 - 5
+    Whismur 8 - 8
+    Whismur 5 - 5
+    Whismur 8 - 8
+    Whismur 5 - 5
+    Whismur 8 - 8
+
+Granite Cave 1F
+    Zubat 7 - 7
+    Makuhita 8 - 8
+    Makuhita 7 - 7
+    Zubat 8 - 8
+    Phanpy 9 - 9
+    Abra 8 - 8
+    Meditite 10 - 10
+    Makuhita 6 - 6
+    Geodude 7 - 7
+    Machop 8 - 8
+    Hitmonlee 6 - 6
+    Hitmonchan 9 - 9
+Granite Cave B1F
+    Zubat
+    Aron
+    Aron
+    Aron
+    Zubat
+    Abra
+    Makuhita
+    Makuhita
+    Sableye
+    Sableye
+    Sableye
+    Sableye
+Grainte Cave B2F
+    Zubat 
+    Aron
+    Aron
+    Zubat
+    Aron
+    Abra
+    Sableye
+    Sableye
+    Sableye
+    Sableye
+    Sableye
+    Sableye
+
+Slateport City
+    Chinchou
+    Ekans
+    Nidoran F
+    Nidoran M
+    Spearow
+    Seel
+    Krabby
+    Treecko
+
+Route 110
+    Poocheyena
+    Electrike
+    Gulpin
+    Electrike
+    Minun
+    Oddish
+    Minun
+    Gulpin
+    Wingull
+    Wingull
+    Plusle
+    Plusle
+
+Mauville City
+    Aron
+    Clefairy
+    Porygon
+    Shuckle
+    Sudowoodo
+    Larvitar
+
+Route 117
+    Poocheyena
+    Oddish
+    Poocheyena
+    Tauros
+    Marill
+    Oddish
+    Drowzee
+    Drowzee
+    Illumise
+    Mareep
+    Volbeat
+    Seedot
+
+Route 112
+    Numel
+    Numel
+    Marill
+    Numel
+    Numel
+    Marill
+    Numell
+    Marill
+    Numel
+    Numel
+    Numel
+    Numel
+
+Route 113
+    Spinda
+    Spinda
+    Slugma
+    Spinda
+    Rhyhorn
+    Slugma
+    Spinda
+    Slugma
+    Spinda
+    Skarmory
+    Spinda
+    Skarmory
+
+Route 114
+    Swablu
+    Lotad
+    Swablu
+    Swablu
+    Lotad
+    Doduo
+    Lombre
+    Lombre
+    Seviper
+    Seviper
+    Ditto
+    Chansey
+
+Meteor Falls 1F-1R
+    Zubat
+    Zubat
+    Zubat
+    Zubat
+    Zubat
+    Solrock
+    Solrock
+    Lunatone
+    Zubat
+    Zubat
+    Zubat
+    Zubat
+
+Route 115
+    Swablu
+    Taillow
+    Swablu
+    Tailow
+    Tailow
+    Swellow
+    Jigglypuff
+    Jigglypuff
+    Wingull
+    Wingull
+    Wingull
+    Wingull
+
+Jagged Pass
+    Numel
+    Numel
+    Machop
+    Numel
+    Spoink
+    Machop
+    Spoink
+    Machop
+    Numel
+    Growlithe
+    Numel
+    Cyndaquil
+
+Route 111
+    Sandshrew
+    Trapinch
+    Sandshrew
+    Trapinch
+    Baltoy
+    Baltoy
+    Sandshrew
+    Trapinch
+    Baltoy
+    Cacnea
+    Cacnea
+    Cancea
+
+Route 118
+    Zigzagoon  
+    Electrike
+    Zigzagoon
+    Electrike
+    Linoone
+    Manectric
+    Wingull
+    Wingull
+    Wingull
+    Grovyle
+    Wingull
+    Kecleon
+
+Route 119
+    Zigzagoon
+    Linoone
+    Zigzagoon
+    Oddish
+    Oddish
+    Oddish
+    Tropius
+    Tropius
+    Tropius
+    Kecleon
+
+Fortree City
+    Paras
+    Venonat
+    Tangela
+    Pineco
+    Dunsparce
+    Parasect
+
+Route 120 
+    Poocheyena
+    Mightyena
+    Mightyena
+    Oddish
+    Marill
+    Oddish
+    Exeggcute
+    Marill
+    Absol
+    Absol
+    Kecleon
+    Seedot
+
+Route 121
+    Teddiursa
+    Shuppet
+    Mightyena
+    Gastly
+    Mightyena
+    Oddish
+    Heracross
+    Gloom
+    Mr. Mime
+    Wingull
+    Wingull
+    Kecleon
+
+Mt. Pyre
+1F
+    Shuppet
+    Shuppet
+    Shuppet
+    Shuppet
+    Shuppet
+    Shuppet
+    Gastly
+    Gastly
+    Shuppet
+    Shuppet
+    Shuppet
+    Shuppet
+2F
+    Shuppet
+    Shuppet
+    Gastly
+    Gastly
+    Shuppet
+    Shuppet
+    Gastly
+    Shuppet
+    Shuppet
+    Shuppet
+    Shuppet
+    Shuppet
+3F
+    Shuppet
+    Shuppet
+    Shuppet
+    Shuppet
+    Gastly
+    Shuppet
+    Shuppet
+    Gastly
+    Shuppet
+    Shuppet
+    Misdrevious
+    Shuppet
+4F
+    Gastly
+    Gastly
+    Gastly
+    Gastly
+    Shuppet
+    Shuppet
+    Misdrevious
+    Haunter
+    Drifloon
+    Duskull
+    Duskull
+    Duskull
+5F
+    Shuppet
+    Drifloon
+    Misdrevious
+    Shuppet
+    Gastly
+    Haunter
+    Shuppet
+    Shuppet
+    Duskull
+    Duskull
+    Duskull
+    Duskull
+6F
+    Shuppet
+    Shuppet
+    Shuppet
+    Shuppet
+    Shuppet
+    Shuppet
+    Shuppet
+    Shuppet
+    Duskull
+    Duskull
+    Sableye
+    Spiritomb
+Exterior
+    Shuppet
+    Absol
+    Sneasel
+    Gastly
+    Vulpix-Alola
+    Scyther
+    Vulpix
+    Murkrow
+    Cubone
+    Stantler
+    Wingull
+    Wingull
+Summit
+    Shuppet
+    Shuppet
+    Shuppet
+    Shuppet
+    Shuppet
+    Shuppet
+    Shuppet
+    Duskull
+    Duskull
+    Rotom
+    Chimecho
+    Chimecho
+
+
+
+
+

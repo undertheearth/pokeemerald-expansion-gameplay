@@ -1,0 +1,140 @@
+mapscripts Route123_BerryShop_MapScripts {
+
+}
+
+script BerryShop_Employee_1 {
+    lock
+    faceplayer
+    message("I grow berries that cure status effects!")
+    waitmessage
+    pokemart(Status_Berries)
+    msgbox("Thanks!")
+    release
+    end
+}
+
+script BerryShop_Employee_2 {
+    lock
+    faceplayer
+    message("I grow berries that heal!")
+    waitmessage
+    pokemart(Heal_Berries)
+    msgbox("I'm Always Here!")
+    release
+    end
+}
+
+script BerryShop_Employee_3 {
+    lock
+    faceplayer
+    message("I grow berries that reduce EVs!")
+    waitmessage
+    pokemart(EV_Berries)
+    msgbox("Thank You!")
+    release
+    end
+}
+
+script BerryShop_Employee_4 {
+    lock
+    faceplayer
+    message("I grow berries that reduce damage taken!")
+    waitmessage
+    pokemart(Damage_Berries)
+    msgbox("Come Back Anytime!")
+    release
+    end
+}
+
+script BerryShop_Employee_5 {
+    lock
+    faceplayer
+    message("I grow berries that boost stats!")
+    waitmessage
+    pokemart(Stat_Berries)
+    msgbox("You're Welcome!")
+    release
+    end
+}
+
+script BerryShop_Employee_6 {
+    lock
+    faceplayer
+    message("I grow berries that react to damage!")
+    waitmessage
+    pokemart(React_Berries)
+    msgbox("Enjoy!")
+    release
+    end
+}
+
+mart Status_Berries {
+    ITEM_CHERI_BERRY
+    ITEM_CHESTO_BERRY
+    ITEM_PECHA_BERRY
+    ITEM_RAWST_BERRY
+    ITEM_ASPEAR_BERRY
+    ITEM_PERSIM_BERRY
+    ITEM_LUM_BERRY    
+}
+
+mart Heal_Berries {
+    ITEM_LEPPA_BERRY
+    ITEM_ORAN_BERRY
+    ITEM_SITRUS_BERRY
+    ITEM_FIGY_BERRY
+    ITEM_WIKI_BERRY
+    ITEM_MAGO_BERRY
+    ITEM_AGUAV_BERRY
+    ITEM_IAPAPA_BERRY
+}
+
+mart EV_Berries {
+    ITEM_PINAP_BERRY
+    ITEM_POMEG_BERRY
+    ITEM_KELPSY_BERRY
+    ITEM_QUALOT_BERRY
+    ITEM_HONDEW_BERRY
+    ITEM_GREPA_BERRY
+    ITEM_TAMATO_BERRY
+}
+
+mart Damage_Berries {
+    ITEM_OCCA_BERRY
+    ITEM_PASSHO_BERRY
+    ITEM_WACAN_BERRY
+    ITEM_RINDO_BERRY
+    ITEM_YACHE_BERRY
+    ITEM_CHOPLE_BERRY
+    ITEM_KEBIA_BERRY 
+    ITEM_SHUCA_BERRY
+    ITEM_COBA_BERRY
+    ITEM_PAYAPA_BERRY
+    ITEM_TANGA_BERRY
+    ITEM_CHARTI_BERRY
+    ITEM_KASIB_BERRY
+    ITEM_HABAN_BERRY
+    ITEM_COLBUR_BERRY
+    ITEM_BABIRI_BERRY
+    ITEM_ROSELI_BERRY
+}
+
+mart Stat_Berries {
+    ITEM_LIECHI_BERRY
+    ITEM_GANLON_BERRY
+    ITEM_SALAC_BERRY
+    ITEM_PETAYA_BERRY
+    ITEM_APICOT_BERRY
+    ITEM_LANSAT_BERRY
+    ITEM_STARF_BERRY    
+}
+
+mart React_Berries {
+    ITEM_ENIGMA_BERRY
+    ITEM_MICLE_BERRY
+    ITEM_CUSTAP_BERRY
+    ITEM_JABOCA_BERRY
+    ITEM_ROWAP_BERRY
+    ITEM_KEE_BERRY
+    ITEM_MARANGA_BERRY    
+}

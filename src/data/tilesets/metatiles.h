@@ -207,3 +207,8 @@ const u16 gMetatileAttributes_MysteryEventsHouse[] = INCBIN_U16("data/tilesets/s
 
 const u16 gMetatiles_UnionRoom[] = INCBIN_U16("data/tilesets/secondary/union_room/metatiles.bin");
 const u16 gMetatileAttributes_UnionRoom[] = INCBIN_U16("data/tilesets/secondary/union_room/metatile_attributes.bin");
+const u16 gMetatiles_LittlerootLakeTiles[] = INCBIN_U16("data/tilesets/secondary/littleroot_lake_tiles/metatiles.bin");
+const u16 gMetatileAttributes_LittlerootLakeTiles[] = INCBIN_U16("data/tilesets/secondary/littleroot_lake_tiles/metatile_attributes.bin");
+
+const u16 gMetatiles_LittleroootTownTiles[] = INCBIN_U16("data/tilesets/secondary/littlerooot_town_tiles/metatiles.bin");
+const u16 gMetatileAttributes_LittleroootTownTiles[] = INCBIN_U16("data/tilesets/secondary/littlerooot_town_tiles/metatile_attributes.bin");

@@ -1,0 +1,12 @@
+mapscripts LittlerootLake_MapScripts {
+
+}
+
+script LittlerootWoods_Bridge_Sign {
+    lockall
+    msgbox(format("“ATTENTION: BRIDGE CLOSED DUE TO STRUCTURAL DAMAGE”"))
+    waitmessage
+    releaseall
+    end
+}
+

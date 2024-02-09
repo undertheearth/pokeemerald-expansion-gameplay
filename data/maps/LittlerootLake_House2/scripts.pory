@@ -1,0 +1,27 @@
+mapscripts LittlerootLake_House2_MapScripts {
+
+}
+
+script LittlerootWoods_MythicalLady {
+    lock
+    faceplayer
+    if (flag(NO_OLD_SEA_MAP) == TRUE && flag(CELEBI_EVENT_FLAG) == TRUE) {
+        msgbox(format("You should check out the lake shrine, The way the sun shines through the trees is very relaxing!"))
+        giveitem(ITEM_OLD_SEA_MAP)
+        clearflag (NO_OLD_SEA_MAP)
+    } elif (flag(NO_OLD_SEA_MAP) == FALSE) {
+        msgbox(format("Back again? I found this old map by the shrine, did you drop it? You look the adventuring sort."))
+    } else {
+        msgbox(format("The shrine looks nice today, I might head over while the weather is nice."))
+    }
+    release
+    end
+}
+
+script LittlerootWood_House_Cat {
+    lockall
+    msgbox("Skitt-purr!")
+    waitmessage
+    releaseall
+    end
+}

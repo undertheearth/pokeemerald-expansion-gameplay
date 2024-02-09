@@ -1,0 +1,827 @@
+GEN 1
+Bulbasaur + Ivysaur - Ability Change: Pickup
+Venusaur - Ability Change: Grassy Surge - BST = 545
+	Attack: 82 - 95
+	Defence: 83 - 90
+	Speed: 80 - 85
+
+Charmander + Charmeleon - Ability Change: Tough Claws - BST = 545
+Charizard - Ability Change: Aerialate
+	Attack: 84 - 100
+	Defence: 78 - 77
+	Sp.Atk: 109 - 110
+	Sp.Def: 85 - 80
+
+Squirtle + Wartortle = Ability Change: Shed Skin
+Wartortle - Type Added: Steel
+Blastoise - Ability Change: Shell Armour - BST = 540 Type Added: Steel | Ability Change HA: Mega Launcher
+	HP: 79 - 100
+	Attack: 83 - 75
+	Sp.Atk: 85 - 90
+	Sp.Def: 105 - 100
+
+Caterpie - Level 16 Evo - BST = 195
+	Attack: 35 - 50
+	Defence: 35 - 45	
+Metapod - Level 26 Evo - BST = 340
+	Attack: 20 - 60
+	Defence: 55 - 85
+	Speed: 30 - 50
+	Sp.Atk: 25 - 50
+	Sp.Def: 25 - 65
+Buterfree  - BST = 450
+	Defence: 50 - 60
+	Sp.Def: 80 - 90
+	Speed: 70 - 100
+	Sp.Atk: 90 - 110
+
+Weedle - Level 16 Evo - BST = 195
+	Attack: 35 - 50
+	Defence: 30 - 40
+Kakuna - Level 28 Evo - BST = 340
+	HP - 45 - 50
+	Attack: 25 - 65
+	Defence: 45 - 80
+	Speed: 35 - 54
+	Sp.Atk: 25 - 45
+	Sp.Def: 25 - 60
+Beedrill - Ability Change: Levitate (Why is bro walking) - BST = 450 - More switch in opportunity
+	HP: 65 - 70
+	Attack: 90 - 115
+	Speed: 75 - 120
+
+Pidgeot - BST = 500
+	Attack: 80 - 91
+	Sp.Atk: 70 - 80
+
+Spearow - Evo Level 25	
+Fearow - Ability Change: Intimidate
+	Attack: 90 - 110
+	Defence: 65 - 80
+	Sp.Def: 61 - 70
+
+Ekans - Ability Change HA: Strong Jaw | Evo level 28
+	HP: 35 - 55
+	Attack: 60 - 70
+	Defence: 44 - 54
+	Speed: 55 - 65
+Arbok - Dark Type Added | Ability Change HA: Strong Jaw
+	HP: 60 - 85
+	Attack: 95 - 115 
+	Defence: 69 - 85
+	Speed: 80 - 85
+	Sp.Atk: 65 - 55
+	Sp.Def: 79 - 95
+
+Farfetchd: Ability Change: Sniper | Ability Change 2: Huge Power | BST = 430
+	HP: 52 - 65
+	Attack: 90 - 80
+	Defence: 55 - 65
+	Speed: 60 - 110
+	Sp.Atk: 58 - 28
+	Sp.Def: 62 - 70
+
+Sandshrew | Ability Change 2: Tough Claws
+	Sp.Def: 30 - 50
+	Speed: 40 - 50
+Sandshrew-Alola | Ability Change 2: Tough Claws
+	Sp.Def: 35 - 55
+	Speed: 40 - 50
+Sandslash | Ability Change 2: Tough Claws
+	Attack: 100 - 120
+	Sp.Def: 55 - 75
+	Speed: 65 - 75
+Alolan Sandslash | Ability Change 2: Tough Claws
+	Attack: 100 - 120
+	Sp.Def: 65 - 85
+
+Nidoqueen
+	Attack: 92 - 102
+	Sp.Atk: 75 - 85	
+Nidoking 
+	Attack: 102 - 112
+	Sp.Atk: 85 - 95
+
+Ninetails
+	Attack: 76 - 67
+	Sp.Atk: 81 - 100
+	Speed: 100 - 109
+Alolan Ninetails
+	Sp.Atk: 81 - 100
+	
+Jigglypuff
+	Attack: 45 - 60
+	Defence: 20 - 60
+	Sp.Atk: 45 - 65
+	Sp.Def: 25 - 65
+Wigglytuff - Ability Change: Thick Fat | Ability Change HA: Fur Coat
+	Attack: 70 - 90
+	Defence: 45 - 75
+	Sp.Atk: 85 - 95
+	Sp.Def: 50 - 70
+
+Entire line: Ability Change 2: Guts
+Crobat 
+	Attack: 90 - 100
+	Sp.Atk: 70 - 100
+
+Oddish - Abiltiy Change: Corrosion
+Gloom - Abiltiy Change: Corrosion
+Vileplume - Ability Change 2: Corrosion | Ability Change: Regenerator
+	HP - 75 - 120
+	Attack: 80 - 70
+	Defence: 85 - 95
+Bellossom - Fairy Type Added | Ability Change 2: Dancer 
+	HP - 75 - 85
+	Attack 80 - 60
+	Speed: 50 - 70
+	Sp.Atk: 90 - 100
+
+Paras - Ability Change: Poison Heal
+	HP: 56 - 65
+Parasect - Look at those pincers! - Ability Change: Poison Heal
+	HP: 60 - 110
+	Attack: 95 - 120
+	Sp.Atk: 60 - 80
+
+Persian
+	Attack: 70 - 90
+	Sp.Atk: 65 - 95
+Alolan Persian
+	Attack: 60 - 80
+	Sp.Atk: 75 - 115
+	
+Psyduck - Psychic Type Added
+Golduck - Psychic Type Added 
+	Attack: 82 - 90
+	Sp.Atk: 95 - 100
+	Speed: 85 - 90
+	
+Poliwrath - Ability Change 2: Drizzle
+	Attack: 95 - 120
+	Speed: 70 - 80
+	
+Politoad - Ability Change 2: Drizzle | Ability Change HA: Rain Dish
+	HP: 90 - 100
+	Sp.Atk: 90 - 100
+	
+Alakazam - Ability Change 2: Magic Guard | Ability Change HA: Magic Bounce | BST: 525
+	HP: 55 - 65
+	Defence: 45 - 66
+	Sp.Atk: 135 - 140
+
+	
+Machamp
+	HP: 90 - 101
+	Defence: 80 - 89
+	Sp.Def: 85 - 95
+
+Bellsprout | Ability 2: Poison Touch
+	Speed: 40 - 50
+Weepingbell | Ability 2: Poison Touch
+	Speed: 55 - 70
+Victrebell | Ability 2: Poison Touch
+	Attack: 105 - 115
+	Defence: 65 - 75
+	Speed: 70 - 90 
+	
+Tentacruel
+	Attack: 70 - 80
+	Sp.Atk: 80 - 110
+Toedscruel
+	Attack: 70 - 80
+	Sp.Atk: 80 - 110
+
+
+
+Eeveeloutions
+Eevee - Ability Change 1: Trace
+	HP: 55 - 60
+	Attack: 55 - 60
+	Sp.Atk: 45 - 65
+Vapeoreon - Ability Change 2: Drizzle
+	Defence: 60 - 80
+	Speed: 65 - 75
+Jolteon - Ability Change 2: Electric Surge
+	HP: 65 - 75
+	Defence: 60 - 80
+Flareon - Ability Change 2: Drought
+	HP: 65 - 75
+	Defence: 60 - 80
+Espeon - Ability Change 2: Psychic Terrain
+	HP: 65 - 75
+	Defence: 60 - 80
+Umbreon - Ability Change 2: Dark Aura
+	Attack: 65 - 95
+	Sp.Atk: 60 - 50
+Leafeon - Ability Change 2: Grassy Surge
+	HP: 65 - 75
+	Sp.Def: 65 - 85
+Glaceon - Abillity Change 2: Snow Warning
+	HP: 65 - 90
+	Sp.Def: 95 - 110
+Slyveon - Ability Change 2: Misty Surge
+	Defence: 65 - 85
+	Speed: 60 - 80
+	
+Rapidash - Abiliy Change: Adaptability
+	HP - 65 - 80
+	Attack: 100 - 120
+	Sp.Atk: 80 - 100
+	Speed: 105 - 115
+
+Slowbro 
+	Sp.Atk: 100 - 110
+Slowking
+	Sp.Atk: 100 - 110
+	
+Dewgong
+	Defence: 80 - 90
+	Sp.Atk: 70 - 90
+	Sp.Def: 95 - 105
+	
+Cloyster
+	Sp.Def: 45 - 65
+	
+Onix - Dragon Dance
+	HP: 35 - 75
+	Attack: 45 - 100
+	Defence: 160 - 140
+	Sp.Def: 45 - 60
+	Speed: 70 - 80
+Learns Dragon Dance at lvl.35
+	
+Steelix
+	HP - 75 - 120
+	Attack: 85 - 95
+	Sp.Def: 65 - 75
+	
+Hypno
+	Sp.Atk: 73 - 115
+	
+Kingler
+	HP: 55 - 65
+	Attack: 130 - 140
+	Sp.Def: 50 - 65
+	Speed: 75 - 95
+	
+Voltorb
+	Sp.Def: 45 - 30	
+Electrode
+	Attack: 50 - 130
+	Defence: 70 - 40
+	Sp.Atk: 80 - 130
+	Sp.Def: 80 - 30
+	
+Exeggcute - Ability Change 2: Natural Cure
+	Speed: 40 - 50
+Exeggutor - Ability Change 2: Natural Cure | BST 530 - 575
+	Attack: 95 - 85
+	Sp.Def: 75 - 100
+	Speed: 55 - 85
+	*Learns Quiver Dance lvl.48
+	*New Moveset
+
+Exeggutor-Alola - Ability Change 1: Poison Heal | Ability Change 2: Analytic | BST 530 - 575
+	HP: 95 - 125
+	Attack: 105 - 125
+	Defence: 85 - 105
+	Sp.Atk: 125 - 75
+	Sp.Def: 75 - 100
+	Barrage is now Steel type 25BP, 100 ACC
+	Evolves with Sun Stone
+	
+Khangashkan
+	Attack: 95 - 100
+
+Horsea - Evo Level 31
+	HP: 30 - 35
+Seadra - Evo Level 45 (No Dragon Scale) | Type Added Poison - BST: 430 - 440
+	Sp.Def: 45 - 55
+Kingdra - Ability Change HA: Damp | Ability Change 2: Drizzle - BST: 540 - 600
+	HP: 75 - 80
+	Attack: 95 - 110
+	Defence: 95 - 90
+	Sp.Atk: 95 - 120
+	Sp.Def: 95 - 90
+	Speed: 85 - 125
+	Egg Cycles: 20 - 40
+	Exp Yield: 243 - 270
+	Friendship: 35
+	Growth Rate: Slow
+	Learns Nasty Plot (57) and Origin Pulse (60)
+	
+Goldeen
+	Attack: 67 - 90
+	Sp.Atk: 35 - 45
+	Speed: 63 - 73
+Seaking
+	Attack: 92 - 112
+	Speed: 68 - 98
+	
+Starmie
+	Sp.Atk: 100 - 110
+	
+Jynx
+	Attack: 50 - 30
+	Defence: 35 - 55
+	Sp.Atk: 95 - 125
+	Speed: 95 - 96
+
+Electabuzz
+	Attack: 83 - 93	
+Electavire
+	Attack: 123 - 133
+	Sp.Atk: 95 - 105
+	
+Tauros
+	Attack: 100 - 120
+	
+Porygon	
+	HP: 65 - 75
+	Attack: 60 - 70
+Porygon2
+	Defence: 90 - 100
+	Sp.Def: 95 - 105
+Porygon-Z - BST: 535 - 575 - Improved level movepool
+	HP: 85 - 95
+	Speed: 90 - 100
+	Attack: 80 - 60
+	Defence: 70 - 90
+	Sp.Def: 75 - 95
+	
+Omastar
+	Speed: 55 - 75
+	
+Kabutops
+	Attack: 115 - 125
+	Speed: 80 - 90
+	
+Aerodactyl
+	Attack: 105 - 115
+	
+Articuno
+	Sp.Atk: 95 - 125
+Zapdos
+	Defence: 85 - 95
+	Sp.Def: 90 - 100
+Moltres
+	Sp.Def: 85 - 115
+	
+
+GEN 2
+
+Chikorita - Ability Change: Magic Guard | Ability Change 2: Triage
+Bayleef - Ability Change: Magic Guard | Ability Change 2: Triage | Fairy Type Added
+Meganium - Ability Change: Magic Guard | Ability Change 2: Triage | Fairy Type Added
+	HP: 80 - 100
+	Attack: 82 - 90
+	Defence: 100 - 110
+	Sp.Atk: 83 - 90
+	Sp.Def: 100 - 110
+
+Cyndaquil - Ability Change: Mold Breaker
+Quilava - Ability Change: No Guard | Normal Type Added
+Typhlosion - Ability Change: No Guard | Normal Type Added
+	Attack: 84 - 100
+	Sp.Atk: 109 - 128
+	Sp.Def: 85 - 75
+
+Totodile + Crocknaw	 - Ability Change: Strong Jaw
+Feraligator - Ability Change: Strong Jaw | Dark Type Added
+	Attack: 105 - 115
+	Sp.Def: 83 - 93
+
+Ledyba - Level 30 Evo
+	HP: 40 - 50
+	Attack: 20 - 70
+	Defence: 30 - 40
+	Speed: 55 - 65
+Ledian - Ability Change: Moxie
+	HP - 55 - 65
+	Attack: 35 - 110
+	Defence: 50 - 60
+	Speed: 80 - 105
+	
+Arridos
+	Attack: 90 - 110
+	
+Chinchou
+	Sp.Atk: 56 - 66
+Lanturn - Ability Change 2: Lightning Rod
+	Defence: 58 - 78
+	Sp.Atk: 76 - 96
+
+Xatu
+	Defence: 70 - 80
+	Sp.Atk: 95 - 105
+	Sp.Def: 70 - 80
+	
+Azumaril
+	Attack: 50 - 60
+	Speed: 50 - 60
+	
+Sudowoodo - Grass Type Added | Ability Change HA: Water Absorb
+	Attack: 100 - 120
+	Sp.Def: 65 - 95
+	
+Ambipom
+	Attack: 100 - 110
+	
+Sunkern - Fire Type Added
+	HP - 30 - 55
+	Defence - 30 - 50
+	Sp.Atk - 30 - 60
+	Sp.Def - 30 - 50
+	Speed - 30 - 60
+	
+Sunflora - Fire Type Added | Ability Changed: Storm Drain | New Moves Added
+	Attack 75 - 45
+	Defence: 55 - 70
+	Sp.Atk: 105 - 135
+	Speed: 30 - 90
+
+Honchkrow
+	Defence: 52 - 75
+	Sp.Def: 52 - 72
+	Speed: 71 - 81
+Granbull
+	HP: 90 - 100
+
+Shuckle
+	HP: 20 - 40
+
+Magcargo
+	Sp.Def: 80 - 120
+	
+Octilary - Ability Changed 2: Colour Change
+	HP: 75 - 99
+	Attack: 105 - 110
+	Sp.Atk: 105 - 110
+	Defence: 75 - 85
+	Sp.Def: 75 - 85
+	Speed: 45 - 72
+	
+Delibird
+	HP: 45 - 60
+	Attack: 55 - 120
+	Sp.Atk: 65 - 80
+	Speed: 75 - 115
+
+Mantine
+	Sp.Atk: 80 - 95
+
+Houndoom
+	Speed: 95 - 96
+
+Wyrdeer
+	Attack: 105 - 135
+
+Smeargle - Poison Type Added | Ability Changed: Trace - OP competitively, not worth using in normal play.
+	HP: 55 - 70
+	Attack: 20 - 70
+	Defence: 35 - 80
+	Speed: 75 - 90
+	Sp.Atk: 20 - 70
+	Sp.Def: 45 - 80
+	
+Miltank
+	Attack: 80 - 90
+	Sp.Atk: 40 - 70
+
+Tyranitar - Evo Level 55 - 50
+
+Celebi - Psychcic Type Changed to Fairy
+
+
+GEN 3
+
+
+Treecko/Grovyle/Sceptile - Ability Change: Berserk | Ability Change 2: Moxie
+Sceptile
+	Defence: 65 - 75
+	Sp.Atk: 105 - 115
+Torchic/Combusken/Blaziken - Ability Change: Reckless | Ability Change 2: Defiant
+Blaziken
+	Sp.Atk: 110 - 120
+Mudkip/Marshtomp/Swampert - Ability Change: Regenerator | Ability Change 2: Water Absorb
+Swampert
+	Attack: 110 - 120
+	
+Mightyena
+	Attack: 90 - 110
+	Speed: 70 - 80
+	
+Linoone
+	Attack: 70 - 80
+	
+Wurmple - Evo Level 14
+	Attack: 45 - 50
+	Defence: 35 - 45
+	Speed: 20 - 30
+	Sp.Def: 30 - 40
+Cascoon and Silcoon - Evo Level 25
+	Attack: 35 - 50
+	Defence: 55 - 60
+	Speed: 15 - 20
+	Sp.Def: 25 - 35
+Beautifly
+	Defence: 50 - 60
+	Sp.Atk: 100 - 110
+	Speed: 65 - 85
+Dustox
+	HP: 60 - 80
+	Defence: 70 - 80
+	Sp.Atk: 50 - 70
+	
+Ludicolo
+	Defence: 70 - 80
+	Sp.Atk: 90 - 100
+
+Shiftry
+	Sp.Def: 60 - 70
+
+Swellow
+	Attack: 85 - 95
+	
+Surskit - BST = 300
+	HP: 40 - 50
+	Defence: 32 - 42
+	Sp.Atk: 50 - 60
+	Sp.Def: 52 - 53
+Masquerian - BST = 470 
+	Defence: 62 - 70
+	Sp.Def: 82 - 90
+
+Vigoroth - Ability Changed 2: Anger Point
+	Attack: 80 - 100
+	Speed: 90 - 95
+Slakoth and Slaking - Abiltiy Changed 2: Klutz
+	Sp.Def: 65 - 90
+
+Whismur - Ability Changed 2: Punk Rock | Ability Changed HA: Scrappy
+Loudred - BST = 360 - 400 | Ability Changed 2: Punk Rock
+	Defence: 43 - 53
+	Sp.Atk: 71 - 81
+	Sp.Def: 43 - 53
+	Speed: 48 - 58
+Exploud - late evo, bad stats - BST = 575 | Ability Changed 2: Punk Rock
+	HP: 103 - 107
+	Defence: 63 - 93
+	Sp.Atk: 91 - 120
+	Sp.Def: 73 - 93
+	Speed: 68 - 71
+
+Hariyama
+	Defence: 60 - 70
+
+Nosepass
+	Attack: 45 - 65
+Probopass
+	HP: 60 - 80
+	Attack: 55 - 85
+	Sp.Atk: 45 - 95
+	
+Skitty - Fairy Type Added | Ability Change 1: Misty Surge | Ability Change 2: Stakeout | Ability Change HA: Fur Coat
+	Sp.Atk: 35 - 45
+	Sp.Def: 35 - 45
+Delcatty - Fairy Type Added | Ability Change 1: Misty Surge | Ability Change 2: Stakeout | Ability Change HA: Fur Coat
+	HP: 70 - 80
+	Attack: 65 - 90
+	Defence: 65 - 75
+	Sp.Atk: 55 - 90
+	Sp.Def: 55 - 75
+
+Sableye - Ability Changed 2: Magic Guard
+	HP: 50 - 60
+	Attack: 75 - 95
+	Defence: 75 - 80
+	Sp.Def: 65 - 75
+	
+Mawille
+	HP: 50 - 80
+	Attack: 85 - 90
+	Defence: 85 - 90
+	Speed: 50 - 60
+	Sp.Def: 55 - 80
+
+Aron
+	Defence: 100 - 80
+	
+Lairon
+	HP: 60 - 70
+	Defence: 140 - 130
+
+Aggron 300 - 420 - 600
+	HP: 70 - 100
+	Attack: 110 - 120
+	Sp.Atk: 60 - 40
+	Sp.Def: 60 - 80
+	Speed: 50 - 80
+	
+Medicham
+	Speed: 80 - 90
+	
+Plusle
+	Defence: 40 - 60
+	Sp.Atk: 85 - 115
+Minun
+	Defence: 50 - 70
+	Sp.Atk: 75 - 105
+
+Volbeat
+	HP: 65 - 75
+	Attack: 73 - 53
+	Defence: 75 - 85
+	Speed: 85 - 95
+	Sp.Atk: 47 - 97
+	Sp.Def: 85 - 95
+	Type Added: Electric
+
+Illumise
+	Type Added: Fairy
+	HP: 65 - 95
+	Attack: 47 - 27
+	Defence: 75 - 95
+	Sp.Atk: 73 - 83
+	Sp.Def: 85 - 105
+	Speed: 85 - 95
+
+Swalot - Ability Changed: Filter
+	Attack: 73 - 80
+	Defence: 83 - 90
+	Sp.Atk: 73 - 80
+	Sp.Def: 83 - 90
+
+Carvahna
+	Defence: 20 - 40
+	Sp.Def: 20 - 40
+Sharpedo
+	Defence: 40 - 60
+	Sp.Def: 40 - 60
+
+Wailord
+	Defence: 45 - 60
+	Sp.Def: 45 - 60
+	
+Camerupt
+	Attack: 100 - 110
+	Sp.Atk: 105 - 115
+	Speed: 40 - 50
+
+Torkoal
+	HP: 70 - 80
+	Sp.Atk: 85 - 105
+
+Spoink - Added Dark Type
+	Defence: 35 - 40
+Grumpig - Added Dark Type
+	Defence: 65 - 75
+
+Spinda - Added Fighting Type
+	Attack: 60 - 100
+	Speed: 60 - 90
+	
+Flygon
+	Attack: 100 - 110
+
+Cacturne
+	Defence: 60 - 80
+	Sp.Def: 60 - 80
+	Speed: 55 - 60
+	
+Swablu - Replaced Normal with Fairy - Evo level changed to 38 - BST = 400
+	HP: 45 - 70
+	Attack: 40 - 70
+	Defence: 60 - 75
+	Speed: 50 - 70
+	
+Altaria  - Replaced Flying with Fairy Type - BST = 575
+	HP: 75 - 100
+	Defence: 90 - 100
+	Speed: 80 - 90
+	Sp.Atk: 70 - 110
+
+Signature move: Slyph Song - Special Fairy move - 95BP, 100 Accuracy, 15 PP
+20% chance to sleep
+Gets Quiver Dance instead of Dragon Dance
+
+Lunatone
+	Sp.Atk: 95 - 115
+Solrock
+	Attack: 95 - 115
+
+Whiscash
+	Attack: 78 - 90
+
+Crawdunt
+	Speed: 55 - 65
+
+Claydol
+	Attack: 70 - 90
+	Sp.Atk: 70 - 90
+	
+Cradily
+	Attack: 81 - 101
+Armaldo
+	HP: 75 - 85
+	
+Milotic - Added Fairy Type
+	Defence - 79 - 89
+
+Castform
+	HP: 70 - 100
+	Attack: 70 - 100
+	Defence: 70 - 100
+	Sp.Atk: 70 - 100
+	Sp.Def: 70 - 100
+	Speed: 70 - 100
+	
+Kecleon - Added Ghost Type | Changed Ability 2: Trace
+	Attack: 90 - 110
+	Speed: 40 - 80
+	
+Tropius
+	Attack: 68 - 98
+	Speed: 51 - 71
+	
+Chimecho
+	Defence: 80 - 100
+	Sp.Def: 80 - 110
+
+Glalie - Changed Ability: Moody | Changed Ability HA: Sturdy
+	Speed: 80 - 91
+	Sp.Atk: 80 - 90
+	Attack: 80 - 90
+Froslass
+	Sp.Atk: 80 - 100
+
+Spheal - Evo Level 30
+Sealeo - Evo Level 54
+Walrein - Changed Ability HA: Regenerator - BST: 530 - 600 (Pseudolegendary)
+	HP: 110 - 150
+	Sp.Atk: 95 - 115
+	Sp.Def: 90 - 100
+	Egg Cycles: 20 - 40
+	Exp Yield: 243 - 270
+	Friendship: 35
+	Growth Rate: Slow
+
+Clamperl
+	Sp.Def: 55 - 65
+Huntail
+	Attack: 104 - 114
+Gorebyss
+	Sp.Atk: 114 - 124
+	
+Relicanth
+	Attack: 90 - 110
+	Speed: 55 - 85
+	Sp.Def: 65 - 75
+
+Luvdisc - Added Fairy Type | Evolves into Alomomola (35)
+	HP: 43 - 83
+	Attack: 30 - 50
+	Sp.Atk: 40 - 80
+Alomomola - Added Fairy Type
+	Defence: 80 - 90
+	Sp.Atk: 40 - 80
+	Sp.Def: 45 - 65
+
+Metagross - Ability 2: Tough Claws
+
+Deoxys (All Forms)
+	HP: 50 - 60
+
+
+Mythical Pokemon 
++20 BST - diversity among stats
+
+Mew	
+	Speed: 100 - 120
+
+Celebi
+	Sp.Atk: 100 - 120
+
+Jirachi
+	Defence: 100 - 110
+	Sp.Def: 100 - 110
+
+Deoxys (all forms)
+	HP: 60 - 80
+
+
+Gen 6
+
+Phantump
+	HP: 43 - 53
+	sp.Atk: 50 - 35
+	Speed: 38 - 58
+Trevenant - BST: 474 - 525
+	HP: 85 - 95
+	Attack: 110 - 120
+	Defence: 76 - 96
+	Sp.Atk: 65 - 45
+	Sp.Def: 82 - 92
+	Speed: 56 - 77
+Learns Recover (30) and Growth (31) Horn Leech (54 - 50) Drain Punch (37)

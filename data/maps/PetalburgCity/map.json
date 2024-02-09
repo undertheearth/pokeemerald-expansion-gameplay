@@ -14,14 +14,14 @@
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": [
     {
-      "map": "MAP_ROUTE104",
-      "offset": -50,
-      "direction": "left"
-    },
-    {
       "map": "MAP_ROUTE102",
       "offset": 10,
       "direction": "right"
+    },
+    {
+      "map": "MAP_ROUTE104",
+      "offset": -49,
+      "direction": "left"
     }
   ],
   "object_events": [
@@ -53,7 +53,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_BOY_1",
-      "x": 8,
+      "x": 13,
       "y": 22,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
@@ -105,8 +105,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
-      "x": 3,
-      "y": 28,
+      "x": 13,
+      "y": 36,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
       "movement_range_x": 0,
@@ -184,6 +184,27 @@
       "y": 12,
       "elevation": 0,
       "dest_map": "MAP_PETALBURG_CITY_MART",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 16,
+      "y": 47,
+      "elevation": 0,
+      "dest_map": "MAP_DAMP_CAVE",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 23,
+      "y": 35,
+      "elevation": 0,
+      "dest_map": "MAP_PETALBURG_CITY_LOREMASTER",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 9,
+      "y": 25,
+      "elevation": 0,
+      "dest_map": "MAP_PETALBURG_CITY_BATTLE_SHOP",
       "dest_warp_id": "0"
     }
   ],
@@ -320,8 +341,8 @@
     },
     {
       "type": "hidden_item",
-      "x": 11,
-      "y": 29,
+      "x": 4,
+      "y": 15,
       "elevation": 3,
       "item": "ITEM_RARE_CANDY",
       "flag": "FLAG_HIDDEN_ITEM_PETALBURG_CITY_RARE_CANDY"

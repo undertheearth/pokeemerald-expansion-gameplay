@@ -1,0 +1,142 @@
+mapscripts LittlerootLake_Mart_MapScripts {
+
+}
+
+script LittlerootMartShop0 {
+    lock
+    faceplayer
+    message(format("Seriously, this place is mega bOooOring since the bridge drama. UGH.\p"
+    "Need anything??"))
+    waitmessage
+    pokemart(LittlerootMart0)
+    msgbox("Whatever...")
+    release
+    end
+}
+
+script LittlerootMartShop1 {
+    lock
+    faceplayer
+    message(format("I specialize in TMs that pack a punch! If you seek power, you're in the right place."))
+    waitmessage
+    pokemart(LittlerootMart1)
+    msgbox("Strength awaits, trainer.")
+    release
+    end
+}
+
+script LittlerootMartShop2 {
+    lock
+    faceplayer
+    message(format("It's really cramped back here."))
+    waitmessage
+    pokemart(LittlerootMart2)
+    msgbox("Happy battling!")
+    release
+    end
+}
+
+script LittlerootMartShop3 {
+    lock
+    faceplayer
+    message(format("May the knowledge within those TMs guide your path, young one."))
+    waitmessage
+    pokemart(LittlerootMart3)
+    msgbox("Choose wisely.")
+    release
+    end
+}
+
+script LittlerootMartShop4 {
+    lock
+    faceplayer
+    message(format("The owner's enthusiasm is as genuine as a Monday morning smile. But hey, enjoy the TMs."))
+    waitmessage
+    pokemart(LittlerootMart4)
+    msgbox("Until next time!")
+    release
+    end
+}
+
+mart LittlerootMart0 {
+    ITEM_LOVE_BALL
+    ITEM_HEAL_BALL
+    ITEM_CHOICE_SCARF
+    ITEM_CHOICE_BAND
+    ITEM_CHOICE_SPECS
+    ITEM_FOCUS_SASH
+    ITEM_BERRY_JUICE
+    ITEM_SWEET_HEART
+    ITEM_HEART_SCALE
+    ITEM_FULL_INCENSE
+    ITEM_LAX_INCENSE
+    ITEM_LUCK_INCENSE
+    ITEM_ODD_INCENSE
+    ITEM_PURE_INCENSE
+    ITEM_ROCK_INCENSE
+    ITEM_ROSE_INCENSE
+    ITEM_SEA_INCENSE
+    ITEM_WAVE_INCENSE
+    ITEM_SMOKE_BALL
+}
+
+mart LittlerootMart1 {
+    ITEM_TM51
+    ITEM_TM52
+    ITEM_TM53
+    ITEM_TM54
+    ITEM_TM55
+    ITEM_TM56
+    ITEM_TM57
+    ITEM_TM58
+    ITEM_TM59
+    ITEM_TM60
+    ITEM_TM61
+    ITEM_TM62
+}
+
+mart LittlerootMart2 {
+    ITEM_TM63
+    ITEM_TM64
+    ITEM_TM65
+    ITEM_TM66
+    ITEM_TM67
+    ITEM_TM68
+    ITEM_TM69
+    ITEM_TM70
+    ITEM_TM71
+    ITEM_TM72
+    ITEM_TM73
+    ITEM_TM74
+}
+
+mart LittlerootMart3 {
+    ITEM_TM75
+    ITEM_TM76
+    ITEM_TM77
+    ITEM_TM78
+    ITEM_TM79
+    ITEM_TM80
+    ITEM_TM81
+    ITEM_TM82
+    ITEM_TM83
+    ITEM_TM84
+    ITEM_TM85
+    ITEM_TM86    
+}
+
+mart LittlerootMart4 {
+    ITEM_TM87
+    ITEM_TM88
+    ITEM_TM89
+    ITEM_TM90
+    ITEM_TM91
+    ITEM_TM92
+    ITEM_TM93
+    ITEM_TM94
+    ITEM_TM95
+    ITEM_TM96
+    ITEM_TM97
+    ITEM_TM98
+    ITEM_TM99   
+}

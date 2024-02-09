@@ -1,0 +1,82 @@
+mapscripts LittlerootLake_BerryShop_MapScripts {
+
+}
+
+script LittlerootBerry_1 {
+    lock
+    faceplayer
+    message(format("Uh, hi Trainer! Welcome to... Berry Bliss? Explore our, um\p"
+    "...berrylicious options? Your Pokémon might, you know, like them."))
+    waitmessage
+    pokemart(Berries_1)
+    msgbox("Hope you enjoy... I guess?")
+    release
+    end
+}
+
+script LittlerootBerry_2 {
+    lock
+    faceplayer
+    message(format("Welcome! We've just opened so excuse the clutter!"))
+    waitmessage
+    pokemart(Berries_2)
+    msgbox("Thanks for coming!")
+    release
+    end
+}
+
+script LittlerootBerry_Customer {
+    lock
+    faceplayer
+    message(format("I wanted a CUSTAP BERRY, but they don't have them here."))
+    waitmessage
+    msgbox(format("Maybe theres someone else who farms berries..."))
+    waitmessage
+    release
+    end
+}
+
+mart Berries_1 {
+    ITEM_CHERI_BERRY
+    ITEM_CHESTO_BERRY
+    ITEM_PECHA_BERRY
+    ITEM_RAWST_BERRY
+    ITEM_ASPEAR_BERRY
+    ITEM_PERSIM_BERRY
+    ITEM_LUM_BERRY    
+    ITEM_LEPPA_BERRY
+    ITEM_ORAN_BERRY
+    ITEM_SITRUS_BERRY
+    ITEM_FIGY_BERRY
+    ITEM_WIKI_BERRY
+    ITEM_MAGO_BERRY
+    ITEM_AGUAV_BERRY
+    ITEM_IAPAPA_BERRY
+}
+
+mart Berries_2 {
+    ITEM_PINAP_BERRY
+    ITEM_POMEG_BERRY
+    ITEM_KELPSY_BERRY
+    ITEM_QUALOT_BERRY
+    ITEM_HONDEW_BERRY
+    ITEM_GREPA_BERRY
+    ITEM_TAMATO_BERRY
+    ITEM_OCCA_BERRY
+    ITEM_PASSHO_BERRY
+    ITEM_WACAN_BERRY
+    ITEM_RINDO_BERRY
+    ITEM_YACHE_BERRY
+    ITEM_CHOPLE_BERRY
+    ITEM_KEBIA_BERRY 
+    ITEM_SHUCA_BERRY
+    ITEM_COBA_BERRY
+    ITEM_PAYAPA_BERRY
+    ITEM_TANGA_BERRY
+    ITEM_CHARTI_BERRY
+    ITEM_KASIB_BERRY
+    ITEM_HABAN_BERRY
+    ITEM_COLBUR_BERRY
+    ITEM_BABIRI_BERRY
+    ITEM_ROSELI_BERRY
+}

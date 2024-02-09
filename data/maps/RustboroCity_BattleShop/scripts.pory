@@ -1,0 +1,26 @@
+mapscripts RustboroCity_BattleShop_MapScripts {
+
+}
+
+script Rustboro_Battle_Shop {
+    lock
+    faceplayer
+    message("I sell held items.")
+    waitmessage
+    pokemart(RUSTBORO_BATTLE_SHOP)
+    msgbox("Thanks!")
+    release
+    end
+}
+
+mart RUSTBORO_BATTLE_SHOP {
+    ITEM_BLACK_SLUDGE
+	ITEM_EVIOLITE
+	ITEM_LEFTOVERS
+    ITEM_POWER_ANKLET
+	ITEM_POWER_BAND
+    ITEM_POWER_BELT
+	ITEM_POWER_BRACER
+    ITEM_POWER_LENS
+	ITEM_POWER_WEIGHT
+}

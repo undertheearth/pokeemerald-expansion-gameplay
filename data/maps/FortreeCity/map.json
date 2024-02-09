@@ -115,6 +115,19 @@
       "trainer_sight_or_berry_tree_id": "0",
       "script": "FortreeCity_EventScript_Kecleon",
       "flag": "FLAG_HIDE_FORTREE_CITY_KECLEON"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_ZIGZAGOON_2",
+      "x": 30,
+      "y": 15,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_WANDER_LEFT_AND_RIGHT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "FortreeCity_Zig",
+      "flag": "0"
     }
   ],
   "warp_events": [
@@ -180,9 +193,18 @@
       "elevation": 0,
       "dest_map": "MAP_FORTREE_CITY_DECORATION_SHOP",
       "dest_warp_id": "0"
+    },
+    {
+      "x": 29,
+      "y": 13,
+      "elevation": 0,
+      "dest_map": "MAP_FORTREE_CITY_BATTLE_SHOP",
+      "dest_warp_id": "0"
     }
   ],
-  "coord_events": [],
+  "coord_events": [
+
+  ],
   "bg_events": [
     {
       "type": "sign",

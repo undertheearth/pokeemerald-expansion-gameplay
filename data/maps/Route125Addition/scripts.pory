@@ -1,0 +1,55 @@
+mapscripts Route125Addition_MapScripts {
+
+}
+
+script Route125_Bird_1 {
+    lock
+    faceplayer
+    msgbox(format("Gull?"))
+    waitmessage
+    release
+    end
+}
+
+script Route125_Bird_2 {
+    lock
+    faceplayer
+    msgbox(format("Kwu?"))
+    waitmessage
+    release
+    end
+}
+
+script Route125_Bird_3 {
+    lock
+    faceplayer
+    msgbox(format("?"))
+    waitmessage
+    release
+    end
+}
+
+script Route125_Skitty {
+    lock
+    faceplayer
+    msgbox(format("Mwao?"))
+    waitmessage
+    release
+    end
+}
+
+script Route125_Azu {
+    lock
+    faceplayer
+    msgbox(format("Zu!"))
+    waitmessage
+    release
+    end
+}
+
+script Route125_EventScript_Sign {
+    lock
+	msgbox (format("Mossdeep Commune./n“We don't have a motto.”"))
+    release	
+    end
+}

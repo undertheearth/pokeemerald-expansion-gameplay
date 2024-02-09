@@ -14,11 +14,6 @@
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": [
     {
-      "map": "MAP_ROUTE125",
-      "offset": 0,
-      "direction": "up"
-    },
-    {
       "map": "MAP_ROUTE127",
       "offset": 0,
       "direction": "down"
@@ -27,6 +22,11 @@
       "map": "MAP_ROUTE124",
       "offset": -40,
       "direction": "left"
+    },
+    {
+      "map": "MAP_ROUTE125",
+      "offset": 0,
+      "direction": "up"
     }
   ],
   "object_events": [
@@ -321,6 +321,13 @@
       "y": 24,
       "elevation": 0,
       "dest_map": "MAP_MOSSDEEP_CITY_GAME_CORNER_1F",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 46,
+      "y": 13,
+      "elevation": 0,
+      "dest_map": "MAP_MOSSDEEP_CITY_BATTLE_SHOP",
       "dest_warp_id": "0"
     }
   ],

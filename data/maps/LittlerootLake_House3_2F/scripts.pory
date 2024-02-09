@@ -1,0 +1,12 @@
+mapscripts LittlerootLake_House3_2F_MapScripts {
+}
+
+script LittlerootLakeHouse3_Man {
+    lock
+    faceplayer
+    message(format("...Why are you in my house?"))
+    waitmessage
+    release
+    end
+}
+

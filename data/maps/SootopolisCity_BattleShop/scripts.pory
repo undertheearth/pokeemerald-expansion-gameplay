@@ -1,0 +1,71 @@
+mapscripts SootopolisCity_BattleShop_MapScripts {
+
+}
+
+script Sootopolis_Battle_Shop_1 {
+    lock
+    faceplayer
+    message("Need any battle items?")
+    waitmessage
+    pokemart(SOOTOPOLIS_BATTLE_SHOP_1)
+    msgbox("Thanks!")
+    release
+    end
+}
+
+script Sootopolis_Battle_Shop_2 {
+    lock
+    faceplayer
+    message("For trainers, by trainers!")
+    waitmessage
+    pokemart(SOOTOPOLIS_BATTLE_SHOP_2)
+    msgbox("Come back soon!")
+    release
+    end
+}
+
+mart SOOTOPOLIS_BATTLE_SHOP_1 {
+	ITEM_ABSORB_BULB
+	ITEM_ADRENALINE_ORB
+	ITEM_AIR_BALLOON
+	ITEM_BLUNDER_POLICY
+	ITEM_CELL_BATTERY
+	ITEM_EJECT_BUTTON
+	ITEM_EJECT_PACK
+	ITEM_ELECTRIC_SEED
+	ITEM_FOCUS_SASH
+	ITEM_GRASSY_SEED
+	ITEM_LUMINOUS_MOSS
+	ITEM_MISTY_SEED
+	ITEM_PSYCHIC_SEED
+	ITEM_RED_CARD
+	ITEM_SHELL_BELL
+	ITEM_SHED_SHELL
+	ITEM_SNOWBALL
+	ITEM_STICKY_BARB
+	ITEM_THROAT_SPRAY	
+	ITEM_WEAKNESS_POLICY
+}
+
+mart SOOTOPOLIS_BATTLE_SHOP_2 {
+	ITEM_LONELY_MINT
+	ITEM_ADAMANT_MINT	
+	ITEM_NAUGHTY_MINT
+	ITEM_BRAVE_MINT
+	ITEM_BOLD_MINT
+	ITEM_IMPISH_MINT
+	ITEM_LAX_MINT
+	ITEM_RELAXED_MINT
+	ITEM_MODEST_MINT
+	ITEM_MILD_MINT
+	ITEM_RASH_MINT
+	ITEM_QUIET_MINT
+	ITEM_CALM_MINT
+	ITEM_GENTLE_MINT
+	ITEM_CAREFUL_MINT
+	ITEM_SASSY_MINT
+	ITEM_TIMID_MINT
+	ITEM_HASTY_MINT
+	ITEM_JOLLY_MINT
+	ITEM_NAIVE_MINT
+}

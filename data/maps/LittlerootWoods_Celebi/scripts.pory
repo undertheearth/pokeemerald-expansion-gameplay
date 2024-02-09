@@ -1,0 +1,93 @@
+mapscripts LittlerootWoods_Celebi_MapScripts {
+}
+
+script LittlerootWoodsCelebi {
+    lockall
+    setflag(CELEBI_EVENT_FLAG)
+    playmoncry(SPECIES_CELEBI, CRY_MODE_ENCOUNTER)
+    delay(40)
+    waitmoncry
+    setwildbattle(SPECIES_CELEBI, 40, ITEM_LEFTOVERS)
+    special(BattleSetup_StartLegendaryBattle)
+
+    resetweather
+    doweather
+    waitstate
+
+    specialvar(VAR_RESULT, GetBattleOutcome)
+    if(var(VAR_RESULT) == B_OUTCOME_CAUGHT){
+        call(Won_or_Caught)
+}
+elif(var(VAR_RESULT) == B_OUTCOME_WON){
+    call(Won_or_Caught)
+}
+elif(var(VAR_RESULT) == B_OUTCOME_RAN){
+    call(RanAway) 
+}
+elif(var(VAR_RESULT) == B_OUTCOME_PLAYER_TELEPORTED){
+    call(RanAway)
+}
+waitmessage
+releaseall
+
+}
+
+script Won_or_Caught {
+    fadescreen(FADE_TO_BLACK)
+    removeobject(1)
+    fadescreen(FADE_FROM_BLACK)
+    msgbox("The forest calms")
+    return
+}
+
+script RanAway {
+    playmoncry(SPECIES_CELEBI, CRY_MODE_ENCOUNTER)
+    msgbox("Bri....", MSGBOX_AUTOCLOSE)
+    delay(20)
+    fadescreen(FADE_TO_BLACK)
+    removeobject(1) 
+    fadescreen(FADE_FROM_BLACK)
+    msgbox("The forest is restless.")
+    return
+    }
+
+
+script CelebiTrigger {
+    applymovement(OBJ_EVENT_ID_PLAYER, InitiateCelebi)
+    waitmovement(0)
+	applymovement(1, CelebiMove)
+	waitmovement(0)
+
+    setvar(VAR_CELEBI_WOODS_STATE, 1)
+	goto(LittlerootWoodsCelebi)
+}
+
+movement CelebiMove {
+	walk_down * 3
+}
+
+script CelebiLeftTrigger {
+    applymovement(OBJ_EVENT_ID_PLAYER, StepLeft)
+    waitmovement(0)
+    goto(CelebiTrigger)
+}
+
+script CelebiRightTrigger {
+    applymovement(OBJ_EVENT_ID_PLAYER, StepRight)
+    waitmovement(0)
+    goto(CelebiTrigger)
+}
+
+movement InitiateCelebi {
+    walk_up * 4
+}
+
+movement StepLeft {
+    walk_right
+    face_up
+}
+
+movement StepRight {
+    walk_left
+    face_up
+}
