@@ -1,1 +1,27 @@
-mapscripts LittlerootTown_House1_1F_MapScripts {}
+mapscripts LittlerootTown_House1_1F_MapScripts {
+
+}
+
+script LittlerootTown_House1_Man {
+    lock
+    faceplayer
+    format(msgbox("I love to cook!"))
+    waitmessage
+    face_up
+    face_down
+    face_up
+    Face_left
+    face_up
+    format(msgbox("I think I left my ORAN BERRY upstairs."))    
+    release
+    end
+}
+
+script LittlerootTown_House1_Boy {
+    lock
+    faceplayer
+    format(msgbox("Daddy is a bad cook."))
+    waitmessage
+    release
+    end
+}

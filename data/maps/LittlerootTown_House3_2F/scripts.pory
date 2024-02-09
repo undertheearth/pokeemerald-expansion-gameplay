@@ -1,1 +1,12 @@
-mapscripts LittlerootTown_House3_2F_MapScripts {}
+mapscripts LittlerootTown_House3_2F_MapScripts {
+
+}
+
+script {
+    lock
+    faceplayer
+    format(msgbox("My dad's always just wandering around outside."))
+    waitmessage
+    release
+    end
+}

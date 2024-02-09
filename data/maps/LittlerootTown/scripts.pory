@@ -1050,3 +1050,11 @@ text May_Outro{
 text PostBattle_May{
     "I'll win next time"
 }
+
+script LittlerootTown_Mailbox {
+	lock
+	msgbox("There's no mail in here.")
+	waitmessage
+	release
+	end
+}

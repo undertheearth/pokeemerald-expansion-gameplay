@@ -1,1 +1,21 @@
-mapscripts LittlerootTown_House4_2F_MapScripts {}
+mapscripts LittlerootTown_House4_2F_MapScripts {
+
+}
+
+script Littleroot_House4_2F_Girl {
+    lock
+    faceplayer
+    format(msgbox("I love Pokémon!"))
+    waitmessage
+    release
+    end
+}
+
+script Littleroot_House4_2F_Skitty {
+    lock
+    faceplayer
+    format(msgbox("Skreeeow!"))
+    waitmessage
+    release
+    end
+}

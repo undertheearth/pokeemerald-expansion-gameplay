@@ -1,1 +1,20 @@
-mapscripts LittlerootTown_House2_2F_MapScripts {}
+mapscripts LittlerootTown_House2_2F_MapScripts {
+
+}
+
+script LittlerootHouse2_2F_Girl {
+    lock
+    msgbox("But I'm not tireeed!")
+    waitmessage
+    release
+    end
+}
+
+script LittlerootHouse2_2F_Mother {
+    lock
+    faceplayer
+    format(msgbox("Kids have too much energy, sometimes you just need to get rid of them for a while."))
+    waitmessage
+    release
+    end
+}

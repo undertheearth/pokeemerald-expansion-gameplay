@@ -1,1 +1,12 @@
-mapscripts LittlerootTown_House2_1F_MapScripts {}
+mapscripts LittlerootTown_House2_1F_MapScripts {
+
+}
+
+script LittlerootHouse2_1F_Mother {
+    lock
+    faceplayer
+    format(msgbox("Sometimes I wish we didn't have kids..."))
+    waitmessage
+    release
+    end
+}

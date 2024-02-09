@@ -17,12 +17,25 @@
 
   ],
   "warp_events": [
-
+    {
+      "x": 1,
+      "y": 1,
+      "elevation": 0,
+      "dest_map": "MAP_LITTLEROOT_TOWN_HOUSE1_1F",
+      "dest_warp_id": "2"
+    }
   ],
   "coord_events": [
 
   ],
   "bg_events": [
-
+    {
+      "type": "hidden_item",
+      "x": 1,
+      "y": 3,
+      "elevation": 0,
+      "item": "ITEM_ORAN_BERRY",
+      "flag": "FLAG_TEMP_1"
+    }
   ]
 }
