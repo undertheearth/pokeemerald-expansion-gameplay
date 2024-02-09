@@ -1058,3 +1058,23 @@ script LittlerootTown_Mailbox {
 	release
 	end
 }
+
+script LittlerootTown_SkittyOutside {
+	lock
+	faceplayer
+	msgbox("???")
+	waitmessage
+	msgbox("Ski?")
+	waitmessage
+	release
+	end
+}
+
+script LittlerootTown_ZigOutside {
+	lock
+	faceplayer
+	msgbox("Zag!")
+	waitmessage
+	release
+	end
+}

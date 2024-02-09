@@ -2,7 +2,7 @@ mapscripts LittlerootTown_House3_2F_MapScripts {
 
 }
 
-script {
+script LittlerootTown_House3_2F_Boy {
     lock
     faceplayer
     format(msgbox("My dad's always just wandering around outside."))
