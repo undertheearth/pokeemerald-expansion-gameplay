@@ -119,6 +119,8 @@ CelebiMove:
 	walk_down
 # 66 "data/maps/LittlerootWoods_Celebi/scripts.pory"
 	walk_down
+# 66 "data/maps/LittlerootWoods_Celebi/scripts.pory"
+	walk_down
 	step_end
 
 CelebiLeftTrigger::
@@ -143,6 +145,8 @@ CelebiRightTrigger::
 
 # 81 "data/maps/LittlerootWoods_Celebi/scripts.pory"
 InitiateCelebi:
+# 82 "data/maps/LittlerootWoods_Celebi/scripts.pory"
+	walk_up
 # 82 "data/maps/LittlerootWoods_Celebi/scripts.pory"
 	walk_up
 # 82 "data/maps/LittlerootWoods_Celebi/scripts.pory"

@@ -7,12 +7,8 @@ script LittlerootTown_House1_Man {
     faceplayer
     msgbox(format("I love to cook!"))
     waitmessage
-    face_up
-    face_down
-    face_up
-    Face_left
-    face_up
-    msgbox(format("I think I left my ORAN BERRY upstairs."))    
+    msgbox(format("I think I left my ORAN BERRY upstairs."))
+    waitmessage    
     release
     end
 }

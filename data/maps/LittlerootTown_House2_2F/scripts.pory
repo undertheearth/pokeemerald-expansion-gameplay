@@ -13,7 +13,7 @@ script LittlerootHouse2_2F_Girl {
 script LittlerootHouse2_2F_Mother {
     lock
     faceplayer
-    msgbox((format"Kids have too much energy, sometimes you just need to get rid of them for a while."))
+    msgbox(format("Kids have too much energy, sometimes you just need to get rid of them for a while."))
     waitmessage
     release
     end

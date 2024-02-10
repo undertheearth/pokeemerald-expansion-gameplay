@@ -8,7 +8,7 @@ LittlerootLakeHouse3_Man::
 # 6 "data/maps/LittlerootLake_House3_2F/scripts.pory"
 	faceplayer
 # 7 "data/maps/LittlerootLake_House3_2F/scripts.pory"
-	message LittlerootLakeHouse3_Man_Text_0
+	msgbox LittlerootLakeHouse3_Man_Text_0
 # 8 "data/maps/LittlerootLake_House3_2F/scripts.pory"
 	waitmessage
 # 9 "data/maps/LittlerootLake_House3_2F/scripts.pory"

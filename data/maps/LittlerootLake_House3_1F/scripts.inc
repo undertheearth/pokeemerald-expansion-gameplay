@@ -6,7 +6,7 @@ LittlerootLakeHouse3_Boy::
 # 6 "data/maps/LittlerootLake_House3_1F/scripts.pory"
 	lock
 # 7 "data/maps/LittlerootLake_House3_1F/scripts.pory"
-	message LittlerootLakeHouse3_Boy_Text_0
+	msgbox LittlerootLakeHouse3_Boy_Text_0
 # 8 "data/maps/LittlerootLake_House3_1F/scripts.pory"
 	waitmessage
 # 9 "data/maps/LittlerootLake_House3_1F/scripts.pory"

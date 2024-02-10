@@ -18,5 +18,5 @@ LittlerootTown_House3_2F_Boy::
 
 LittlerootTown_House3_2F_Boy_Text_0:
 # 8 "data/maps/LittlerootTown_House3_2F/scripts.pory"
-	.string "My dad's always just wandering around\n"
+	.string "My dad is always just wandering around\n"
 	.string "outside.$"

@@ -4,7 +4,7 @@ mapscripts LittlerootLake_House3_1F_MapScripts {
 
 script LittlerootLakeHouse3_Boy {
     lock
-    message(format("How am I losing again? I've been practicing for hours!"))
+    msgbox(format("How am I losing again? I've been practicing for hours!"))
     waitmessage
     release
     end

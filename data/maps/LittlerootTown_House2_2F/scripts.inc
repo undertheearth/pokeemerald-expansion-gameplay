@@ -34,4 +34,6 @@ LittlerootHouse2_2F_Girl_Text_0:
 
 LittlerootHouse2_2F_Mother_Text_0:
 # 16 "data/maps/LittlerootTown_House2_2F/scripts.pory"
-	.format "Kids have too much energy, sometimes you just need to get rid of them for a while."
+	.string "Kids have too much energy, sometimes\n"
+	.string "you just need to get rid of them for a\l"
+	.string "while.$"

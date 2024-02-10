@@ -3302,9 +3302,9 @@ static const u8 sTM54Desc[] = _( //False Swipe
     "at least 1 HP."); 
 
 static const u8 sTM55Desc[] = _( // Brine
-    "Deals double damage\n"
-    "to foes with half\n"
-    "HP.");
+    "Deals twice as\n"
+    "much damage to foes\n"
+    "under half HP.");
 
 static const u8 sTM56Desc[] = _( // Fling
     "Hurls held item at\n"
@@ -3323,8 +3323,8 @@ static const u8 sTM58Desc[] = _( // Endure
 
 static const u8 sTM59Desc[] = _( // Dragon Pulse
     "A powerful wave\n"
-    "of draconic energy\n"
-    "damages the target.");
+    "of energy damages\n"
+    "the target.");
 
 static const u8 sTM60Desc[] = _( // Drain Punch
     "Absorbs half of\n"

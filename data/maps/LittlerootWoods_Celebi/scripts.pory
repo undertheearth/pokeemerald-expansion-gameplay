@@ -63,7 +63,7 @@ script CelebiTrigger {
 }
 
 movement CelebiMove {
-	walk_down * 3
+	walk_down * 4
 }
 
 script CelebiLeftTrigger {
@@ -79,7 +79,7 @@ script CelebiRightTrigger {
 }
 
 movement InitiateCelebi {
-    walk_up * 4
+    walk_up * 5
 }
 
 movement StepLeft {
