@@ -449,3 +449,8 @@ Doesn't make makes contact
 Wild Charge
 Power: 90 - 100
 PP: 15 - 10
+
+Branch Poke
+Power: 40 - 65
+PP: 40 - 30
+Effect: 50% CHANCE TO LOWER DEFENSE

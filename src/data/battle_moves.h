@@ -12422,12 +12422,12 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_DYNAMAX] =
 
     [MOVE_BRANCH_POKE] =
     {
-        .effect = EFFECT_HIT,
-        .power = 40,
+        .effect = EFFECT_DEFENSE_DOWN_HIT,
+        .power = 70,
         .type = TYPE_GRASS,
         .accuracy = 100,
-        .pp = 40,
-        .secondaryEffectChance = 0,
+        .pp = 20,
+        .secondaryEffectChance = 50,
         .target = MOVE_TARGET_SELECTED,
         .priority = 0,
         .split = SPLIT_PHYSICAL,
