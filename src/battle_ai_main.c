@@ -2007,6 +2007,7 @@ static s32 AI_CheckBadMove(u32 battlerAtk, u32 battlerDef, u32 move, s32 score)
                 {
                     if (GetBattlerSecondaryDamage(battlerAtk) >= gBattleMons[battlerAtk].hp
                       && aiData->abilities[battlerDef] != ABILITY_MOXIE
+                      && aiData->abilities[battlerDef] != ABILITY_AIR_FORCE
                       && aiData->abilities[battlerDef] != ABILITY_BEAST_BOOST)
                     {
                         ADJUST_SCORE(-10); //Don't protect if you're going to faint after protecting

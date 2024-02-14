@@ -40,6 +40,7 @@ static const s8 sAiAbilityRatings[ABILITIES_COUNT] =
     [ABILITY_ADAPTABILITY] = 8,
     [ABILITY_AFTERMATH] = 5,
     [ABILITY_AERILATE] = 8,
+    [ABILITY_AIR_FORCE] = 10,    
     [ABILITY_AIR_LOCK] = 5,
     [ABILITY_ANALYTIC] = 5,
     [ABILITY_ANGER_POINT] = 4,

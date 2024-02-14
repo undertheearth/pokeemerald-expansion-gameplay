@@ -50,6 +50,7 @@ Beedrill - Ability Change: Levitate (Why is bro walking) - BST = 450 - More swit
 	Attack: 90 - 115
 	Speed: 75 - 120
 
+Pidgey/Pidgeoto/Pidgeot - Ability Changed 2: No Guard
 Pidgeot - BST = 500
 	Attack: 80 - 91
 	Sp.Atk: 70 - 80
@@ -200,26 +201,36 @@ Eevee - Ability Change 1: Trace
 	Attack: 55 - 60
 	Sp.Atk: 45 - 65
 Vapeoreon - Ability Change 2: Drizzle
-	Defence: 60 - 80
+	Defence: 60 - 90
 	Speed: 65 - 75
+	Sp.Def: 95 - 100
 Jolteon - Ability Change 2: Electric Surge
-	HP: 65 - 75
+	HP: 65 - 95
+	Attack: 65 - 100
 	Defence: 60 - 80
-Flareon - Ability Change 2: Drought
+Flareon - Ability Change 2: Drought | Ability Change HA: Berserk
 	HP: 65 - 75
+	Attack: 130 - 100
 	Defence: 60 - 80
+	Sp.Atk: 95 - 130
 Espeon - Ability Change 2: Psychic Terrain
 	HP: 65 - 75
 	Defence: 60 - 80
 Umbreon - Ability Change 2: Dark Aura
-	Attack: 65 - 95
+	HP: 95 - 105
+	Attack: 65 - 100
 	Sp.Atk: 60 - 50
 Leafeon - Ability Change 2: Grassy Surge
 	HP: 65 - 75
+	Attack: 110 - 130
+	Defence: 130 - 95
+	Speed: 95 - 110
 	Sp.Def: 65 - 85
 Glaceon - Abillity Change 2: Snow Warning
 	HP: 65 - 90
+	Sp.Atk: 130 - 140
 	Sp.Def: 95 - 110
+	Speed: 65 - 85
 Slyveon - Ability Change 2: Misty Surge
 	Defence: 65 - 85
 	Speed: 60 - 80
@@ -392,16 +403,16 @@ Feraligator - Ability Change: Strong Jaw | Dark Type Added
 	Attack: 105 - 115
 	Sp.Def: 83 - 93
 
-Ledyba - Level 30 Evo
+Ledyba - Level 30 Evo | Ability Change 1: Air Force - Levitate+Moxie | Type Change: Bug/Fighting
 	HP: 40 - 50
-	Attack: 20 - 70
-	Defence: 30 - 40
+	Attack: 20 - 80
+	Defence: 30 - 50
 	Speed: 55 - 65
-Ledian - Ability Change: Moxie
-	HP - 55 - 65
+Ledian - Ability Change 1: Air Force - Levitate+Moxie | Type Change: Bug/Fighting
+	HP - 55 - 80
 	Attack: 35 - 110
-	Defence: 50 - 60
-	Speed: 80 - 105
+	Defence: 50 - 70
+	Speed: 85 - 115
 	
 Arridos
 	Attack: 90 - 110
@@ -493,6 +504,11 @@ Tyranitar - Evo Level 55 - 50
 
 Celebi - Psychcic Type Changed to Fairy
 
+Ampharos - Dragon Type Added
+	HP: 90 - 100
+	Attack: 65 - 95
+	Defence: 85 - 95
+	Speed - 55 - 65
 
 GEN 3
 
@@ -512,8 +528,10 @@ Mightyena
 	Attack: 90 - 110
 	Speed: 70 - 80
 	
-Linoone
-	Attack: 70 - 80
+Linoone - Abiltiy Change HA:  
+	Attack: 70 - 90
+	Defence: 61 - 71
+	Sp.Def: 61 - 71
 	
 Wurmple - Evo Level 14
 	Attack: 45 - 50
@@ -679,8 +697,12 @@ Grumpig - Added Dark Type
 	Defence: 65 - 75
 
 Spinda - Added Fighting Type
+	HP: 60 - 80
 	Attack: 60 - 100
-	Speed: 60 - 90
+	Defence: 60 - 70
+	Sp.Atk: 60 - 100
+	Sp.Def: 60 - 70
+	Speed: 60 - 91
 	
 Flygon
 	Attack: 100 - 110
