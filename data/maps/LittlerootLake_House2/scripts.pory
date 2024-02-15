@@ -5,7 +5,7 @@ mapscripts LittlerootLake_House2_MapScripts {
 script LittlerootWoods_MythicalLady {
     lock
     faceplayer
-    if (flag(NO_OLD_SEA_MAP) == TRUE && flag(CELEBI_EVENT_FLAG) == TRUE) {
+    if (flag(NO_OLD_SEA_MAP) == TRUE && flag(FLAG_CELEBI_EVENT) == TRUE) {
         msgbox(format("You should check out the lake shrine, The way the sun shines through the trees is very relaxing!"))
         giveitem(ITEM_OLD_SEA_MAP)
         clearflag (NO_OLD_SEA_MAP)

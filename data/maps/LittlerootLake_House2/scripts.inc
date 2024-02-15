@@ -35,7 +35,7 @@ LittlerootWoods_MythicalLady_3:
 
 LittlerootWoods_MythicalLady_6:
 # 8 "data/maps/LittlerootLake_House2/scripts.pory"
-	goto_if_set CELEBI_EVENT_FLAG, LittlerootWoods_MythicalLady_2
+	goto_if_set FLAG_CELEBI_EVENT, LittlerootWoods_MythicalLady_2
 	goto LittlerootWoods_MythicalLady_5
 
 

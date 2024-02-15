@@ -6,7 +6,7 @@ LittlerootWoodsCelebi::
 # 5 "data/maps/LittlerootWoods_Celebi/scripts.pory"
 	lockall
 # 6 "data/maps/LittlerootWoods_Celebi/scripts.pory"
-	setflag CELEBI_EVENT_FLAG
+	setflag FLAG_CELEBI_EVENT
 # 7 "data/maps/LittlerootWoods_Celebi/scripts.pory"
 	playmoncry SPECIES_CELEBI, CRY_MODE_ENCOUNTER
 # 8 "data/maps/LittlerootWoods_Celebi/scripts.pory"
