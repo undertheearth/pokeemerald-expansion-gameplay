@@ -3302,8 +3302,10 @@ static const u8 sTM56Desc[] = _( // Todo
 static const u8 sTM57Desc[] = _( // Todo
     "?????");
 
-static const u8 sTM58Desc[] = _( // Todo
-    "?????");
+static const u8 sTM58Desc[] = _( // Earth Power
+    "The ground erupts\n"
+    "with power. May\n"
+    "lower Sp. Def.");
 
 static const u8 sTM59Desc[] = _( // Todo
     "?????");
@@ -3416,8 +3418,10 @@ static const u8 sTM94Desc[] = _( // Todo
 static const u8 sTM95Desc[] = _( // Todo
     "?????");
 
-static const u8 sTM96Desc[] = _( // Todo
-    "?????");
+static const u8 sTM96Desc[] = _( // Power Gem
+    "A sparkling ray\n"
+    "of gemstone light\n"
+    "hits the target.");
 
 static const u8 sTM97Desc[] = _( // Todo
     "?????");
@@ -3993,3 +3997,57 @@ static const u8 sGlimmeringCharmDesc[] = _(
     "A charm that will\n"
     "raise the shards\n"
     "from Tera Raids.");
+    
+// Start qol_field_moves
+
+static const u8 sCutToolDesc[] = _(
+	"This tool\n"
+    "is used for\n"
+    "cutting trees.");
+
+static const u8 sFlyToolDesc[] = _(
+	"Summons a\n"
+    "flying Pokémon\n"
+    "for transit.");
+
+static const u8 sSurfToolDesc[] = _(
+	"This tool\n"
+    "is used for\n"
+    "riding waves.");
+
+static const u8 sStrengthToolDesc[] = _(
+	"Allows the\n"
+    "wearer to\n"
+    "move boulders.");
+
+static const u8 sFlashToolDesc[] = _(
+	"A bright orb\n"
+    "that lights\n"
+    "dark places.");
+
+static const u8 sRockSmashToolDesc[] = _(
+	"This tool\n"
+    "is used for\n"
+    "smashing rocks.");
+
+static const u8 sWaterfallToolDesc[] = _(
+	"This hat is used\n"
+    "for climbing up\n"
+    "waterfalls.");
+
+static const u8 sDiveToolDesc[] = _(
+	"Goggles that\n"
+    "allow underwater\n"
+    "breathing.");
+
+static const u8 sTeleportToolDesc[] = _(
+	"A mirror that\n"
+    "returns the\n"
+    "user to safety.");
+
+static const u8 sSweetScentToolDesc[] = _(
+	"A sweet smelling\n"
+    "powder that\n"
+    "lures Pokémon.");
+
+// End qol_field_moves
