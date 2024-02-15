@@ -12,6 +12,18 @@ const struct Trainer gTrainers[] = {
         .party = NULL,
     },
 
+    [TRAINER_DAVE_1] =
+    {
+        .trainerClass = TRAINER_CLASS_HIKER,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_HIKER,
+        .trainerPic = TRAINER_PIC_HIKER,
+        .trainerName = _("DAVE"),
+        .items = {},
+        .doubleBattle = FALSE,
+        .aiFlags = 0,
+        .party = TRAINER_PARTY(sParty_Dave_Littleroot_Lake),
+    },
+
     [TRAINER_SAWYER_1] =
     {
         .trainerClass = TRAINER_CLASS_HIKER,
@@ -10259,4 +10271,5 @@ const struct Trainer gTrainers[] = {
         .aiFlags = 0,
         .party = TRAINER_PARTY(sParty_MayLinkPlaceholder),
     },
+
 };

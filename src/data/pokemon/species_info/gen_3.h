@@ -694,11 +694,11 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
 
 #define LINOONE_MISC_INFO                                                       \
         .baseHP        = 78,                                                    \
-        .baseAttack    = 80,                                                    \
-        .baseDefense   = 61,                                                    \
+        .baseAttack    = 90,                                                    \
+        .baseDefense   = 71,                                                    \
         .baseSpeed     = 100,                                                   \
         .baseSpAttack  = 50,                                                    \
-        .baseSpDefense = 61,                                                    \
+        .baseSpDefense = 71,                                                    \
         .catchRate = 90,                                                        \
         .expYield = 147,                                                        \
         .evYield_Speed = 2,                                                     \
@@ -707,7 +707,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .friendship = STANDARD_FRIENDSHIP,                                      \
         .growthRate = GROWTH_MEDIUM_FAST,                                       \
         .eggGroups = { EGG_GROUP_FIELD, EGG_GROUP_FIELD },                      \
-        .abilities = { ABILITY_PICKUP, ABILITY_GLUTTONY, ABILITY_QUICK_FEET },  \
+        .abilities = { ABILITY_PICKUP, ABILITY_GLUTTONY, ABILITY_TOUGH_CLAWS },  \
         .bodyColor = BODY_COLOR_WHITE,                                          \
         .speciesName = _("Linoone"),                                            \
         .cryId = CRY_LINOONE,                                                   \
@@ -4511,12 +4511,12 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
 #if P_FAMILY_SPINDA
     [SPECIES_SPINDA] =
     {
-        .baseHP        = 60,
+        .baseHP        = 80,
         .baseAttack    = 100,
-        .baseDefense   = 60,
-        .baseSpeed     = 90,
-        .baseSpAttack  = 60,
-        .baseSpDefense = 60,
+        .baseDefense   = 70,
+        .baseSpeed     = 91,
+        .baseSpAttack  = 100,
+        .baseSpDefense = 70,
         .types = { TYPE_NORMAL, TYPE_FIGHTING },
         .catchRate = 255,
         .expYield = 126,

@@ -34,7 +34,7 @@ LittlerootLakeHouse3_Woman::
 
 LittlerootLakeHouse3_Boy_Text_0:
 # 7 "data/maps/LittlerootLake_House3_1F/scripts.pory"
-	.string "How am I losing again? I've been\n"
+	.string "How did I lose again? I've been\n"
 	.string "practicing for hours!$"
 
 LittlerootLakeHouse3_Woman_Text_0:

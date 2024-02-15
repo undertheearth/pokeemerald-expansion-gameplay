@@ -597,7 +597,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .baseSpeed     = 50,
         .baseSpAttack  = 36,
         .baseSpDefense = 56,
-        .types = { TYPE_NORMAL, TYPE_FLYING },
+        .types = { TYPE_GHOST, TYPE_FLYING },
         .catchRate = 255,
         .expYield = 52,
         .evYield_HP = 1,
@@ -645,7 +645,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .baseSpeed     = 70,
         .baseSpAttack  = P_UPDATED_STATS >= GEN_7 ? 86 : 76,
         .baseSpDefense = 96,
-        .types = { TYPE_NORMAL, TYPE_FLYING },
+        .types = { TYPE_GHOST, TYPE_FLYING },
         .catchRate = 90,
         .expYield = 158,
         .evYield_HP = 2,
@@ -689,12 +689,12 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
     [SPECIES_LEDYBA] =
     {
         .baseHP        = 50,
-        .baseAttack    = 50,
-        .baseDefense   = 40,
+        .baseAttack    = 80,
+        .baseDefense   = 50,
         .baseSpeed     = 65,
         .baseSpAttack  = 40,
         .baseSpDefense = 80,
-        .types = { TYPE_BUG, TYPE_FLYING },
+        .types = { TYPE_BUG, TYPE_FIGHTING },
         .catchRate = 255,
         .expYield = 53,
         .evYield_SpDefense = 1,
@@ -703,7 +703,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_FAST,
         .eggGroups = { EGG_GROUP_BUG, EGG_GROUP_BUG },
-        .abilities = { ABILITY_MOXIE, ABILITY_EARLY_BIRD, ABILITY_RATTLED },
+        .abilities = { ABILITY_AIR_FORCE, ABILITY_NONE },
         .bodyColor = BODY_COLOR_RED,
         .speciesName = _("Ledyba"),
         .cryId = CRY_LEDYBA,
@@ -738,13 +738,13 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
 
     [SPECIES_LEDIAN] =
     {
-        .baseHP        = 65,
-        .baseAttack    = 110,
-        .baseDefense   = 60,
-        .baseSpeed     = 105,
+        .baseHP        = 80,
+        .baseAttack    = 120,
+        .baseDefense   = 70,
+        .baseSpeed     = 115,
         .baseSpAttack  = 55,
         .baseSpDefense = 110,
-        .types = { TYPE_BUG, TYPE_FLYING },
+        .types = { TYPE_BUG, TYPE_FIGHTING },
         .catchRate = 90,
         .expYield = 137,
         .evYield_SpDefense = 2,
@@ -753,7 +753,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_FAST,
         .eggGroups = { EGG_GROUP_BUG, EGG_GROUP_BUG },
-        .abilities = { ABILITY_SWARM, ABILITY_EARLY_BIRD, ABILITY_IRON_FIST },
+        .abilities = { ABILITY_AIR_FORCE, ABILITY_NONE },
         .bodyColor = BODY_COLOR_RED,
         .speciesName = _("Ledian"),
         .cryId = CRY_LEDIAN,
@@ -1360,18 +1360,18 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .formSpeciesIdTable = sAmpharosFormSpeciesIdTable,  \
         .formChangeTable = sAmpharosFormChangeTable
 
-#define AMPHAROS_DEFENSE (P_UPDATED_STATS >= GEN_6 ? 85 : 75)
+#define AMPHAROS_DEFENSE (P_UPDATED_STATS >= GEN_6 ? 95 : 75)
 
     [SPECIES_AMPHAROS] =
     {
         AMPHAROS_MISC_INFO,
-        .baseHP        = 90,
-        .baseAttack    = 75,
+        .baseHP        = 100,
+        .baseAttack    = 95,
         .baseDefense   = AMPHAROS_DEFENSE,
-        .baseSpeed     = 55,
+        .baseSpeed     = 65,
         .baseSpAttack  = 115,
         .baseSpDefense = 90,
-        .types = { TYPE_ELECTRIC, TYPE_ELECTRIC },
+        .types = { TYPE_ELECTRIC, TYPE_DRAGON },
         .expYield = 230,
         .abilities = { ABILITY_STATIC, ABILITY_NONE, ABILITY_PLUS },
         .cryId = CRY_AMPHAROS,
@@ -1396,10 +1396,10 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
     [SPECIES_AMPHAROS_MEGA] =
     {
         AMPHAROS_MISC_INFO,
-        .baseHP        = 90,
+        .baseHP        = 100,
         .baseAttack    = 95,
         .baseDefense   = AMPHAROS_DEFENSE + 20,
-        .baseSpeed     = 45,
+        .baseSpeed     = 85,
         .baseSpAttack  = 165,
         .baseSpDefense = 110,
         .types = { TYPE_ELECTRIC, TYPE_DRAGON },
@@ -1989,7 +1989,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
     {
         .baseHP        = 75,
         .baseAttack    = 45,
-        .baseDefense   = 70,
+        .baseDefense   = 90,
         .baseSpeed     = 90,
         .baseSpAttack  = 135,
         .baseSpDefense = 85,

@@ -9095,6 +9095,7 @@ static void Cmd_various(void)
 
         if ((battlerAbility == ABILITY_MOXIE
          || battlerAbility == ABILITY_CHILLING_NEIGH
+         || battlerAbility == ABILITY_AIR_FORCE         
          || battlerAbility == ABILITY_AS_ONE_ICE_RIDER)
           && HasAttackerFaintedTarget()
           && !NoAliveMonsForEitherParty()

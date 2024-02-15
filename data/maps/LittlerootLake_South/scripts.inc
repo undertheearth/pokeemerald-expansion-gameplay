@@ -92,6 +92,14 @@ LittlerootWoods_Shrine_Sign::
 	end
 
 
+LittlerootWoods_EventScript_HikerDave::
+# 66 "data/maps/LittlerootLake_South/scripts.pory"
+	trainerbattle_single TRAINER_DAVE_1, Dave_Intro, Dave_Outro
+# 67 "data/maps/LittlerootLake_South/scripts.pory"
+	waitmessage
+	end
+
+
 LittlerootLakeSouth_Locked_Text_0:
 # 7 "data/maps/LittlerootLake_South/scripts.pory"
 	.string "This door is locked.$"
@@ -126,3 +134,11 @@ LittlerootLakeWalker_3_Text_1:
 LittlerootWoods_Shrine_Sign_Text_0:
 # 59 "data/maps/LittlerootLake_South/scripts.pory"
 	.string "“Littleroot Lake Shrine”$"
+
+Dave_Intro::
+# 71 "data/maps/LittlerootLake_South/scripts.pory"
+	.string "Nice place for a break!$"
+
+Dave_Outro::
+# 75 "data/maps/LittlerootLake_South/scripts.pory"
+	.string "Always gets the blood pumping!$"

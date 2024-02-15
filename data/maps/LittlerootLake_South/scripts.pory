@@ -61,3 +61,17 @@ script LittlerootWoods_Shrine_Sign {
     releaseall
     end
 }
+
+script LittlerootWoods_EventScript_HikerDave {
+    trainerbattle_single(TRAINER_DAVE_1, Dave_Intro, Dave_Outro)
+    waitmessage
+    end
+}
+
+text Dave_Intro{
+    "Nice place for a break!"
+}
+
+text Dave_Outro{
+    "Always gets the blood pumping!"
+}
