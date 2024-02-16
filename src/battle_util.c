@@ -9013,6 +9013,10 @@ static inline u32 CalcMoveBasePowerAfterModifiers(u32 move, u32 battlerAtk, u32 
         if (gBattleMoves[move].bitingMove)
            modifier = uq4_12_multiply(modifier, UQ_4_12(1.5));
         break;
+    case ABILITY_TRICKSTER:
+        if (gBattleMoves[move].bitingMove)
+           modifier = uq4_12_multiply(modifier, UQ_4_12(1.5));
+        break;
     case ABILITY_MEGA_LAUNCHER:
         if (gBattleMoves[move].pulseMove)
            modifier = uq4_12_multiply(modifier, UQ_4_12(1.5));

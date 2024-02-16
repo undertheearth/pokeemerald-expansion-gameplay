@@ -320,7 +320,7 @@ Kingdra - Ability Change HA: Damp | Ability Change 2: Drizzle - BST: 540 - 600
 	Exp Yield: 243 - 270
 	Friendship: 35
 	Growth Rate: Slow
-	Learns Nasty Plot (57) and Origin Pulse (60)
+	Learns Quiver Dance (57) and Origin Pulse (60)
 	
 Goldeen
 	Attack: 67 - 90
@@ -334,10 +334,11 @@ Starmie
 	Sp.Atk: 100 - 110
 	
 Jynx
+	HP: 65 - 75
 	Attack: 50 - 30
-	Defence: 35 - 55
+	Defence: 35 - 65
 	Sp.Atk: 95 - 125
-	Speed: 95 - 96
+	Speed: 95 - 105
 
 Electabuzz
 	Attack: 83 - 93	
@@ -462,6 +463,9 @@ Granbull
 Shuckle
 	HP: 20 - 40
 
+Sneasel - Ability Change 2: Refrigerate
+Weaville - Ability Change 2: Refrigerate
+
 Magcargo
 	Sp.Def: 80 - 120
 	
@@ -482,7 +486,9 @@ Delibird
 Mantine
 	Sp.Atk: 80 - 95
 
-Houndoom
+Hondour - Ability Change HA: Drought
+Houndoom - Ability Change HA: Drought
+	Defence: 50 - 80
 	Speed: 95 - 96
 
 Wyrdeer
@@ -504,11 +510,19 @@ Tyranitar - Evo Level 55 - 50
 
 Celebi - Psychcic Type Changed to Fairy
 
-Ampharos - Dragon Type Added
+Ampharos - Dragon Type Added | Ability 2: Motor Drive
 	HP: 90 - 100
 	Attack: 65 - 95
 	Defence: 85 - 95
 	Speed - 55 - 65
+
+Noctowl - Normal type changed to Ghost type
+	Attack: 50 - 75
+	Defence: 50 - 86
+	Sp.Atk: 86 - 96
+
+Skarmory
+	Attack: 80 - 90
 
 GEN 3
 
@@ -556,8 +570,14 @@ Ludicolo
 	Defence: 70 - 80
 	Sp.Atk: 90 - 100
 
+Pelipper
+	HP: 60 - 70
+	Sp.Def: 70 - 90
+
 Shiftry
+	Attack: 100 - 110
 	Sp.Def: 60 - 70
+	Sp.Atk: 90 - 100
 
 Swellow
 	Attack: 85 - 95
@@ -593,6 +613,13 @@ Exploud - late evo, bad stats - BST = 575 | Ability Changed 2: Punk Rock
 Hariyama
 	Defence: 60 - 70
 
+Manectric | Ability Change HA: Electric Surge
+	HP: 70 - 80
+	Sp.Atk: 105 - 115
+	Attack: 75 - 100
+	Defence: 60 - 70
+	Sp.Def: 60 - 70
+
 Nosepass
 	Attack: 45 - 65
 Probopass
@@ -610,11 +637,11 @@ Delcatty - Fairy Type Added | Ability Change 1: Misty Surge | Ability Change 2: 
 	Sp.Atk: 55 - 90
 	Sp.Def: 55 - 75
 
-Sableye - Ability Changed 2: Magic Guard
-	HP: 50 - 60
-	Attack: 75 - 95
-	Defence: 75 - 80
-	Sp.Def: 65 - 75
+Sableye - Ability Change 1,2,HA - Trickster - Prankster + Strong Jaw
+	HP: 50 - 65
+	Attack: 75 - 115
+	Defence: 75 - 100
+	Sp.Def: 65 - 100
 	
 Mawille
 	HP: 50 - 80
@@ -706,6 +733,8 @@ Spinda - Added Fighting Type
 	
 Flygon
 	Attack: 100 - 110
+	Sp.Atk: 80 - 110
+	Speed: 100 - 101
 
 Cacturne
 	Defence: 60 - 80
@@ -733,13 +762,14 @@ Lunatone
 Solrock
 	Attack: 95 - 115
 
-Whiscash
-	Attack: 78 - 90
+Whiscash: Ability Change 1: Unaware | Ability Change 2: Sap sipper
+	Attack: 78 - 100
 
 Crawdunt
 	Speed: 55 - 65
 
 Claydol
+	HP: 60 - 100
 	Attack: 70 - 90
 	Sp.Atk: 70 - 90
 	
@@ -767,6 +797,21 @@ Tropius
 	Attack: 68 - 98
 	Speed: 51 - 71
 	
+Duskull - Ability Change 2: Regenerator
+Dusclops - Ability Change 2: Regenerator
+	HP: 40 - 60
+	Attack: 70 - 90
+Dusknoir - Ability Change 2: Regenerator
+	HP: 45 - 75
+	Attack: 100 - 120
+
+Banette - Ability Change 2: Prankster
+	HP: 64 - 74
+	Defence: 65 - 75
+	Sp.Atk: 83 - 103
+	Sp.Def: 63 - 73
+	Speed: 65 - 85
+
 Chimecho
 	Defence: 80 - 100
 	Sp.Def: 80 - 110
@@ -778,10 +823,11 @@ Glalie - Changed Ability: Moody | Changed Ability HA: Sturdy
 Froslass
 	Sp.Atk: 80 - 100
 
-Spheal - Evo Level 30
-Sealeo - Evo Level 54
-Walrein - Changed Ability HA: Regenerator - BST: 530 - 600 (Pseudolegendary)
-	HP: 110 - 150
+Spheal - Evo Level 26 | Ability Change 1: Regenerator | Ability Change 2: Unaware |Ability Change HA: Thick Fat
+Sealeo - Evo Level 54 | Ability Change 1: Regenerator | Ability Change 2: Unaware |Ability Change HA: Thick Fat
+Walrein - Ability Change 1: Regenerator | Ability Change 2: Unaware |Ability Change HA: Thick Fat - BST: 530 - 600 (Pseudolegendary)
+	HP: 110 - 140
+	Attack: 80 - 90
 	Sp.Atk: 95 - 115
 	Sp.Def: 90 - 100
 	Egg Cycles: 20 - 40
@@ -798,7 +844,8 @@ Gorebyss
 	
 Relicanth
 	Attack: 90 - 110
-	Speed: 55 - 85
+	Speed: 55 - 75
+	Sp.Atk: 45 - 35
 	Sp.Def: 65 - 75
 
 Luvdisc - Added Fairy Type | Evolves into Alomomola (35)

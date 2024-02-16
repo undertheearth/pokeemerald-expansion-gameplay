@@ -298,6 +298,7 @@ static const u8 sEmbodyAspectCornerstoneDescription[] = _("Raises Defense.");
 static const u8 sToxicChainDescription[] = _("Moves can poison.");
 static const u8 sSupersweetSyrupDescription[] = _("Lowers the foe's Speed.");
 static const u8 sAirForceDescription[] = _("Moxie, Levitate, Flying.");
+static const u8 sTricksterDescription[] = _("Prankster & Strong Jaw.");
 
 #if B_EXPANDED_ABILITY_NAMES == TRUE
 const u8 gAbilityNames[ABILITIES_COUNT][ABILITY_NAME_LENGTH + 1] =
@@ -610,6 +611,7 @@ const u8 gAbilityNames[ABILITIES_COUNT][ABILITY_NAME_LENGTH + 1] =
     [ABILITY_TOXIC_CHAIN] = _("Toxic Chain"),
     [ABILITY_SUPERSWEET_SYRUP] = _("Supersweet Syrup"),
     [ABILITY_AIR_FORCE] = _("Air Force"),
+    [ABILITY_TRICKSTER] = _("Trickster"),
 };
 #else   // 12 characters
 const u8 gAbilityNames[ABILITIES_COUNT][ABILITY_NAME_LENGTH + 1] =
@@ -922,6 +924,7 @@ const u8 gAbilityNames[ABILITIES_COUNT][ABILITY_NAME_LENGTH + 1] =
     [ABILITY_TOXIC_CHAIN] = _("Toxic Chain"),
     [ABILITY_SUPERSWEET_SYRUP] = _("SuprswtSyrup"),
     [ABILITY_AIR_FORCE] = _("Air Force"),
+    [ABILITY_TRICKSTER] = _("Trickster"),
 };
 #endif
 
@@ -1235,4 +1238,5 @@ const u8 *const gAbilityDescriptionPointers[ABILITIES_COUNT] =
     [ABILITY_TOXIC_CHAIN] = sToxicChainDescription,
     [ABILITY_SUPERSWEET_SYRUP] = sSupersweetSyrupDescription,
     [ABILITY_AIR_FORCE] = sAirForceDescription,
+    [ABILITY_TRICKSTER] = sTricksterDescription,
 };

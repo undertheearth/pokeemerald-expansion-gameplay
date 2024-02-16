@@ -19,7 +19,7 @@ Power: 40 - 60
 Vise Grip
 Type: Normal - Bug
 
-Razor Wind
+Razor Wind (special)
 Power: 80 - 70
 Type: Normal - Flying
 PP: 10 - 15
@@ -156,7 +156,7 @@ Power: 15 - 20
 Accuracy: 85 - 90
 
 Sky Attack
-Power: 130 - 90
+Power: 130 - 100
 Effect: Two Turns Flinch Chance - Single Turn Flinch Chance
 PP: 5 - 10
 
@@ -197,6 +197,7 @@ False Swipe
 Power: 40 - 90
 
 Steel Wing
+Power: 70 - 85
 Accuracy: 90 - 100
 Effect Chance: 10 - 30
 
@@ -283,6 +284,7 @@ Hydro Cannon
 Power: 150 - 140
 Accuracy: 90 - 100
 Effect: Recharge - Recoil 50%
+New Tag: Pulse Move
 
 Frenzy Plant
 Power: 150 - 140
@@ -425,6 +427,9 @@ Accuracy: 85 - 90
 
 Double Iron Bash
 PP: 5 - 10
+
+Double Kick
+Power: 30 - 35
 
 Ice Burn
 Power: 140 - 120

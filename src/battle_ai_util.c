@@ -253,6 +253,7 @@ static const s8 sAiAbilityRatings[ABILITIES_COUNT] =
     [ABILITY_TOUGH_CLAWS] = 7,
     [ABILITY_TRACE] = 6,
     [ABILITY_TRIAGE] = 7,
+    [ABILITY_TRICKSTER] = 10,   
     [ABILITY_TRUANT] = -2,
     [ABILITY_TURBOBLAZE] = 7,
     [ABILITY_UNAWARE] = 6,

@@ -424,7 +424,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_DYNAMAX] =
     [MOVE_DOUBLE_KICK] =
     {
         .effect = EFFECT_HIT,
-        .power = 30,
+        .power = 35,
         .type = TYPE_FIGHTING,
         .accuracy = 100,
         .pp = 30,
@@ -2537,7 +2537,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_DYNAMAX] =
     [MOVE_SKY_ATTACK] =
     {
         .effect = EFFECT_HIT,
-        .power = 90,
+        .power = 100,
         .type = TYPE_FLYING,
         .accuracy = 100,
         .pp = 10,
@@ -3808,7 +3808,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_DYNAMAX] =
     [MOVE_STEEL_WING] =
     {
         .effect = EFFECT_DEFENSE_UP_HIT,
-        .power = 70,
+        .power = 85,
         .type = TYPE_STEEL,
         .accuracy = 100,
         .pp = 25,
@@ -3976,8 +3976,8 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_DYNAMAX] =
         .effect = EFFECT_BURN_HIT,
         .power = 100,
         .type = TYPE_FIRE,
-        .accuracy = 95,
-        .pp = 5,
+        .accuracy = 100,
+        .pp = 10,
         .secondaryEffectChance = 50,
         .target = MOVE_TARGET_SELECTED,
         .priority = 0,
@@ -5523,6 +5523,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_DYNAMAX] =
         .target = MOVE_TARGET_SELECTED,
         .priority = 0,
         .split = SPLIT_SPECIAL,
+        .pulseMove = TRUE,
         .zMoveEffect = Z_EFFECT_NONE,
     },
 

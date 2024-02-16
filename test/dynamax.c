@@ -1392,7 +1392,7 @@ DOUBLE_BATTLE_TEST("(DYNAMAX) G-Max Depletion takes away 2 PP from the target's 
         PLAYER(SPECIES_DURALUDON);
         PLAYER(SPECIES_WYNAUT);
         // Dynamax behaves weird with test turn order because stats are recalculated.
-        OPPONENT(SPECIES_SABLEYE) { Ability(ABILITY_PRANKSTER); }
+        OPPONENT(SPECIES_SABLEYE) { Ability((ABILITY_PRANKSTER || ABILITY_TRICKSTER)); }
         OPPONENT(SPECIES_WYNAUT);
     } WHEN {
         TURN { MOVE(playerLeft, MOVE_DRAGON_CLAW, target: opponentLeft, dynamax: TRUE); }
