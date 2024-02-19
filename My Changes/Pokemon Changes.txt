@@ -235,7 +235,9 @@ Slyveon - Ability Change 2: Misty Surge
 	Defence: 65 - 85
 	Speed: 60 - 80
 	
-Rapidash - Abiliy Change: Adaptability
+Ponyta - Abiliy Change: Chilling Neigh | Ability Change 2: Grim Neigh | Ability Change HA: Flash Fire | Type Change 2: Dragon
+	Sp.Atk: 65 - 75
+Rapidash - Abiliy Change: Chilling Neigh | Ability Change 2: Grim Neigh | Ability Change HA: Flash Fire | Type Change 2: Dragon
 	HP - 65 - 80
 	Attack: 100 - 120
 	Sp.Atk: 80 - 100
@@ -309,13 +311,13 @@ Horsea - Evo Level 31
 	HP: 30 - 35
 Seadra - Evo Level 45 (No Dragon Scale) | Type Added Poison - BST: 430 - 440
 	Sp.Def: 45 - 55
-Kingdra - Ability Change HA: Damp | Ability Change 2: Drizzle - BST: 540 - 600
+Kingdra - Ability Change HA: Damp | Ability Change 2: Drizzle - BST: 540 - 600 | Ability Change HA: Mega Launcher
 	HP: 75 - 80
-	Attack: 95 - 110
+	Attack: 95 - 100
 	Defence: 95 - 90
-	Sp.Atk: 95 - 120
+	Sp.Atk: 95 - 125
 	Sp.Def: 95 - 90
-	Speed: 85 - 125
+	Speed: 85 - 130
 	Egg Cycles: 20 - 40
 	Exp Yield: 243 - 270
 	Friendship: 35
@@ -467,7 +469,10 @@ Sneasel - Ability Change 2: Refrigerate
 Weaville - Ability Change 2: Refrigerate
 
 Magcargo
+	HP: 60 - 80
+	Sp.Atk: 90 - 100
 	Sp.Def: 80 - 120
+	Spped: 30 - 50
 	
 Octilary - Ability Changed 2: Colour Change
 	HP: 75 - 99
@@ -519,7 +524,7 @@ Ampharos - Dragon Type Added | Ability 2: Motor Drive
 Noctowl - Normal type changed to Ghost type
 	Attack: 50 - 75
 	Defence: 50 - 86
-	Sp.Atk: 86 - 96
+	Sp.Atk: 86 - 106
 
 Skarmory
 	Attack: 80 - 90
@@ -582,6 +587,17 @@ Shiftry
 Swellow
 	Attack: 85 - 95
 	
+Roselia - Ability Change 2: Toxic Debris
+	HP: 50 - 60
+	Defence: 45 - 55
+	Speed: 65- 75
+Roserade - Ability Change 2: Toxic Debris (BST - 560)
+	HP: 60 - 70
+	Defence: 65 - 85
+	Attack: 70 - 80
+	Speed: 90 - 95
+Growth Rate - Slow
+
 Surskit - BST = 300
 	HP: 40 - 50
 	Defence: 32 - 42
@@ -747,7 +763,7 @@ Swablu - Replaced Normal with Fairy - Evo level changed to 38 - BST = 400
 	Defence: 60 - 75
 	Speed: 50 - 70
 	
-Altaria  - Replaced Flying with Fairy Type - BST = 575
+Altaria  - Replaced Flying with Fairy Type - BST = 575 | Ability 2 Change: Fairy Aura
 	HP: 75 - 100
 	Defence: 90 - 100
 	Speed: 80 - 90
@@ -758,15 +774,25 @@ Signature move: Slyph Song - Special Fairy move - 95BP, 100 Accuracy, 15 PP
 Gets Quiver Dance instead of Dragon Dance
 
 Lunatone
-	Sp.Atk: 95 - 115
+	Defence: 65 - 85
+	Sp.Atk: 95 - 100
+	Speed: 70 - 75
 Solrock
-	Attack: 95 - 115
+	Attack: 95 - 100
+	Sp.Def: 65 - 85
+	Speed: 70 - 75
 
 Whiscash: Ability Change 1: Unaware | Ability Change 2: Sap sipper
 	Attack: 78 - 100
 
+Corphish + 10 all base stats
 Crawdunt
+	HP: 63 - 93
+	Attack: 120 - 130
+	Defence: 85 - 95
 	Speed: 55 - 65
+	Sp.Atk: 90 - 100
+	Sp.Def: 55 - 75
 
 Claydol
 	HP: 60 - 100
@@ -779,7 +805,13 @@ Armaldo
 	HP: 75 - 85
 	
 Milotic - Added Fairy Type
-	Defence - 79 - 89
+	HP: 95 - 105
+	Defence: 79 - 89
+	Sp.Atk: 100 - 100
+
+Gardevoir
+	HP: 68 - 88
+	Speed: 80 - 100
 
 Castform
 	HP: 70 - 100
@@ -823,13 +855,13 @@ Glalie - Changed Ability: Moody | Changed Ability HA: Sturdy
 Froslass
 	Sp.Atk: 80 - 100
 
-Spheal - Evo Level 26 | Ability Change 1: Regenerator | Ability Change 2: Unaware |Ability Change HA: Thick Fat
-Sealeo - Evo Level 54 | Ability Change 1: Regenerator | Ability Change 2: Unaware |Ability Change HA: Thick Fat
-Walrein - Ability Change 1: Regenerator | Ability Change 2: Unaware |Ability Change HA: Thick Fat - BST: 530 - 600 (Pseudolegendary)
-	HP: 110 - 140
-	Attack: 80 - 90
-	Sp.Atk: 95 - 115
-	Sp.Def: 90 - 100
+Spheal - Evo Level 26 | Ability Change 1: Snow Warning | Ability Change 2: Regenerator | Ability Change HA: Thick Fat
+Sealeo - Evo Level 54 | Ability Change 1: Snow Warning | Ability Change 2: Regenerator | Ability Change HA: Thick Fat
+Walrein - Ability Change 1: Snow Warning | Ability Change 2: Regenerator | Ability Change HA: Thick Fat - BST: 530 - 600 (Pseudolegendary)
+	HP: 110 - 150
+	Defence: 90 - 95
+	Sp.Atk: 95 - 105
+	Sp.Def: 90 - 110
 	Egg Cycles: 20 - 40
 	Exp Yield: 243 - 270
 	Friendship: 35

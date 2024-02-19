@@ -186,6 +186,7 @@ PP: 5 - 10
 Octazooka
 Power: 65 - 80
 Accuracy: 85 - 100
+Now Pulse move
 
 Zap Cannon
 Accuracy: 50 - 75

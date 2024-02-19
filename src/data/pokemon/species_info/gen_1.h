@@ -5682,8 +5682,8 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
 
 #if P_FAMILY_PONYTA
 #define KANTONIAN_PONYTA_FAMILY_INFO                                                \
-        .types = { TYPE_FIRE, TYPE_FIRE },                                          \
-        .abilities = { ABILITY_ADAPTABILITY, ABILITY_FLASH_FIRE, ABILITY_FLAME_BODY },  \
+        .types = { TYPE_FIRE, TYPE_DRAGON },                                          \
+        .abilities = { ABILITY_CHILLING_NEIGH, ABILITY_GRIM_NEIGH, ABILITY_FLASH_FIRE },  \
         .bodyColor = BODY_COLOR_YELLOW
 
 #define PONYTA_FAMILY_MISC_INFO                             \
@@ -5698,7 +5698,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .baseAttack    = 85,                            \
         .baseDefense   = 55,                            \
         .baseSpeed     = 90,                            \
-        .baseSpAttack  = 65,                            \
+        .baseSpAttack  = 75,                            \
         .baseSpDefense = 65,                            \
         .catchRate = 190,                               \
         .expYield = 82,                                 \
@@ -9006,10 +9006,10 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
     [SPECIES_KINGDRA] =
     {
         .baseHP        = 80,
-        .baseAttack    = 110,
+        .baseAttack    = 100,
         .baseDefense   = 90,
-        .baseSpeed     = 125,
-        .baseSpAttack  = 120,
+        .baseSpeed     = 130,
+        .baseSpAttack  = 125,
         .baseSpDefense = 90,
         .types = { TYPE_WATER, TYPE_DRAGON },
         .catchRate = 45,
@@ -9023,7 +9023,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .friendship = 35,
         .growthRate = GROWTH_SLOW,
         .eggGroups = { EGG_GROUP_WATER_1, EGG_GROUP_DRAGON },
-        .abilities = { ABILITY_SWIFT_SWIM, ABILITY_DRIZZLE, ABILITY_DAMP },
+        .abilities = { ABILITY_SWIFT_SWIM, ABILITY_DRIZZLE, ABILITY_MEGA_LAUNCHER },
         .bodyColor = BODY_COLOR_BLUE,
         .speciesName = _("Kingdra"),
         .cryId = CRY_KINGDRA,
