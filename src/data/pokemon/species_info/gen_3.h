@@ -5518,8 +5518,8 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
     {
         .baseHP        = 86,
         .baseAttack    = 101,
-        .baseDefense   = 97,
-        .baseSpeed     = 43,
+        .baseDefense   = 107,
+        .baseSpeed     = 63,
         .baseSpAttack  = 81,
         .baseSpDefense = 107,
         .types = { TYPE_ROCK, TYPE_GRASS },
@@ -5614,9 +5614,9 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
 
     [SPECIES_ARMALDO] =
     {
-        .baseHP        = 85,
+        .baseHP        = 95,
         .baseAttack    = 125,
-        .baseDefense   = 100,
+        .baseDefense   = 110,
         .baseSpeed     = 45,
         .baseSpAttack  = 70,
         .baseSpDefense = 80,

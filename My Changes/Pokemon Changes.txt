@@ -801,8 +801,12 @@ Claydol
 	
 Cradily
 	Attack: 81 - 101
+	Defence: 97 - 107
+	Speed: 43 - 63
 Armaldo
-	HP: 75 - 85
+	HP: 75 - 95
+	Speed: 45 - 65
+	Defence: 100 - 110
 	
 Milotic - Added Fairy Type
 	HP: 95 - 105
