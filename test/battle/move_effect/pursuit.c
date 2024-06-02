@@ -3,7 +3,7 @@
 
 ASSUMPTIONS
 {
-    ASSUME(gBattleMoves[MOVE_PURSUIT].effect == EFFECT_PURSUIT);
+    ASSUME(gMovesInfo[MOVE_PURSUIT].effect == EFFECT_PURSUIT);
 }
 
 SINGLE_BATTLE_TEST("Pursuited mon correctly switches out after it got hit and activated ability Tangling Hair")
@@ -24,3 +24,5 @@ SINGLE_BATTLE_TEST("Pursuited mon correctly switches out after it got hit and ac
         MESSAGE("Go! Wobbuffet!");
     }
 }
+
+TO_DO_BATTLE_TEST("Baton Pass doesn't cause Pursuit to increase its power or priority");

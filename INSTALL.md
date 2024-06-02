@@ -91,8 +91,46 @@ Some tips before proceeding:
     </details>
     This will install GCC v10 on Ubuntu 22.04. pokeemerald-expansion works with GCC v10, but remote repositories and the RHH Team use GCC v13 for stricter error-checking. If you want to upgrade from v10 to v13, also follow the devkitpro install instructions.
 
-### Choosing where to store pokeemerald (WSL1)
-WSL has its own file system that's not natively accessible from Windows, but Windows files *are* accessible from WSL. So you're going to want to store pokeemerald within Windows.
+### Installing devkitARM on WSL1
+
+1. Change directory to somewhere you can download a package, such as **C:\Users\\_\<user>_\Downloads** (the Downloads location for most users). To do so, enter this command, where *\<user> is your **Windows** username:
+
+    ```bash
+    cd /mnt/c/Users/<user>/Downloads
+    ```
+
+2. Once the directory has been changed, run the following commands to install devkitARM.
+
+    ```bash
+    sudo apt install wget
+    wget https://apt.devkitpro.org/install-devkitpro-pacman
+    chmod +x ./install-devkitpro-pacman
+    sudo ./install-devkitpro-pacman
+    sudo dkp-pacman -S gba-dev
+    ```
+    The last command will ask for the selection of packages to install. Just press Enter to install all of them, followed by entering Y to proceed with the installation.
+
+3. Run the following command to set devkitPro related environment variables (alternatively, close and re-open WSL):
+
+    ```bash
+    source /etc/profile.d/devkit-env.sh
+    ```
+
+devkitARM is now installed.
+
+### Installing Python on WSL1
+
+To install Python on WSL1, simply run the following commands:
+
+```bash
+sudo apt update && sudo apt upgrade
+sudo apt install python3
+```
+
+Python is now installed.
+
+### Choosing where to store pokeemerald Expansion (WSL1)
+WSL has its own file system that's not natively accessible from Windows, but Windows files *are* accessible from WSL. So you're going to want to store pokeemerald Expansion within Windows.
 
 For example, say you want to store pokeemerald (and agbcc) in **C:\Users\\_\<user>_\Desktop\decomps**. First, ensure that the folder already exists. Then, enter this command to **change directory** to said folder, where *\<user>* is your **Windows** username:
 
@@ -173,8 +211,18 @@ Note that in msys2, Copy is Ctrl+Insert and Paste is Shift+Insert.
     cd
     ```
 
-### Choosing where to store pokeemerald (msys2)
-At this point, you can choose a folder to store pokeemerald into. If you're okay with storing pokeemerald in the user profile folder, then proceed to [Installation](#installation). Otherwise, you'll need to account for where pokeemerald is stored when changing directory to the pokeemerald folder.
+### Installing Python on msys2
+
+To install Python on msys2, simply run the following commands:
+
+    ```bash
+    pacman -S mingw-w64-x86_64-python3
+    ```
+
+Python is now installed.
+
+### Choosing where to store pokeemerald Expansion (msys2)
+At this point, you can choose a folder to store pokeemerald Expansion into. If you're okay with storing pokeemerald Expansion in the user profile folder, then proceed to [Installation](#installation). Otherwise, you'll need to account for where pokeemerald Expansion is stored when changing directory to the pokeemerald-expansion folder.
 
 For example, if you want to store pokeemerald (and agbcc) in **C:\Users\\_\<user>_\Desktop\decomps** (where *\<user>* is your **Windows** username), enter this command:
 
@@ -262,6 +310,7 @@ If this works, then proceed to [Installation](#installation). Otherwise, ask for
     ```
 
 2.  - If libpng is **not installed**, then go to [Installing libpng (macOS)](#installing-libpng-macos).
+    - If pkg-config is **not installed**, then go to [Installing pkg-config (macos)](#installing-pkg-config-macos).
     - If devkitARM is **not installed**, then go to [Installing devkitARM (macOS)](#installing-devkitarm-macos).
     - Otherwise, **open the Terminal** and go to [Choosing where to store pokeemerald (macOS)](#choosing-where-to-store-pokeemerald-macos)
 
@@ -281,7 +330,27 @@ If this works, then proceed to [Installation](#installation). Otherwise, ask for
     ```
     libpng is now installed.
 
-    Continue to [Installing devkitARM (macOS)](#installing-devkitarm-macos) if **devkitARM is not installed**, otherwise, go to [Choosing where to store pokeemerald (macOS)](#choosing-where-to-store-pokeemerald-macos).
+    Continue to [Installing pkg-config (macOS)](#installing-pkg-config-macos) if **pkg-config is not installed**. Otherwise, continue to [Installing devkitARM (macOS)](#installing-devkitarm-macos) if **devkitARM is not installed**.
+    
+    If both pkg-config and devkitARM are already installed, go to [Choosing where to store pokeemerald Expansion (macOS)](#choosing-where-to-store-pokeemerald-expansion-macos).
+
+### Installing pkg-config (macOS)
+<details>
+    <summary><i>Note for advanced users...</i></summary>
+
+>   This guide installs pkg-config via Homebrew as it is the easiest method, however advanced users can install pkg-config through other means if they so desire.
+</details>
+
+1. Open the Terminal.
+2. If Homebrew is not installed, then install [Homebrew](https://brew.sh/) by following the instructions on the website.
+3. Run the following command to install libpng.
+
+    ```bash
+    brew install pkg-config
+    ```
+    pkg-config is now installed.
+
+    Continue to [Installing devkitARM (macOS)](#installing-devkitarm-macos) if **devkitARM is not installed**, otherwise, go to [Choosing where to store pokeemerald Expansion (macOS)](#choosing-where-to-store-pokeemerald-expansion-macos).
 
 ### Installing devkitARM (macOS)
 1. Download the `devkitpro-pacman-installer.pkg` package from [here](https://github.com/devkitPro/pacman/releases).
@@ -300,12 +369,31 @@ If this works, then proceed to [Installation](#installation). Otherwise, ask for
 
     ```bash
     export DEVKITPRO=/opt/devkitpro
+    echo "export DEVKITPRO=$DEVKITPRO" >> ~/.zshrc
+    export DEVKITARM=$DEVKITPRO/devkitARM
+    echo "export DEVKITARM=$DEVKITARM" >> ~/.zshrc
+
+    echo "if [ -f ~/.zshrc ]; then . ~/.zshrc; fi" >> ~/.zprofile
+    ```
+    *Note: Starting with macOS 10.15, the default Unix shell is now zsh. If you migrated from an older version of macOS, you might still be using bash. You can check my running `echo $0` in the terminal.*
+    <details>
+        <summary><i>If your terminal is using bash instead of zsh...</i></summary>
+
+    ```bash
+    export DEVKITPRO=/opt/devkitpro
     echo "export DEVKITPRO=$DEVKITPRO" >> ~/.bashrc
     export DEVKITARM=$DEVKITPRO/devkitARM
     echo "export DEVKITARM=$DEVKITARM" >> ~/.bashrc
 
     echo "if [ -f ~/.bashrc ]; then . ~/.bashrc; fi" >> ~/.bash_profile
     ```
+    </details>
+
+### Installing Python (macOS)
+1. Download the latest Python package from [here](https://www.python.org/downloads/).
+2. Open the package to install Python.
+
+Python is now installed.
 
 ### Choosing where to store pokeemerald (macOS)
 At this point, you can choose a folder to store pokeemerald into. If you're okay with storing pokeemerald in the user folder, then proceed to [Installation](#installation). Otherwise, you'll need to account for where pokeemerald is stored when changing directory to the pokeemerald folder.
@@ -375,8 +463,11 @@ _(Specific instructions for other distributions would be greatly appreciated!)_
 
     The last command will ask for the selection of packages to install. Just press Enter to install all of them, followed by entering Y to proceed with the installation.
 
-### Choosing where to store pokeemerald (Linux)
-At this point, you can choose a folder to store pokeemerald (and agbcc) into. If so, you'll have to account for the modified folder path when changing directory to the pokeemerald folder.
+### Installing Python in Linux
+Installing Python depends on your distribution, please refere to the instructions [here](https://docs.python-guide.org/starting/install3/linux/).
+
+### Choosing where to store pokeemerald Expansion (Linux)
+At this point, you can choose a folder to store pokeemerald Expansion into. If so, you'll have to account for the modified folder path when changing directory to the pokeemerald-expansion folder.
 
 If this works, then proceed to [Installation](#installation). Otherwise, ask for help on Discord or IRC (see [README.md](README.md)).
 
@@ -619,3 +710,4 @@ Note that this is not necessary for a non-modern build since those are built wit
 * [porymap](https://github.com/huderlem/porymap) for viewing and editing maps
 * [poryscript](https://github.com/huderlem/poryscript) for scripting ([VS Code extension](https://marketplace.visualstudio.com/items?itemName=karathan.poryscript))
 * [Tilemap Studio](https://github.com/Rangi42/tilemap-studio) for viewing and editing tilemaps
+
