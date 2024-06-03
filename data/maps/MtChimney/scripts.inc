@@ -901,7 +901,6 @@ MtChimney_EventScript_MeteoriteMachine::
 # 451 "data/maps/MtChimney/scripts.pory"
 	giveitem ITEM_METEORITE
 # 452 "data/maps/MtChimney/scripts.pory"
-	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
 	setflag FLAG_RECEIVED_METEORITE
 # 453 "data/maps/MtChimney/scripts.pory"
 	releaseall

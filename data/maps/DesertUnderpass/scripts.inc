@@ -41,7 +41,6 @@ DesertUnderpass_EventScript_GiveClawFossil::
 # 21 "data/maps/DesertUnderpass/scripts.pory"
 	giveitem ITEM_CLAW_FOSSIL
 # 22 "data/maps/DesertUnderpass/scripts.pory"
-	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
 	removeobject LOCALID_FOSSIL
 # 23 "data/maps/DesertUnderpass/scripts.pory"
 	release
@@ -54,7 +53,6 @@ DesertUnderpass_EventScript_GiveRootFossil::
 # 27 "data/maps/DesertUnderpass/scripts.pory"
 	giveitem ITEM_ROOT_FOSSIL
 # 28 "data/maps/DesertUnderpass/scripts.pory"
-	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
 	removeobject LOCALID_FOSSIL
 # 29 "data/maps/DesertUnderpass/scripts.pory"
 	release

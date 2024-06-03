@@ -73,7 +73,6 @@ Route118_EventScript_ReceiveGoodRod::
 # 37 "data/maps/Route118/scripts.pory"
 	giveitem ITEM_GOOD_ROD
 # 38 "data/maps/Route118/scripts.pory"
-	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
 	setflag FLAG_RECEIVED_GOOD_ROD
 # 39 "data/maps/Route118/scripts.pory"
 	msgbox Route118_Text_TryYourLuckFishing, MSGBOX_DEFAULT

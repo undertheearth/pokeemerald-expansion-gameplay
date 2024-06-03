@@ -3835,7 +3835,7 @@ void SetMoveEffect(bool32 primary, bool32 certain)
                     gBattlescriptCurrInstr = BattleScript_EffectPsychicNoise;
                 }
                 break;
-            }>>>>>
+            }
         }
     }
 

@@ -851,7 +851,6 @@ MauvilleCity_EventScript_Wattson::
 # 426 "data/maps/MauvilleCity/scripts.pory"
 	giveitem ITEM_BASEMENT_KEY
 # 427 "data/maps/MauvilleCity/scripts.pory"
-	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
 	setflag FLAG_GOT_BASEMENT_KEY_FROM_WATTSON
 # 428 "data/maps/MauvilleCity/scripts.pory"
 	msgbox MauvilleCity_Text_WattsonWontBeChallenge, MSGBOX_DEFAULT

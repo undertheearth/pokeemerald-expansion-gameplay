@@ -8960,7 +8960,7 @@ static inline u32 CalcMoveBasePowerAfterModifiers(u32 move, u32 battlerAtk, u32 
            modifier = uq4_12_multiply(modifier, UQ_4_12(1.3));
         break;
     case ABILITY_STRONG_JAW:
-        if (gBattleMoves[move].bitingMove)
+        if (gMovesInfo[move].bitingMove)
            modifier = uq4_12_multiply(modifier, UQ_4_12(1.5));
         break;
     case ABILITY_TRICKSTER:
@@ -10129,7 +10129,7 @@ static inline uq4_12_t CalcTypeEffectivenessMultiplierInternal(u32 move, u32 mov
             RecordAbilityBattle(battlerDef, ABILITY_LEVITATE);
         }
     }    
-    else if (moveType == TYPE_GROUND && !IsBattlerGrounded2(battlerDef, TRUE) && !(gBattleMoves[move].ignoreTypeIfFlyingAndUngrounded))
+    else if (moveType == TYPE_GROUND && !IsBattlerGrounded2(battlerDef, TRUE) && !(gMovesInfo[move].ignoreTypeIfFlyingAndUngrounded))
     {
         modifier = UQ_4_12(0.0);
         if (recordAbilities && defAbility == ABILITY_AIR_FORCE)

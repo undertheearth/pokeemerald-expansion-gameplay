@@ -191,7 +191,6 @@ DewfordTown_EventScript_GiveOldRod::
 # 96 "data/maps/DewfordTown/scripts.pory"
 	giveitem ITEM_OLD_ROD
 # 97 "data/maps/DewfordTown/scripts.pory"
-	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
 	setflag FLAG_RECEIVED_OLD_ROD
 # 98 "data/maps/DewfordTown/scripts.pory"
 	msgbox DewfordTown_Text_ThrowInFishingAdvice, MSGBOX_DEFAULT
