@@ -1,0 +1,13 @@
+raw `
+HauntedForest_House_MapScripts::
+	.byte 0
+`
+script Haunted_Woman {
+    lock
+    msgbox(format("I like it here."))
+    waitmessage
+    faceplayer
+    msgbox(format("The POKEMON here are dangerous."))
+    release
+    end
+}

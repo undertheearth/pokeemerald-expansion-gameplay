@@ -4730,6 +4730,26 @@
       "secondary_tileset": "gTileset_LittlerootLakeTiles",
       "border_filepath": "data/layouts/LittlerootLake_OceanConnection/border.bin",
       "blockdata_filepath": "data/layouts/LittlerootLake_OceanConnection/map.bin"
+    },
+    {
+      "id": "LAYOUT_HAUNTED_FOREST",
+      "name": "HauntedForest_Layout",
+      "width": 19,
+      "height": 25,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Rustboro",
+      "border_filepath": "data/layouts/HauntedForest/border.bin",
+      "blockdata_filepath": "data/layouts/HauntedForest/map.bin"
+    },
+    {
+      "id": "LAYOUT_HAUNTED_FOREST_HOUSE",
+      "name": "HauntedForest_House_Layout",
+      "width": 10,
+      "height": 9,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/HauntedForest_House/border.bin",
+      "blockdata_filepath": "data/layouts/HauntedForest_House/map.bin"
     }
   ]
 }

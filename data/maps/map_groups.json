@@ -183,7 +183,8 @@
     "PetalburgCity_PokemonCenter_2F",
     "PetalburgCity_Mart",
     "PetalburgCity_Loremaster",
-    "PetalburgCity_BattleShop"
+    "PetalburgCity_BattleShop",
+    "HauntedForest_House"
   ],
   "gMapGroup_IndoorSlateport": [
     "SlateportCity_SternsShipyard_1F",
@@ -460,7 +461,8 @@
     "MeteorFalls_StevensCave",
     "DampCave",
     "Route123_Dungeon",
-    "LittlerootWoods_Celebi"
+    "LittlerootWoods_Celebi",
+    "HauntedForest"
   ],
   "gMapGroup_IndoorDynamic": [
     "SecretBase_RedCave1",

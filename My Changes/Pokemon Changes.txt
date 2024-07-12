@@ -1,78 +1,145 @@
 GEN 1
-Bulbasaur + Ivysaur - Ability Change: Pickup
-Venusaur - Ability Change: Grassy Surge - BST = 545
-	Attack: 82 - 95
-	Defence: 83 - 90
-	Speed: 80 - 85
+Bulbasaur
+Ivysaur
+Venusaur
+	Hidden Ability: Chlorophyll - Grassy Surge
+~Comments~ Chlorophyll was good but I wanted a little power boost
 
-Charmander + Charmeleon - Ability Change: Tough Claws - BST = 545
-Charizard - Ability Change: Aerialate
-	Attack: 84 - 100
-	Defence: 78 - 77
-	Sp.Atk: 109 - 110
-	Sp.Def: 85 - 80
+Charmander
+	Hidden Ability: Solar Power - Tough Claws
+Charmeleon
+	Hidden Ability: Solar Power - Tough Claws
+Charizard
+	Hidden Ability: Solar Power - Tough Claws
+~Comments~ Solar Power is mostly a determent
 
-Squirtle + Wartortle = Ability Change: Shed Skin
-Wartortle - Type Added: Steel
-Blastoise - Ability Change: Shell Armour - BST = 540 Type Added: Steel | Ability Change HA: Mega Launcher
-	HP: 79 - 100
-	Attack: 83 - 75
-	Sp.Atk: 85 - 90
-	Sp.Def: 105 - 100
+Squirtle
+	Hidden Ability: Rain Dish - Shell Armour
+Wartortle
+	Hidden Ability: Rain Dish - Shell Armour
+	Type: Water - Water/Steel	
+Blastoise
+	Hidden Ability: Rain Dish - Shell Armour
+	Type: Water - Water/Steel
+	HP: 79 - 90
+	Attack: 83 - 60
+	Defence: /
+	Sp.Atk: 85 - 95
+	Sp.Def: /
+	Speed: 78 - 80
+~Comments~ Blastoise was the weakest of the three and the only monotype
 
-Caterpie - Level 16 Evo - BST = 195
-	Attack: 35 - 50
-	Defence: 35 - 45	
-Metapod - Level 26 Evo - BST = 340
-	Attack: 20 - 60
-	Defence: 55 - 85
-	Speed: 30 - 50
-	Sp.Atk: 25 - 50
-	Sp.Def: 25 - 65
-Buterfree  - BST = 450
+Caterpie:
+	EVO Level: 7 - 15
+	BST: 225
+	HP: /
+	Attack: 30 - 40
+	Defence: 35 - 45
+	Sp.Atk: /
+	Sp.Def: 20 - 30
+	Speed: /
+Metapod:
+	EVO Level: 10 - 25
+	BST: 360
+	Attack: 20 - 40
+	Defence: 55 - 75
+	Sp.Atk: 25 - 60
+	Sp.Def: 25 - 95
+	Speed: 30 - 40
+Buterfree:
+	BST: 475
+	HP: 60 - 70
+	Attack: /
 	Defence: 50 - 60
-	Sp.Def: 80 - 90
-	Speed: 70 - 100
-	Sp.Atk: 90 - 110
+	Sp.Atk: 90 - 110 or 80 - 100 (old gen)
+	Sp.Def: 80 - 95
+	Speed: 70 - 95
 
-Weedle - Level 16 Evo - BST = 195
-	Attack: 35 - 50
+Comments: add things for compound eyes in movepool
+
+Weedle:
+	EVO Level: 7 - 15
+	BST: 225
+	HP: /
+	Attack: 35 - 55
 	Defence: 30 - 40
-Kakuna - Level 28 Evo - BST = 340
-	HP - 45 - 50
-	Attack: 25 - 65
-	Defence: 45 - 80
-	Speed: 35 - 54
-	Sp.Atk: 25 - 45
-	Sp.Def: 25 - 60
-Beedrill - Ability Change: Levitate (Why is bro walking) - BST = 450 - More switch in opportunity
-	HP: 65 - 70
-	Attack: 90 - 115
-	Speed: 75 - 120
+	Sp.Atk: /
+	Sp.Def: /
+	Speed: /
+Kakuna:
+	EVO Level: 15 - 25
+	BST: 360
+	HP: 45 - 50
+	Attack: 25 -  60
+	Defence: 45 - 95
+	Sp.Atk: 25 - 40
+	Sp.Def: 25 - 75
+	Speed: 35 - 40
+Beedrill
+	BST: 475
+	Ability Change: Swarm - Levitate
+	HP: /
+	Attack: 90-125 or 80-115 (old-gen)
+	Defence: 40 - 60
+	Sp.Atk: 45 - 40
+	Sp.Def: /
+	Speed: 75 - 105
 
-Pidgey/Pidgeoto/Pidgeot - Ability Changed 2: No Guard
-Pidgeot - BST = 500
+Comments: big buff, add things to sweep in movepool, twinneedle buffed, levitate switch ins
+
+Pidgey
+	Hidden Ability: Big Pecks - No Guard
+Pidgeoto
+	Hidden Ability: Big Pecks - No Guard
+Pidgeot - 
+	Hidden Ability: Big Pecks - No Guard
+	BST = 500
+	HP: /
 	Attack: 80 - 91
+	Defence: /
 	Sp.Atk: 70 - 80
+	Sp.Def: /
+	Speed: /
 
-Spearow - Evo Level 25	
-Fearow - Ability Change: Intimidate
+Comments: I don't like megas but like the changes to weak mons. Give Pidgeot some way of boosting
+
+Spearow - Evo Level 25
+	
+Fearow
+	Ability Change: Intimidate
+	BST: 500
+	Type: Normal/Flying - Fighting/Flying
+	HP: /
 	Attack: 90 - 110
 	Defence: 65 - 80
-	Sp.Def: 61 - 70
+	Sp.Atk: 61: 51
+	Sp.Def: 61 - 71
+	Speed: 
+Commnets: to differtentiate from pidgey. Update movepool accordingly
 
-Ekans - Ability Change HA: Strong Jaw | Evo level 28
+
+Ekans - Evo level 26
+	Hidden Ability: Unnerve - Strong Jaw
+	BST: 338
 	HP: 35 - 55
 	Attack: 60 - 70
 	Defence: 44 - 54
+	Sp.Atk: /
+	Sp.Def: /
 	Speed: 55 - 65
-Arbok - Dark Type Added | Ability Change HA: Strong Jaw
-	HP: 60 - 85
-	Attack: 95 - 115 
-	Defence: 69 - 85
-	Speed: 80 - 85
-	Sp.Atk: 65 - 55
-	Sp.Def: 79 - 95
+Arbok
+	Hidden Ability: Unnerve - Strong Jaw
+	Type: Poison Type: Poison/Dark
+	BST: 514
+	HP: 60 - 80
+	Attack: 95 - 110 or 85 - 100 
+	Defence: 69 - 79
+	Speed: 80 - 91
+	Sp.Atk: 65 - 75
+	Sp.Def: /
+
+Comments: Arbok line already had really good abilities, this helps with its already pretty good movepool. Bite moves already BP/chance buffed. Dark is VERY nice secondary typing. BST/Evo level rebalancing.
+
 
 Farfetchd: Ability Change: Sniper | Ability Change 2: Huge Power | BST = 430
 	HP: 52 - 65
@@ -82,13 +149,16 @@ Farfetchd: Ability Change: Sniper | Ability Change 2: Huge Power | BST = 430
 	Sp.Atk: 58 - 28
 	Sp.Def: 62 - 70
 
-Sandshrew | Ability Change 2: Tough Claws
+Sandshrew
+	Ability 2: None - Tough Claws
 	Sp.Def: 30 - 50
 	Speed: 40 - 50
-Sandshrew-Alola | Ability Change 2: Tough Claws
+Sandshrew-Alola
+	Ability 2: None - Tough Claws
 	Sp.Def: 35 - 55
 	Speed: 40 - 50
-Sandslash | Ability Change 2: Tough Claws
+Sandslash
+	Ability 2: None - Tough Claws
 	Attack: 100 - 120
 	Sp.Def: 55 - 75
 	Speed: 65 - 75
@@ -96,35 +166,67 @@ Alolan Sandslash | Ability Change 2: Tough Claws
 	Attack: 100 - 120
 	Sp.Def: 65 - 85
 
+Comments: I feel like most Ground types were bad, with the exceptions being crazy good, so sandslash line changes.
+
+
 Nidoqueen
-	Attack: 92 - 102
-	Sp.Atk: 75 - 85	
-Nidoking 
-	Attack: 102 - 112
-	Sp.Atk: 85 - 95
+	BST: +30
+	Defence: 87 - 97
+	Sp.Atk: 75 - 85
+	Sp.Def: 85 - 95	
+Nidoking
+	BST: +30
+	Attack: 102-112 or 92-102
+	Sp.Atk: 85 - 105
+
+Comments: Large buffs for the last Evos. Will check for movepool changes that enhance their niches (defensive ((especially)) vs offensive)
+
+Clefable
+	BST: +1
+	Speed: 60 - 61
+
+Comments: Already strong, but a slight edge
+
 
 Ninetails
-	Attack: 76 - 67
-	Sp.Atk: 81 - 100
+	BST: +30
+	Type: Fire - Fire/Fairy
+	HP: 73 - 83
+	Attack: 76 - 66
+	Sp.Atk: 81 - 102
 	Speed: 100 - 109
 Alolan Ninetails
-	Sp.Atk: 81 - 100
-	
+	BST: +30
+	Sp.Atk: 81 - 101
+	Speed: 109 - 119
+comments: Underperforms, due to typing/stats. Will update movepool
+
+
 Jigglypuff
-	Attack: 45 - 60
-	Defence: 20 - 60
+	BST: +70
+	Attack: 45 - 55
+	Defence: 20 - 50
 	Sp.Atk: 45 - 65
-	Sp.Def: 25 - 65
-Wigglytuff - Ability Change: Thick Fat | Ability Change HA: Fur Coat
+	Sp.Def: 25 - 55
+Wigglytuff
+	Ability 1: Cute Charm - Thick Fat
+	Hidden Abilit: Frisk - Fur Coat
+	BST: +70
 	Attack: 70 - 90
 	Defence: 45 - 75
-	Sp.Atk: 85 - 95
 	Sp.Def: 50 - 70
 
-Entire line: Ability Change 2: Guts
+Comments: Massive buffs, will test further. Clefable shouldn't be the only one with strong ability options, especially with the dex entry.
+
+
+Zubat
+	Ability 2: None - Guts
+Golbat
+	Ability 2: None - Guts
 Crobat 
-	Attack: 90 - 100
-	Sp.Atk: 70 - 100
+	Ability 2: None - Guts
+	BST: +20
+	HP: 85 - 105
 
 Oddish - Abiltiy Change: Corrosion
 Gloom - Abiltiy Change: Corrosion

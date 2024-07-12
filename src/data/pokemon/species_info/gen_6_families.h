@@ -3859,12 +3859,12 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
 
     [SPECIES_TREVENANT] =
     {
-        .baseHP        = 85,
-        .baseAttack    = 110,
-        .baseDefense   = 76,
-        .baseSpeed     = 56,
-        .baseSpAttack  = 65,
-        .baseSpDefense = 82,
+        .baseHP        = 95,
+        .baseAttack    = 120,
+        .baseDefense   = 96,
+        .baseSpeed     = 77,
+        .baseSpAttack  = 45,
+        .baseSpDefense = 92,
         .types = MON_TYPES(TYPE_GHOST, TYPE_GRASS),
         .catchRate = 60,
         .expYield = 166,

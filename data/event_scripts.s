@@ -1104,3 +1104,7 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/LittlerootLake_House3_1F/scripts.inc"
 	.include "data/maps/LittlerootLake_House3_2F/scripts.inc"
 	.include "data/maps/LittlerootLake_OceanConnection/scripts.inc"
+
+	.include "data/maps/HauntedForest/scripts.inc"
+
+	.include "data/maps/HauntedForest_House/scripts.inc"

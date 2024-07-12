@@ -154,6 +154,7 @@
 #define MAP_PETALBURG_CITY_MART              (6 | (8 << 8))
 #define MAP_PETALBURG_CITY_LOREMASTER        (7 | (8 << 8))
 #define MAP_PETALBURG_CITY_BATTLE_SHOP       (8 | (8 << 8))
+#define MAP_HAUNTED_FOREST_HOUSE             (9 | (8 << 8))
 
 // gMapGroup_IndoorSlateport
 #define MAP_SLATEPORT_CITY_STERNS_SHIPYARD_1F      (0 | (9 << 8))
@@ -431,6 +432,7 @@
 #define MAP_DAMP_CAVE                                (108 | (24 << 8))
 #define MAP_ROUTE123_DUNGEON                         (109 | (24 << 8))
 #define MAP_LITTLEROOT_WOODS_CELEBI                  (110 | (24 << 8))
+#define MAP_HAUNTED_FOREST                           (111 | (24 << 8))
 
 // gMapGroup_IndoorDynamic
 #define MAP_SECRET_BASE_RED_CAVE1    (0 | (25 << 8))
