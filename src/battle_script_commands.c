@@ -1923,7 +1923,11 @@ s32 CalcCritChanceStageArgs(u32 battlerAtk, u32 battlerDef, u32 move, bool32 rec
     }
     else if (gStatuses3[battlerAtk] & STATUS3_LASER_FOCUS
         || gMovesInfo[move].alwaysCriticalHit
+        || (abilityAtk == ABILITY_MERCILESS && gBattleMons[battlerDef].status1 & STATUS1_PSN_ANY))
+    {
+        critChance = -2;
     }
+    else
     {
         critChance  = 2 * ((gBattleMons[battlerAtk].status2 & STATUS2_FOCUS_ENERGY) != 0)
                     + 1 * ((gBattleMons[battlerAtk].status2 & STATUS2_DRAGON_CHEER) != 0)
@@ -2104,6 +2108,7 @@ static void Cmd_adjustdamage(void)
         gLastUsedItem = gBattleMons[gBattlerTarget].item;
         gSpecialStatuses[gBattlerTarget].focusBanded = FALSE;
         gSpecialStatuses[gBattlerTarget].focusSashed = FALSE;
+
     }
     else if (gSpecialStatuses[gBattlerTarget].sturdied)
     {
@@ -2985,7 +2990,6 @@ void SetMoveEffect(bool32 primary, bool32 certain)
                     break;
             }
 
-            if (!CanBeBurned(gEffectBattler))
             if (!CanBeBurned(gEffectBattler, GetBattlerAbility(gEffectBattler)))
                 break;
 
@@ -3223,10 +3227,6 @@ void SetMoveEffect(bool32 primary, bool32 certain)
                 {
                     gBattleMons[gEffectBattler].status2 |= sStatusFlagsForMoveEffects[gBattleScripting.moveEffect];
                     gBattlescriptCurrInstr++;
-                } 
-                else 
-                {
-                    gBattlescriptCurrInstr++;
                 }
                 else
                 {
@@ -3360,7 +3360,6 @@ void SetMoveEffect(bool32 primary, bool32 certain)
             case MOVE_EFFECT_SP_DEF_MINUS_1:
             case MOVE_EFFECT_ACC_MINUS_1:
             case MOVE_EFFECT_EVS_MINUS_1:
-                flags = affectsUser;
                 if (affectsUser == MOVE_EFFECT_AFFECTS_USER)
                     flags = MOVE_EFFECT_AFFECTS_USER | MOVE_EFFECT_CERTAIN;
                 else
@@ -6295,16 +6294,6 @@ static void Cmd_moveend(void)
                     }
                 }
 
-                for (battler = 0; battler < MAX_BATTLERS_COUNT; battler++)
-                {
-                    if (gSpecialStatuses[battler].dancerUsedMove)
-                    {
-                        // in case a battler fails to act on a Dancer-called move
-                        turnOnHitmarker = TRUE;
-                        break;
-                    }
-                }
-                
                 if (!(gBattleStruct->lastMoveFailed & gBitTable[gBattlerAttacker]
                     || (!gSpecialStatuses[gBattlerAttacker].dancerUsedMove
                         && gBattleStruct->bouncedMoveIsUsed)))
@@ -9526,8 +9515,8 @@ static void Cmd_various(void)
         u16 battlerAbility = GetBattlerAbility(battler);
 
         if ((battlerAbility == ABILITY_MOXIE
+         || battlerAbility == ABILITY_AIR_FORCE     
          || battlerAbility == ABILITY_CHILLING_NEIGH
-         || battlerAbility == ABILITY_AIR_FORCE         
          || battlerAbility == ABILITY_AS_ONE_ICE_RIDER)
           && HasAttackerFaintedTarget()
           && !NoAliveMonsForEitherParty()

@@ -1967,6 +1967,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_WATER_1, EGG_GROUP_FLYING),
+    #if P_UPDATED_ABILITIES >= GEN_7
         .abilities = { ABILITY_KEEN_EYE, ABILITY_DRIZZLE, ABILITY_RAIN_DISH },
     #else
         .abilities = { ABILITY_KEEN_EYE, ABILITY_NONE, ABILITY_RAIN_DISH },
@@ -8252,13 +8253,13 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
 #if P_FAMILY_CLAMPERL
     [SPECIES_CLAMPERL] =
     {
-        .baseHP        = 35,
-        .baseAttack    = 64,
+        .baseHP        = 65,
+        .baseAttack    = 54,
         .baseDefense   = 85,
-        .baseSpeed     = 32,
+        .baseSpeed     = 42,
         .baseSpAttack  = 74,
-        .baseSpDefense = 55,
-        .types = MON_TYPES(TYPE_WATER),
+        .baseSpDefense = 65,
+        .types = MON_TYPES(TYPE_WATER, TYPE_STEEL),
         .catchRate = 255,
         .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 69 : 142,
         .evYield_Defense = 1,
@@ -8269,7 +8270,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_ERRATIC,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_WATER_1),
-        .abilities = { ABILITY_SHELL_ARMOR, ABILITY_NONE, ABILITY_RATTLED },
+        .abilities = { ABILITY_SHELL_ARMOR, ABILITY_PRESSURE, ABILITY_RATTLED },
         .bodyColor = BODY_COLOR_BLUE,
         .speciesName = _("Clamperl"),
         .cryId = CRY_CLAMPERL,
@@ -8310,13 +8311,13 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
 
     [SPECIES_HUNTAIL] =
     {
-        .baseHP        = 55,
-        .baseAttack    = 114,
-        .baseDefense   = 105,
+        .baseHP        = 95,
+        .baseAttack    = 134,
+        .baseDefense   = 125,
         .baseSpeed     = 52,
-        .baseSpAttack  = 94,
-        .baseSpDefense = 75,
-        .types = MON_TYPES(TYPE_WATER),
+        .baseSpAttack  = 64,
+        .baseSpDefense = 85,
+        .types = MON_TYPES(TYPE_WATER, TYPE_STEEL),
         .catchRate = 60,
         .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 170 : 178,
         .evYield_Attack = 1,
@@ -8327,7 +8328,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_ERRATIC,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_WATER_1),
-        .abilities = { ABILITY_SWIFT_SWIM, ABILITY_NONE, ABILITY_WATER_VEIL },
+        .abilities = { ABILITY_SWIFT_SWIM, ABILITY_PRESSURE, ABILITY_WATER_VEIL },
         .bodyColor = BODY_COLOR_BLUE,
         .speciesName = _("Huntail"),
         .cryId = CRY_HUNTAIL,
@@ -8364,13 +8365,13 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
 
     [SPECIES_GOREBYSS] =
     {
-        .baseHP        = 55,
-        .baseAttack    = 84,
-        .baseDefense   = 105,
-        .baseSpeed     = 52,
-        .baseSpAttack  = 124,
+        .baseHP        = 95,
+        .baseAttack    = 74,
+        .baseDefense   = 90,
+        .baseSpeed     = 87,
+        .baseSpAttack  = 134,
         .baseSpDefense = 75,
-        .types = MON_TYPES(TYPE_WATER),
+        .types = MON_TYPES(TYPE_WATER, TYPE_STEEL),
         .catchRate = 60,
         .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 170 : 178,
         .evYield_SpAttack = 2,
@@ -8380,7 +8381,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_ERRATIC,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_WATER_1),
-        .abilities = { ABILITY_SWIFT_SWIM, ABILITY_NONE, ABILITY_HYDRATION },
+        .abilities = { ABILITY_SWIFT_SWIM, ABILITY_PRESSURE, ABILITY_HYDRATION },
         .bodyColor = BODY_COLOR_PINK,
         .speciesName = _("Gorebyss"),
         .cryId = CRY_GOREBYSS,
@@ -8479,13 +8480,13 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
 #if P_FAMILY_LUVDISC
     [SPECIES_LUVDISC] =
     {
-        .baseHP        = 83,
-        .baseAttack    = 50,
-        .baseDefense   = 55,
-        .baseSpeed     = 97,
-        .baseSpAttack  = 80,
+        .baseHP        = 68,
+        .baseAttack    = 30,
+        .baseDefense   = 70,
+        .baseSpeed     = 107,
+        .baseSpAttack  = 90,
         .baseSpDefense = 65,
-        .types = MON_TYPES(TYPE_WATER, TYPE_FAIRY),
+        .types = MON_TYPES(TYPE_WATER),
         .catchRate = 225,
         .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 116 : 110,
         .evYield_Speed = 1,
@@ -8495,7 +8496,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_WATER_2),
-        .abilities = { ABILITY_SWIFT_SWIM, ABILITY_NONE, ABILITY_HYDRATION },
+        .abilities = { ABILITY_TECHNICIAN, ABILITY_SIMPLE, ABILITY_HYDRATION },
         .bodyColor = BODY_COLOR_PINK,
         .speciesName = _("Luvdisc"),
         .cryId = CRY_LUVDISC,
@@ -8528,7 +8529,6 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         FOOTPRINT(Luvdisc)
         .levelUpLearnset = sLuvdiscLevelUpLearnset,
         .teachableLearnset = sLuvdiscTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 35, SPECIES_ALOMOMOLA}),
     },
 #endif //P_FAMILY_LUVDISC
 

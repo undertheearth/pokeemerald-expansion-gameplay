@@ -1108,3 +1108,7 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/HauntedForest/scripts.inc"
 
 	.include "data/maps/HauntedForest_House/scripts.inc"
+
+	.include "data/maps/Desert_Route111/scripts.inc"
+
+	.include "data/maps/AridoriaTown/scripts.inc"

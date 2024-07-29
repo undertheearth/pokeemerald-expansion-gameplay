@@ -97,7 +97,9 @@
     "LittlerootLake",
     "LittlerootLake_East",
     "LittlerootLake_South",
-    "LittlerootLake_OceanConnection"
+    "LittlerootLake_OceanConnection",
+    "Desert_Route111",
+    "AridoriaTown"
   ],
   "gMapGroup_IndoorLittleroot": [
     "LittlerootTown_BrendansHouse_1F",

@@ -4750,6 +4750,26 @@
       "secondary_tileset": "gTileset_GenericBuilding",
       "border_filepath": "data/layouts/HauntedForest_House/border.bin",
       "blockdata_filepath": "data/layouts/HauntedForest_House/map.bin"
+    },
+    {
+      "id": "LAYOUT_DESERT_ROUTE111",
+      "name": "Desert_Route111_Layout",
+      "width": 80,
+      "height": 90,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Mauville",
+      "border_filepath": "data/layouts/Desert_Route111/border.bin",
+      "blockdata_filepath": "data/layouts/Desert_Route111/map.bin"
+    },
+    {
+      "id": "LAYOUT_ARIDORIA_TOWN",
+      "name": "AridoriaTown_Layout",
+      "width": 60,
+      "height": 55,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Mauville",
+      "border_filepath": "data/layouts/AridoriaTown/border.bin",
+      "blockdata_filepath": "data/layouts/AridoriaTown/map.bin"
     }
   ]
 }
