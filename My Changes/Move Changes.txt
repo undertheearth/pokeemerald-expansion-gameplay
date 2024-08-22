@@ -71,7 +71,7 @@ Effect Chance: 10 - 30
 Twineedle
 Power: 25 - 40
 
-Pin Missle
+Pin Missile
 Accuracy: 95 - 100
 
 Sing
