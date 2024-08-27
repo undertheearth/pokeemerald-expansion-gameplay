@@ -20669,6 +20669,29 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_DYNAMAX] =
         .battleAnimScript = Move_MALIGNANT_CHAIN,
     },
 
+    [MOVE_SYLPH_SONG] =
+    {
+        .name = HANDLE_EXPANDED_MOVE_NAME("Sylph Song", "Sylph Song"),
+        .description = COMPOUND_STRING(
+            "A soothing vocal attack\n"
+            "that may cause sleep."),
+        .effect = EFFECT_HIT,
+        .power = 100,
+        .type = TYPE_FAIRY,
+        .accuracy = 100,
+        .pp = 15,
+        .target = MOVE_TARGET_SELECTED,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_SPECIAL,
+        .windMove = B_EXTRAPOLATED_MOVE_FLAGS,
+        .soundMove = TRUE,
+        .additionalEffects = ADDITIONAL_EFFECTS({
+            .moveEffect = MOVE_EFFECT_SLEEP,
+            .chance = 30,
+        }),
+        .battleAnimScript = Move_SYLPH_SONG,
+    },
+
     // Z-Moves
     [MOVE_BREAKNECK_BLITZ] =
     {

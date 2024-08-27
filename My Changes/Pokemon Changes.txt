@@ -871,7 +871,7 @@ Altaria  - Replaced Flying with Fairy Type - BST = 575 | Ability 2 Change: Fairy
 	Speed: 80 - 90
 	Sp.Atk: 70 - 110
 
-Signature move: Slyph Song - Special Fairy move - 95BP, 100 Accuracy, 15 PP
+Signature move: Sylph Song - Special Fairy move - 95BP, 100 Accuracy, 15 PP
 20% chance to sleep
 Gets Quiver Dance instead of Dragon Dance
 
