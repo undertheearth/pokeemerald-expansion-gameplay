@@ -1,12 +1,3 @@
-# 1 "data/maps/BattleFrontier_BattlePalaceLobby/scripts.pory"
-
-# 2 "data/maps/BattleFrontier_BattlePalaceLobby/scripts.pory"
-.set LOCALID_ATTENDANT_SINGLES, 1
-# 3 "data/maps/BattleFrontier_BattlePalaceLobby/scripts.pory"
-.set LOCALID_ATTENDANT_DOUBLES, 6
-# 4 "data/maps/BattleFrontier_BattlePalaceLobby/scripts.pory"
-
-# 5 "data/maps/BattleFrontier_BattlePalaceLobby/scripts.pory"
 BattleFrontier_BattlePalaceLobby_MapScripts::
 # 6 "data/maps/BattleFrontier_BattlePalaceLobby/scripts.pory"
 	map_script MAP_SCRIPT_ON_FRAME_TABLE, BattleFrontier_BattlePalaceLobby_OnFrame
@@ -28,9 +19,7 @@ BattleFrontier_BattlePalaceLobby_OnWarp:
 BattleFrontier_BattlePalaceLobby_EventScript_TurnPlayerNorth::
 # 15 "data/maps/BattleFrontier_BattlePalaceLobby/scripts.pory"
 	setvar VAR_TEMP_1, 1
-# 16 "data/maps/BattleFrontier_BattlePalaceLobby/scripts.pory"
-	turnobject OBJ_EVENT_ID_PLAYER, DIR_NORTH
-# 17 "data/maps/BattleFrontier_BattlePalaceLobby/scripts.pory"
+	turnobject LOCALID_PLAYER, DIR_NORTH
 	end
 # 18 "data/maps/BattleFrontier_BattlePalaceLobby/scripts.pory"
 
@@ -156,7 +145,7 @@ BattleFrontier_BattlePalaceLobby_EventScript_SaveAfterChallenge::
 	special LoadPlayerParty
 # 79 "data/maps/BattleFrontier_BattlePalaceLobby/scripts.pory"
 	special HealPlayerParty
-# 80 "data/maps/BattleFrontier_BattlePalaceLobby/scripts.pory"
+	callnative UpdateFollowingPokemon
 	palace_save 0
 # 81 "data/maps/BattleFrontier_BattlePalaceLobby/scripts.pory"
 	playse SE_SAVE
@@ -306,7 +295,7 @@ BattleFrontier_BattlePalaceLobby_EventScript_TryEnterChallenge::
 	msgbox BattleFrontier_BattlePalaceLobby_Text_NowSelectThreeMons, MSGBOX_DEFAULT
 # 154 "data/maps/BattleFrontier_BattlePalaceLobby/scripts.pory"
 	fadescreen FADE_TO_BLACK
-# 155 "data/maps/BattleFrontier_BattlePalaceLobby/scripts.pory"
+	callnative RemoveFollowingPokemon
 	call BattleFrontier_EventScript_GetLvlMode
 # 156 "data/maps/BattleFrontier_BattlePalaceLobby/scripts.pory"
 	copyvar VAR_0x8004, VAR_RESULT
@@ -434,7 +423,7 @@ BattleFrontier_BattlePalaceLobby_EventScript_CancelChallengeSaveFailed::
 BattleFrontier_BattlePalaceLobby_EventScript_LoadPartyAndCancelChallenge::
 # 218 "data/maps/BattleFrontier_BattlePalaceLobby/scripts.pory"
 	special LoadPlayerParty
-# 219 "data/maps/BattleFrontier_BattlePalaceLobby/scripts.pory"
+	callnative LoadPlayerParty
 BattleFrontier_BattlePalaceLobby_EventScript_CancelChallenge::
 # 220 "data/maps/BattleFrontier_BattlePalaceLobby/scripts.pory"
 	msgbox BattleFrontier_BattlePalaceLobby_Text_ReturnWhenFortified, MSGBOX_DEFAULT
@@ -486,9 +475,7 @@ BattleFrontier_BattlePalaceLobby_EventScript_WalkToDoor::
 	call_if_eq VAR_FRONTIER_BATTLE_MODE, FRONTIER_MODE_DOUBLES, BattleFrontier_BattlePalaceLobby_EventScript_TalkedToDoublesAttendant
 # 244 "data/maps/BattleFrontier_BattlePalaceLobby/scripts.pory"
 	applymovement VAR_LAST_TALKED, BattleFrontier_BattlePalaceLobby_Movement_WalkToDoor
-# 245 "data/maps/BattleFrontier_BattlePalaceLobby/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, BattleFrontier_BattlePalaceLobby_Movement_WalkToDoor
-# 246 "data/maps/BattleFrontier_BattlePalaceLobby/scripts.pory"
+	applymovement LOCALID_PLAYER, BattleFrontier_BattlePalaceLobby_Movement_WalkToDoor
 	waitmovement 0
 # 247 "data/maps/BattleFrontier_BattlePalaceLobby/scripts.pory"
 	call_if_eq VAR_FRONTIER_BATTLE_MODE, FRONTIER_MODE_SINGLES, BattleFrontier_BattlePalaceLobby_EventScript_OpenSinglesHallDoor
@@ -498,9 +485,7 @@ BattleFrontier_BattlePalaceLobby_EventScript_WalkToDoor::
 	waitdooranim
 # 250 "data/maps/BattleFrontier_BattlePalaceLobby/scripts.pory"
 	applymovement VAR_LAST_TALKED, BattleFrontier_BattlePalaceLobby_Movement_AttendantEnterDoor
-# 251 "data/maps/BattleFrontier_BattlePalaceLobby/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, BattleFrontier_BattlePalaceLobby_Movement_PlayerEnterDoor
-# 252 "data/maps/BattleFrontier_BattlePalaceLobby/scripts.pory"
+	applymovement LOCALID_PLAYER, BattleFrontier_BattlePalaceLobby_Movement_PlayerEnterDoor
 	waitmovement 0
 # 253 "data/maps/BattleFrontier_BattlePalaceLobby/scripts.pory"
 	call_if_eq VAR_FRONTIER_BATTLE_MODE, FRONTIER_MODE_SINGLES, BattleFrontier_BattlePalaceLobby_EventScript_CloseSinglesHallDoor
@@ -514,17 +499,13 @@ BattleFrontier_BattlePalaceLobby_EventScript_WalkToDoor::
 
 # 258 "data/maps/BattleFrontier_BattlePalaceLobby/scripts.pory"
 BattleFrontier_BattlePalaceLobby_EventScript_TalkedToSinglesAttendant::
-# 259 "data/maps/BattleFrontier_BattlePalaceLobby/scripts.pory"
-	setvar VAR_LAST_TALKED, LOCALID_ATTENDANT_SINGLES
-# 260 "data/maps/BattleFrontier_BattlePalaceLobby/scripts.pory"
+	setvar VAR_LAST_TALKED, LOCALID_PALACE_ATTENDANT_SINGLES
 	return
 # 261 "data/maps/BattleFrontier_BattlePalaceLobby/scripts.pory"
 
 # 262 "data/maps/BattleFrontier_BattlePalaceLobby/scripts.pory"
 BattleFrontier_BattlePalaceLobby_EventScript_TalkedToDoublesAttendant::
-# 263 "data/maps/BattleFrontier_BattlePalaceLobby/scripts.pory"
-	setvar VAR_LAST_TALKED, LOCALID_ATTENDANT_DOUBLES
-# 264 "data/maps/BattleFrontier_BattlePalaceLobby/scripts.pory"
+	setvar VAR_LAST_TALKED, LOCALID_PALACE_ATTENDANT_DOUBLES
 	return
 # 265 "data/maps/BattleFrontier_BattlePalaceLobby/scripts.pory"
 

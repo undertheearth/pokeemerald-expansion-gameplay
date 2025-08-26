@@ -1,10 +1,3 @@
-# 1 "data/maps/Route104_PrettyPetalFlowerShop/scripts.pory"
-
-# 2 "data/maps/Route104_PrettyPetalFlowerShop/scripts.pory"
-.set LOCALID_OWNER, 1
-# 3 "data/maps/Route104_PrettyPetalFlowerShop/scripts.pory"
-
-# 4 "data/maps/Route104_PrettyPetalFlowerShop/scripts.pory"
 Route104_PrettyPetalFlowerShop_MapScripts::
 # 5 "data/maps/Route104_PrettyPetalFlowerShop/scripts.pory"
 	map_script MAP_SCRIPT_ON_TRANSITION, Route104_PrettyPetalFlowerShop_OnTransition
@@ -28,9 +21,7 @@ Route104_PrettyPetalFlowerShop_OnTransition:
 
 # 15 "data/maps/Route104_PrettyPetalFlowerShop/scripts.pory"
 Route104_PrettyPetalFlowerShop_EventScript_MoveShopOwner::
-# 16 "data/maps/Route104_PrettyPetalFlowerShop/scripts.pory"
-	setobjectxyperm LOCALID_OWNER, 4, 6
-# 17 "data/maps/Route104_PrettyPetalFlowerShop/scripts.pory"
+	setobjectxyperm LOCALID_FLOWER_SHOP_OWNER, 4, 6
 	end
 # 18 "data/maps/Route104_PrettyPetalFlowerShop/scripts.pory"
 
@@ -220,17 +211,14 @@ Flower_Shop_Herbs::
 
 
 	.align 2
-# 115 "data/maps/Route104_PrettyPetalFlowerShop/scripts.pory"
-FLOWER_HERBS:
-# 116 "data/maps/Route104_PrettyPetalFlowerShop/scripts.pory"
-	.2byte ITEM_MENTAL_HERB
-# 117 "data/maps/Route104_PrettyPetalFlowerShop/scripts.pory"
-	.2byte ITEM_MIRROR_HERB
-# 118 "data/maps/Route104_PrettyPetalFlowerShop/scripts.pory"
-	.2byte ITEM_POWER_HERB
-# 119 "data/maps/Route104_PrettyPetalFlowerShop/scripts.pory"
-	.2byte ITEM_WHITE_HERB
-	.2byte ITEM_NONE
+Route104_PrettyPetalFlowerShop_Pokemart_Plants:
+	.2byte DECOR_RED_PLANT
+	.2byte DECOR_TROPICAL_PLANT
+	.2byte DECOR_PRETTY_FLOWERS
+	.2byte DECOR_COLORFUL_PLANT
+	.2byte DECOR_BIG_PLANT
+	.2byte DECOR_GORGEOUS_PLANT
+	pokemartlistend
 
 Flower_Shop_Herbs_Text_0:
 # 107 "data/maps/Route104_PrettyPetalFlowerShop/scripts.pory"

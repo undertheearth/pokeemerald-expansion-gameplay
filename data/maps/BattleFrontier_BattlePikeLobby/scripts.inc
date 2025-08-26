@@ -1,10 +1,3 @@
-# 1 "data/maps/BattleFrontier_BattlePikeLobby/scripts.pory"
-
-# 2 "data/maps/BattleFrontier_BattlePikeLobby/scripts.pory"
-.set LOCALID_ATTENDANT, 1
-# 3 "data/maps/BattleFrontier_BattlePikeLobby/scripts.pory"
-
-# 4 "data/maps/BattleFrontier_BattlePikeLobby/scripts.pory"
 BattleFrontier_BattlePikeLobby_MapScripts::
 # 5 "data/maps/BattleFrontier_BattlePikeLobby/scripts.pory"
 	map_script MAP_SCRIPT_ON_FRAME_TABLE, BattleFrontier_BattlePikeLobby_OnFrame
@@ -40,9 +33,7 @@ BattleFrontier_BattlePikeLobby_OnWarp:
 BattleFrontier_BattlePikeLobby_EventScript_TurnPlayerNorth::
 # 21 "data/maps/BattleFrontier_BattlePikeLobby/scripts.pory"
 	setvar VAR_TEMP_1, 1
-# 22 "data/maps/BattleFrontier_BattlePikeLobby/scripts.pory"
-	turnobject OBJ_EVENT_ID_PLAYER, DIR_NORTH
-# 23 "data/maps/BattleFrontier_BattlePikeLobby/scripts.pory"
+	turnobject LOCALID_PLAYER, DIR_NORTH
 	end
 # 24 "data/maps/BattleFrontier_BattlePikeLobby/scripts.pory"
 
@@ -122,7 +113,7 @@ BattleFrontier_BattlePikeLobby_EventScript_GiveBattlePoints::
 	special LoadPlayerParty
 # 62 "data/maps/BattleFrontier_BattlePikeLobby/scripts.pory"
 	special HealPlayerParty
-# 63 "data/maps/BattleFrontier_BattlePikeLobby/scripts.pory"
+	callnative UpdateFollowingPokemon
 	pike_resethelditems
 # 64 "data/maps/BattleFrontier_BattlePikeLobby/scripts.pory"
 	message BattleFrontier_BattlePikeLobby_Text_ShallRecordResults
@@ -164,7 +155,7 @@ BattleFrontier_BattlePikeLobby_EventScript_LostChallenge::
 	special LoadPlayerParty
 # 83 "data/maps/BattleFrontier_BattlePikeLobby/scripts.pory"
 	special HealPlayerParty
-# 84 "data/maps/BattleFrontier_BattlePikeLobby/scripts.pory"
+	callnative UpdateFollowingPokemon
 	pike_resethelditems
 # 85 "data/maps/BattleFrontier_BattlePikeLobby/scripts.pory"
 	pike_save 0
@@ -242,7 +233,7 @@ BattleFrontier_BattlePikeLobby_EventScript_TryEnterChallenge::
 	msgbox BattleFrontier_BattlePikeLobby_Text_PleaseChooseThreeMons, MSGBOX_DEFAULT
 # 122 "data/maps/BattleFrontier_BattlePikeLobby/scripts.pory"
 	fadescreen FADE_TO_BLACK
-# 123 "data/maps/BattleFrontier_BattlePikeLobby/scripts.pory"
+	callnative RemoveFollowingPokemon
 	call BattleFrontier_EventScript_GetLvlMode
 # 124 "data/maps/BattleFrontier_BattlePikeLobby/scripts.pory"
 	copyvar VAR_0x8004, VAR_RESULT
@@ -370,7 +361,7 @@ BattleFrontier_BattlePikeLobby_EventScript_CancelChallengeSaveFailed::
 BattleFrontier_BattlePikeLobby_EventScript_LoadPartyAndCancelChallenge::
 # 186 "data/maps/BattleFrontier_BattlePikeLobby/scripts.pory"
 	special LoadPlayerParty
-# 187 "data/maps/BattleFrontier_BattlePikeLobby/scripts.pory"
+	callnative UpdateFollowingPokemon
 BattleFrontier_BattlePikeLobby_EventScript_CancelChallenge::
 # 188 "data/maps/BattleFrontier_BattlePikeLobby/scripts.pory"
 	msgbox BattleFrontier_BattlePikeLobby_Text_LookForwardToSeeingYou, MSGBOX_DEFAULT
@@ -400,11 +391,8 @@ BattleFrontier_BattlePikeLobby_EventScript_ShowResults::
 
 # 201 "data/maps/BattleFrontier_BattlePikeLobby/scripts.pory"
 BattleFrontier_BattlePikeLobby_EventScript_WalkToCorridor::
-# 202 "data/maps/BattleFrontier_BattlePikeLobby/scripts.pory"
-	applymovement LOCALID_ATTENDANT, BattleFrontier_BattlePikeLobby_Movement_AttendantWalkToCorridor
-# 203 "data/maps/BattleFrontier_BattlePikeLobby/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, BattleFrontier_BattlePikeLobby_Movement_PlayerWalkToCorridor
-# 204 "data/maps/BattleFrontier_BattlePikeLobby/scripts.pory"
+	applymovement LOCALID_PIKE_LOBBY_ATTENDANT, BattleFrontier_BattlePikeLobby_Movement_AttendantWalkToCorridor
+	applymovement LOCALID_PLAYER, BattleFrontier_BattlePikeLobby_Movement_PlayerWalkToCorridor
 	waitmovement 0
 # 205 "data/maps/BattleFrontier_BattlePikeLobby/scripts.pory"
 	return

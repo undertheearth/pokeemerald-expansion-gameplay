@@ -1,18 +1,7 @@
-# 1 "data/maps/BattleFrontier_BattleDomeBattleRoom/scripts.pory"
-
-# 2 "data/maps/BattleFrontier_BattleDomeBattleRoom/scripts.pory"
-.set LOCALID_ANNOUNCER, 1
-# 3 "data/maps/BattleFrontier_BattleDomeBattleRoom/scripts.pory"
-.set LOCALID_AUDIENCE_TWIN, 2
-# 4 "data/maps/BattleFrontier_BattleDomeBattleRoom/scripts.pory"
-.set LOCALID_AUDIENCE_WALKING, 6
-# 5 "data/maps/BattleFrontier_BattleDomeBattleRoom/scripts.pory"
-.set LOCALID_REFEREE, 9
-# 6 "data/maps/BattleFrontier_BattleDomeBattleRoom/scripts.pory"
-.set LOCALID_PLAYER, 13
-# 7 "data/maps/BattleFrontier_BattleDomeBattleRoom/scripts.pory"
-.set LOCALID_OPPONENT, 15
-# 8 "data/maps/BattleFrontier_BattleDomeBattleRoom/scripts.pory"
+@ On this map the player will automatically walk into the room, but the camera is supposed to remain still.
+@ To do this GF sets the player (LOCALID_PLAYER) invisible and creates a fake player object (LOCALID_DOME_PLAYER).
+@ The graphics of this fake player object are represented with VAR_OBJ_GFX_ID_1.
+@ The graphics of the opponent are represented with VAR_OBJ_GFX_ID_0, which will ultimately be set by dome_setopponentgfx.
 
 # 9 "data/maps/BattleFrontier_BattleDomeBattleRoom/scripts.pory"
 .set NO_DRAW,       0
@@ -38,7 +27,7 @@ BattleFrontier_BattleDomeBattleRoom_MapScripts::
 
 # 20 "data/maps/BattleFrontier_BattleDomeBattleRoom/scripts.pory"
 BattleFrontier_BattleDomeBattleRoom_OnTransition:
-# 21 "data/maps/BattleFrontier_BattleDomeBattleRoom/scripts.pory"
+	setflag FLAG_TEMP_HIDE_FOLLOWER
 	dome_setopponentgfx
 # 22 "data/maps/BattleFrontier_BattleDomeBattleRoom/scripts.pory"
 	frontier_get FRONTIER_DATA_BATTLE_NUM
@@ -96,9 +85,7 @@ BattleFrontier_BattleDomeBattleRoom_EventScript_EnterRoom::
 	call BattleFrontier_BattleDomeBattleRoom_EventScript_GetRoundNum
 # 49 "data/maps/BattleFrontier_BattleDomeBattleRoom/scripts.pory"
 	call_if_eq VAR_RESULT, DOME_ROUND1, BattleFrontier_BattleDomeBattleRoom_EventScript_TryDoAudienceMemberWalkToSeat
-# 50 "data/maps/BattleFrontier_BattleDomeBattleRoom/scripts.pory"
-	applymovement LOCALID_ANNOUNCER, Common_Movement_WalkInPlaceDown
-# 51 "data/maps/BattleFrontier_BattleDomeBattleRoom/scripts.pory"
+	applymovement LOCALID_DOME_ANNOUNCER, Common_Movement_WalkInPlaceDown
 	waitmovement 0
 # 52 "data/maps/BattleFrontier_BattleDomeBattleRoom/scripts.pory"
 	call BattleFrontier_BattleDomeBattleRoom_EventScript_AnnouncePlayer
@@ -106,25 +93,19 @@ BattleFrontier_BattleDomeBattleRoom_EventScript_EnterRoom::
 	msgbox BattleFrontier_BattleDomeBattleRoom_Text_PlayerHasEnteredDome, MSGBOX_DEFAULT
 # 54 "data/maps/BattleFrontier_BattleDomeBattleRoom/scripts.pory"
 	closemessage
-# 55 "data/maps/BattleFrontier_BattleDomeBattleRoom/scripts.pory"
-	showobjectat LOCALID_PLAYER, MAP_BATTLE_FRONTIER_BATTLE_DOME_BATTLE_ROOM
-# 56 "data/maps/BattleFrontier_BattleDomeBattleRoom/scripts.pory"
+	showobjectat LOCALID_DOME_PLAYER, MAP_BATTLE_FRONTIER_BATTLE_DOME_BATTLE_ROOM
 	goto_if_ne VAR_TEMP_F, DOME_FINAL, BattleFrontier_BattleDomeBattleRoom_EventScript_PlayerEnter
 # 57 "data/maps/BattleFrontier_BattleDomeBattleRoom/scripts.pory"
 	goto_if_ne VAR_TEMP_E, FRONTIER_BRAIN_NOT_READY, BattleFrontier_BattleDomeBattleRoom_EventScript_PlayerEnterForTucker
 # 58 "data/maps/BattleFrontier_BattleDomeBattleRoom/scripts.pory"
 BattleFrontier_BattleDomeBattleRoom_EventScript_PlayerEnter::
-# 59 "data/maps/BattleFrontier_BattleDomeBattleRoom/scripts.pory"
-	applymovement LOCALID_PLAYER, BattleFrontier_BattleDomeBattleRoom_Movement_PlayerEnter
-# 60 "data/maps/BattleFrontier_BattleDomeBattleRoom/scripts.pory"
+	applymovement LOCALID_DOME_PLAYER, BattleFrontier_BattleDomeBattleRoom_Movement_PlayerEnter
 	goto BattleFrontier_BattleDomeBattleRoom_EventScript_AudienceReactToPlayer
 # 61 "data/maps/BattleFrontier_BattleDomeBattleRoom/scripts.pory"
 
 # 62 "data/maps/BattleFrontier_BattleDomeBattleRoom/scripts.pory"
 BattleFrontier_BattleDomeBattleRoom_EventScript_PlayerEnterForTucker::
-# 63 "data/maps/BattleFrontier_BattleDomeBattleRoom/scripts.pory"
-	applymovement LOCALID_PLAYER, BattleFrontier_BattleDomeBattleRoom_Movement_PlayerEnterForTucker
-# 64 "data/maps/BattleFrontier_BattleDomeBattleRoom/scripts.pory"
+	applymovement LOCALID_DOME_PLAYER, BattleFrontier_BattleDomeBattleRoom_Movement_PlayerEnterForTucker
 BattleFrontier_BattleDomeBattleRoom_EventScript_AudienceReactToPlayer::
 # 65 "data/maps/BattleFrontier_BattleDomeBattleRoom/scripts.pory"
 	playse SE_M_ENCORE2
@@ -144,11 +125,8 @@ BattleFrontier_BattleDomeBattleRoom_EventScript_BattleOpponent::
 	msgbox BattleFrontier_BattleDomeBattleRoom_Text_PlayerVersusTrainer, MSGBOX_DEFAULT
 # 73 "data/maps/BattleFrontier_BattleDomeBattleRoom/scripts.pory"
 	closemessage
-# 74 "data/maps/BattleFrontier_BattleDomeBattleRoom/scripts.pory"
-	applymovement LOCALID_PLAYER, BattleFrontier_BattleDomeBattleRoom_Movement_PlayerStepForward
-# 75 "data/maps/BattleFrontier_BattleDomeBattleRoom/scripts.pory"
-	applymovement LOCALID_OPPONENT, BattleFrontier_BattleDomeBattleRoom_Movement_OpponentStepForward
-# 76 "data/maps/BattleFrontier_BattleDomeBattleRoom/scripts.pory"
+	applymovement LOCALID_DOME_PLAYER, BattleFrontier_BattleDomeBattleRoom_Movement_PlayerStepForward
+	applymovement LOCALID_DOME_OPPONENT, BattleFrontier_BattleDomeBattleRoom_Movement_OpponentStepForward
 	waitmovement 0
 # 77 "data/maps/BattleFrontier_BattleDomeBattleRoom/scripts.pory"
 	tower_getopponentintro 0
@@ -184,19 +162,13 @@ BattleFrontier_BattleDomeBattleRoom_EventScript_Draw::
 	call BattleFrontier_BattleDomeBattleRoom_EventScript_AudienceLookAround
 # 93 "data/maps/BattleFrontier_BattleDomeBattleRoom/scripts.pory"
 	delay 60
-# 94 "data/maps/BattleFrontier_BattleDomeBattleRoom/scripts.pory"
-	applymovement LOCALID_REFEREE, BattleFrontier_BattleDomeBattleRoom_Movement_RefereeEnter
-# 95 "data/maps/BattleFrontier_BattleDomeBattleRoom/scripts.pory"
+	applymovement LOCALID_DOME_REFEREE, BattleFrontier_BattleDomeBattleRoom_Movement_RefereeEnter
 	waitmovement 0
-# 96 "data/maps/BattleFrontier_BattleDomeBattleRoom/scripts.pory"
-	applymovement LOCALID_ANNOUNCER, BattleFrontier_BattleDomeBattleRoom_Movement_AnnouncerFaceLeft
-# 97 "data/maps/BattleFrontier_BattleDomeBattleRoom/scripts.pory"
+	applymovement LOCALID_DOME_ANNOUNCER, BattleFrontier_BattleDomeBattleRoom_Movement_AnnouncerFaceLeft
 	waitmovement 0
 # 98 "data/maps/BattleFrontier_BattleDomeBattleRoom/scripts.pory"
 	delay 180
-# 99 "data/maps/BattleFrontier_BattleDomeBattleRoom/scripts.pory"
-	applymovement LOCALID_REFEREE, BattleFrontier_BattleDomeBattleRoom_Movement_RefereeExit
-# 100 "data/maps/BattleFrontier_BattleDomeBattleRoom/scripts.pory"
+	applymovement LOCALID_DOME_REFEREE, BattleFrontier_BattleDomeBattleRoom_Movement_RefereeExit
 	waitmovement 0
 # 101 "data/maps/BattleFrontier_BattleDomeBattleRoom/scripts.pory"
 	goto_if_eq VAR_TEMP_2, DRAW_TUCKER, BattleFrontier_BattleDomeBattleRoom_EventScript_LostToOpponent @ Tucker always wins on a draw
@@ -208,9 +180,7 @@ BattleFrontier_BattleDomeBattleRoom_EventScript_Draw::
 	case 1, BattleFrontier_BattleDomeBattleRoom_EventScript_DefeatedOpponent
 # 105 "data/maps/BattleFrontier_BattleDomeBattleRoom/scripts.pory"
 BattleFrontier_BattleDomeBattleRoom_EventScript_LostToOpponent::
-# 106 "data/maps/BattleFrontier_BattleDomeBattleRoom/scripts.pory"
-	applymovement LOCALID_ANNOUNCER, Common_Movement_WalkInPlaceDown
-# 107 "data/maps/BattleFrontier_BattleDomeBattleRoom/scripts.pory"
+	applymovement LOCALID_DOME_ANNOUNCER, Common_Movement_WalkInPlaceDown
 	waitmovement 0
 # 108 "data/maps/BattleFrontier_BattleDomeBattleRoom/scripts.pory"
 	dome_getopponentname
@@ -274,9 +244,7 @@ BattleFrontier_BattleDomeBattleRoom_EventScript_TuckerWonDraw::
 
 # 138 "data/maps/BattleFrontier_BattleDomeBattleRoom/scripts.pory"
 BattleFrontier_BattleDomeBattleRoom_EventScript_DefeatedOpponent::
-# 139 "data/maps/BattleFrontier_BattleDomeBattleRoom/scripts.pory"
-	applymovement LOCALID_ANNOUNCER, Common_Movement_WalkInPlaceDown
-# 140 "data/maps/BattleFrontier_BattleDomeBattleRoom/scripts.pory"
+	applymovement LOCALID_DOME_ANNOUNCER, Common_Movement_WalkInPlaceDown
 	waitmovement 0
 # 141 "data/maps/BattleFrontier_BattleDomeBattleRoom/scripts.pory"
 	call_if_eq VAR_TEMP_2, NO_DRAW, BattleFrontier_BattleDomeBattleRoom_EventScript_PlayerWon
@@ -312,9 +280,7 @@ BattleFrontier_BattleDomeBattleRoom_EventScript_DefeatedOpponent::
 
 # 157 "data/maps/BattleFrontier_BattleDomeBattleRoom/scripts.pory"
 BattleFrontier_BattleDomeBattleRoom_EventScript_WonTourney::
-# 158 "data/maps/BattleFrontier_BattleDomeBattleRoom/scripts.pory"
-	applymovement LOCALID_PLAYER, BattleFrontier_BattleDomeBattleRoom_Movement_PlayerApproachAudience
-# 159 "data/maps/BattleFrontier_BattleDomeBattleRoom/scripts.pory"
+	applymovement LOCALID_DOME_PLAYER, BattleFrontier_BattleDomeBattleRoom_Movement_PlayerApproachAudience
 	waitmovement 0
 # 160 "data/maps/BattleFrontier_BattleDomeBattleRoom/scripts.pory"
 	frontier_get FRONTIER_DATA_LVL_MODE
@@ -684,13 +650,9 @@ BattleFrontier_BattleDomeBattleRoom_EventScript_AnnounceTuckerGold::
 BattleFrontier_BattleDomeBattleRoom_EventScript_TuckerEnter::
 # 343 "data/maps/BattleFrontier_BattleDomeBattleRoom/scripts.pory"
 	closemessage
-# 344 "data/maps/BattleFrontier_BattleDomeBattleRoom/scripts.pory"
-	applymovement LOCALID_AUDIENCE_TWIN, BattleFrontier_BattleDomeBattleRoom_Movement_AudienceTwinJump
-# 345 "data/maps/BattleFrontier_BattleDomeBattleRoom/scripts.pory"
-	applymovement LOCALID_ANNOUNCER, BattleFrontier_BattleDomeBattleRoom_Movement_AnnouncerMoveForTuckerEntrance
-# 346 "data/maps/BattleFrontier_BattleDomeBattleRoom/scripts.pory"
-	applymovement LOCALID_OPPONENT, BattleFrontier_BattleDomeBattleRoom_Movement_TuckerEnterAndDance
-# 347 "data/maps/BattleFrontier_BattleDomeBattleRoom/scripts.pory"
+	applymovement LOCALID_DOME_AUDIENCE_TWIN, BattleFrontier_BattleDomeBattleRoom_Movement_AudienceTwinJump
+	applymovement LOCALID_DOME_ANNOUNCER, BattleFrontier_BattleDomeBattleRoom_Movement_AnnouncerMoveForTuckerEntrance
+	applymovement LOCALID_DOME_OPPONENT, BattleFrontier_BattleDomeBattleRoom_Movement_TuckerEnterAndDance
 	playse SE_M_ENCORE2
 # 348 "data/maps/BattleFrontier_BattleDomeBattleRoom/scripts.pory"
 	call BattleFrontier_BattleDomeBattleRoom_EventScript_AudienceLookAround
@@ -772,9 +734,7 @@ BattleFrontier_BattleDomeBattleRoom_EventScript_BattleTuckerSilver::
 	goto_if_ne VAR_RESULT, 0, BattleFrontier_BattleDomeBattleRoom_EventScript_WonTourney
 # 387 "data/maps/BattleFrontier_BattleDomeBattleRoom/scripts.pory"
 	closemessage
-# 388 "data/maps/BattleFrontier_BattleDomeBattleRoom/scripts.pory"
-	applymovement LOCALID_OPPONENT, BattleFrontier_BattleDomeBattleRoom_Movement_TuckerApproachPlayer
-# 389 "data/maps/BattleFrontier_BattleDomeBattleRoom/scripts.pory"
+	applymovement LOCALID_DOME_OPPONENT, BattleFrontier_BattleDomeBattleRoom_Movement_TuckerApproachPlayer
 	waitmovement 0
 # 390 "data/maps/BattleFrontier_BattleDomeBattleRoom/scripts.pory"
 	msgbox BattleFrontier_BattleDomeBattleRoom_Text_SeeYourFrontierPass, MSGBOX_DEFAULT
@@ -828,9 +788,7 @@ BattleFrontier_BattleDomeBattleRoom_EventScript_BattleTuckerGold::
 	goto_if_eq VAR_RESULT, 2, BattleFrontier_BattleDomeBattleRoom_EventScript_WonTourney
 # 415 "data/maps/BattleFrontier_BattleDomeBattleRoom/scripts.pory"
 	closemessage
-# 416 "data/maps/BattleFrontier_BattleDomeBattleRoom/scripts.pory"
-	applymovement LOCALID_OPPONENT, BattleFrontier_BattleDomeBattleRoom_Movement_TuckerApproachPlayer
-# 417 "data/maps/BattleFrontier_BattleDomeBattleRoom/scripts.pory"
+	applymovement LOCALID_DOME_OPPONENT, BattleFrontier_BattleDomeBattleRoom_Movement_TuckerApproachPlayer
 	waitmovement 0
 # 418 "data/maps/BattleFrontier_BattleDomeBattleRoom/scripts.pory"
 	msgbox BattleFrontier_BattleDomeBattleRoom_Text_NeverLostWhenPowerUnleashed, MSGBOX_DEFAULT
@@ -856,11 +814,8 @@ BattleFrontier_BattleDomeBattleRoom_EventScript_DoTuckerBattle::
 	msgbox BattleFrontier_BattleDomeBattleRoom_Text_PlayerVersusTucker, MSGBOX_DEFAULT
 # 429 "data/maps/BattleFrontier_BattleDomeBattleRoom/scripts.pory"
 	closemessage
-# 430 "data/maps/BattleFrontier_BattleDomeBattleRoom/scripts.pory"
-	applymovement LOCALID_PLAYER, BattleFrontier_BattleDomeBattleRoom_Movement_PlayerStepForward2
-# 431 "data/maps/BattleFrontier_BattleDomeBattleRoom/scripts.pory"
-	applymovement LOCALID_OPPONENT, BattleFrontier_BattleDomeBattleRoom_Movement_TuckerStepForward
-# 432 "data/maps/BattleFrontier_BattleDomeBattleRoom/scripts.pory"
+	applymovement LOCALID_DOME_PLAYER, BattleFrontier_BattleDomeBattleRoom_Movement_PlayerStepForward2
+	applymovement LOCALID_DOME_OPPONENT, BattleFrontier_BattleDomeBattleRoom_Movement_TuckerStepForward
 	waitmovement 0
 # 433 "data/maps/BattleFrontier_BattleDomeBattleRoom/scripts.pory"
 	call BattleFrontier_BattleDomeBattleRoom_EventScript_DoDomeBattle
@@ -928,17 +883,13 @@ BattleFrontier_BattleDomeBattleRoom_OnWarp:
 
 # 465 "data/maps/BattleFrontier_BattleDomeBattleRoom/scripts.pory"
 BattleFrontier_BattleDomeBattleRoom_EventScript_SetUpObjects::
-# 466 "data/maps/BattleFrontier_BattleDomeBattleRoom/scripts.pory"
-	hideobjectat LOCALID_PLAYER, MAP_BATTLE_FRONTIER_BATTLE_DOME_BATTLE_ROOM
-# 467 "data/maps/BattleFrontier_BattleDomeBattleRoom/scripts.pory"
+	hideobjectat LOCALID_DOME_PLAYER, MAP_BATTLE_FRONTIER_BATTLE_DOME_BATTLE_ROOM
 	call BattleFrontier_BattleDomeBattleRoom_EventScript_AddAudience
 # 468 "data/maps/BattleFrontier_BattleDomeBattleRoom/scripts.pory"
 	call BattleFrontier_BattleDomeBattleRoom_EventScript_SetPlayerGfx
 # 469 "data/maps/BattleFrontier_BattleDomeBattleRoom/scripts.pory"
 	setvar VAR_TEMP_1, 1
-# 470 "data/maps/BattleFrontier_BattleDomeBattleRoom/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, BattleFrontier_BattleDomeBattleRoom_Movement_SetInvisible
-# 471 "data/maps/BattleFrontier_BattleDomeBattleRoom/scripts.pory"
+	applymovement LOCALID_PLAYER, BattleFrontier_BattleDomeBattleRoom_Movement_SetInvisible
 	frontier_get FRONTIER_DATA_BATTLE_NUM
 # 472 "data/maps/BattleFrontier_BattleDomeBattleRoom/scripts.pory"
 	goto_if_ne VAR_RESULT, DOME_FINAL, BattleFrontier_BattleDomeBattleRoom_EventScript_EndSetUpObjects
@@ -950,15 +901,11 @@ BattleFrontier_BattleDomeBattleRoom_EventScript_SetUpObjects::
 	goto_if_eq VAR_RESULT, FRONTIER_BRAIN_NOT_READY, BattleFrontier_BattleDomeBattleRoom_EventScript_EndSetUpObjects
 # 476 "data/maps/BattleFrontier_BattleDomeBattleRoom/scripts.pory"
 	call BattleFrontier_EventScript_SetBrainObjectGfx
-# 477 "data/maps/BattleFrontier_BattleDomeBattleRoom/scripts.pory"
-	setobjectxyperm LOCALID_OPPONENT, 13, 9
-# 478 "data/maps/BattleFrontier_BattleDomeBattleRoom/scripts.pory"
-	removeobject LOCALID_OPPONENT
-# 479 "data/maps/BattleFrontier_BattleDomeBattleRoom/scripts.pory"
-	addobject LOCALID_OPPONENT
-# 480 "data/maps/BattleFrontier_BattleDomeBattleRoom/scripts.pory"
-	applymovement LOCALID_OPPONENT, BattleFrontier_BattleDomeBattleRoom_Movement_SetInvisibleFacingUp
-# 481 "data/maps/BattleFrontier_BattleDomeBattleRoom/scripts.pory"
+	setobjectxyperm LOCALID_DOME_OPPONENT, 13, 9
+	removeobject LOCALID_DOME_OPPONENT
+	delay 1
+	addobject LOCALID_DOME_OPPONENT
+	applymovement LOCALID_DOME_OPPONENT, BattleFrontier_BattleDomeBattleRoom_Movement_SetInvisibleFacingUp
 BattleFrontier_BattleDomeBattleRoom_EventScript_EndSetUpObjects::
 # 482 "data/maps/BattleFrontier_BattleDomeBattleRoom/scripts.pory"
 	end
@@ -1742,11 +1689,8 @@ BattleFrontier_BattleDomeBattleRoom_EventScript_SetWalkingAudienceMemberPos::
 	copyvar VAR_TEMP_D, VAR_RESULT
 # 872 "data/maps/BattleFrontier_BattleDomeBattleRoom/scripts.pory"
 	goto_if_eq VAR_TEMP_D, 0, Common_EventScript_NopReturn
-# 873 "data/maps/BattleFrontier_BattleDomeBattleRoom/scripts.pory"
-	setobjectxyperm LOCALID_AUDIENCE_WALKING, 2, 0
-# 874 "data/maps/BattleFrontier_BattleDomeBattleRoom/scripts.pory"
-	setobjectmovementtype LOCALID_AUDIENCE_WALKING, MOVEMENT_TYPE_FACE_RIGHT
-# 875 "data/maps/BattleFrontier_BattleDomeBattleRoom/scripts.pory"
+	setobjectxyperm LOCALID_DOME_AUDIENCE_WALKING, 2, 0
+	setobjectmovementtype LOCALID_DOME_AUDIENCE_WALKING, MOVEMENT_TYPE_FACE_RIGHT
 	return
 # 876 "data/maps/BattleFrontier_BattleDomeBattleRoom/scripts.pory"
 
@@ -1754,9 +1698,7 @@ BattleFrontier_BattleDomeBattleRoom_EventScript_SetWalkingAudienceMemberPos::
 BattleFrontier_BattleDomeBattleRoom_EventScript_TryDoAudienceMemberWalkToSeat::
 # 878 "data/maps/BattleFrontier_BattleDomeBattleRoom/scripts.pory"
 	goto_if_eq VAR_TEMP_D, 0, Common_EventScript_NopReturn
-# 879 "data/maps/BattleFrontier_BattleDomeBattleRoom/scripts.pory"
-	applymovement LOCALID_AUDIENCE_WALKING, BattleFrontier_BattleDomeBattleRoom_Movement_AudienceMemberWalkToSeat
-# 880 "data/maps/BattleFrontier_BattleDomeBattleRoom/scripts.pory"
+	applymovement LOCALID_DOME_AUDIENCE_WALKING, BattleFrontier_BattleDomeBattleRoom_Movement_AudienceMemberWalkToSeat
 	return
 # 881 "data/maps/BattleFrontier_BattleDomeBattleRoom/scripts.pory"
 

@@ -1,12 +1,3 @@
-# 1 "data/maps/BattleFrontier_BattlePyramidLobby/scripts.pory"
-
-# 2 "data/maps/BattleFrontier_BattlePyramidLobby/scripts.pory"
-.set LOCALID_ATTENDANT, 1
-# 3 "data/maps/BattleFrontier_BattlePyramidLobby/scripts.pory"
-.set LOCALID_HINT_GIVER, 2
-# 4 "data/maps/BattleFrontier_BattlePyramidLobby/scripts.pory"
-
-# 5 "data/maps/BattleFrontier_BattlePyramidLobby/scripts.pory"
 BattleFrontier_BattlePyramidLobby_MapScripts::
 # 6 "data/maps/BattleFrontier_BattlePyramidLobby/scripts.pory"
 	map_script MAP_SCRIPT_ON_FRAME_TABLE, BattleFrontier_BattlePyramidLobby_OnFrame
@@ -30,9 +21,7 @@ BattleFrontier_BattlePyramidLobby_OnWarp:
 BattleFrontier_BattlePyramidLobby_EventScript_TurnPlayerNorth:
 # 16 "data/maps/BattleFrontier_BattlePyramidLobby/scripts.pory"
 	setvar VAR_TEMP_1, 1
-# 17 "data/maps/BattleFrontier_BattlePyramidLobby/scripts.pory"
-	turnobject OBJ_EVENT_ID_PLAYER, DIR_NORTH
-# 18 "data/maps/BattleFrontier_BattlePyramidLobby/scripts.pory"
+	turnobject LOCALID_PLAYER, DIR_NORTH
 	end
 # 19 "data/maps/BattleFrontier_BattlePyramidLobby/scripts.pory"
 
@@ -122,7 +111,7 @@ BattleFrontier_BattlePyramidLobby_EventScript_GiveBattlePoints::
 	pyramid_clearhelditems
 # 62 "data/maps/BattleFrontier_BattlePyramidLobby/scripts.pory"
 	special HealPlayerParty
-# 63 "data/maps/BattleFrontier_BattlePyramidLobby/scripts.pory"
+	callnative UpdateFollowingPokemon
 	message BattleFrontier_BattlePyramidLobby_Text_UsedBattleBagWillBeKept
 # 64 "data/maps/BattleFrontier_BattlePyramidLobby/scripts.pory"
 	waitmessage
@@ -170,7 +159,7 @@ BattleFrontier_BattlePyramidLobby_EventScript_LostChallenge::
 	pyramid_clearhelditems
 # 86 "data/maps/BattleFrontier_BattlePyramidLobby/scripts.pory"
 	special HealPlayerParty
-# 87 "data/maps/BattleFrontier_BattlePyramidLobby/scripts.pory"
+	callnative UpdateFollowingPokemon
 	lockall
 # 88 "data/maps/BattleFrontier_BattlePyramidLobby/scripts.pory"
 	message BattleFrontier_BattlePyramidLobby_Text_DisappointingHereIsBag
@@ -268,7 +257,7 @@ BattleFrontier_BattlePyramidLobby_EventScript_TryEnterChallenge::
 	msgbox BattleFrontier_BattlePyramidLobby_Text_SelectThreeMons, MSGBOX_DEFAULT
 # 135 "data/maps/BattleFrontier_BattlePyramidLobby/scripts.pory"
 	fadescreen FADE_TO_BLACK
-# 136 "data/maps/BattleFrontier_BattlePyramidLobby/scripts.pory"
+	callnative RemoveFollowingPokemon
 	call BattleFrontier_EventScript_GetLvlMode
 # 137 "data/maps/BattleFrontier_BattlePyramidLobby/scripts.pory"
 	copyvar VAR_0x8004, VAR_RESULT
@@ -396,7 +385,7 @@ BattleFrontier_BattlePyramidLobby_EventScript_CancelChallengeSaveFailed::
 BattleFrontier_BattlePyramidLobby_EventScript_LoadPartyAndCancelChallenge::
 # 199 "data/maps/BattleFrontier_BattlePyramidLobby/scripts.pory"
 	special LoadPlayerParty
-# 200 "data/maps/BattleFrontier_BattlePyramidLobby/scripts.pory"
+	callnative UpdateFollowingPokemon
 BattleFrontier_BattlePyramidLobby_EventScript_CancelChallenge::
 # 201 "data/maps/BattleFrontier_BattlePyramidLobby/scripts.pory"
 	msgbox BattleFrontier_BattlePyramidLobby_Text_AwaitFutureChallenge, MSGBOX_DEFAULT
@@ -412,9 +401,7 @@ BattleFrontier_BattlePyramidLobby_EventScript_EndCancelChallenge::
 BattleFrontier_BattlePyramidLobby_EventScript_HintGiver::
 # 207 "data/maps/BattleFrontier_BattlePyramidLobby/scripts.pory"
 	lockall
-# 208 "data/maps/BattleFrontier_BattlePyramidLobby/scripts.pory"
-	applymovement LOCALID_HINT_GIVER, Common_Movement_FacePlayer
-# 209 "data/maps/BattleFrontier_BattlePyramidLobby/scripts.pory"
+	applymovement LOCALID_PYRAMID_LOBBY_HINT_GIVER, Common_Movement_FacePlayer
 	waitmovement 0
 # 210 "data/maps/BattleFrontier_BattlePyramidLobby/scripts.pory"
 	msgbox BattleFrontier_BattlePyramidLobby_Text_TellYouWhatMisfortunesAwait, MSGBOX_DEFAULT
@@ -736,11 +723,8 @@ BattleFrontier_BattlePyramidLobby_EventScript_ShowResults::
 
 # 369 "data/maps/BattleFrontier_BattlePyramidLobby/scripts.pory"
 BattleFrontier_BattlePyramidLobby_EventScript_WalkToPanelAndReceiveBag::
-# 370 "data/maps/BattleFrontier_BattlePyramidLobby/scripts.pory"
-	applymovement LOCALID_ATTENDANT, BattleFrontier_BattlePyramidLobby_Movement_AttendantWalkToPanel
-# 371 "data/maps/BattleFrontier_BattlePyramidLobby/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, BattleFrontier_BattlePyramidLobby_Movement_PlayerWalkToPanel
-# 372 "data/maps/BattleFrontier_BattlePyramidLobby/scripts.pory"
+	applymovement LOCALID_PYRAMID_LOBBY_ATTENDANT, BattleFrontier_BattlePyramidLobby_Movement_AttendantWalkToPanel
+	applymovement LOCALID_PLAYER, BattleFrontier_BattlePyramidLobby_Movement_PlayerWalkToPanel
 	waitmovement 0
 # 373 "data/maps/BattleFrontier_BattlePyramidLobby/scripts.pory"
 	msgbox BattleFrontier_BattlePyramidLobby_Text_WeWillHoldBagForSafekeeping, MSGBOX_DEFAULT
@@ -772,13 +756,9 @@ BattleFrontier_BattlePyramidLobby_EventScript_ReceiveBattleBag::
 	msgbox BattleFrontier_BattlePyramidLobby_Text_StepOnFloorPanel, MSGBOX_DEFAULT
 # 387 "data/maps/BattleFrontier_BattlePyramidLobby/scripts.pory"
 	closemessage
-# 388 "data/maps/BattleFrontier_BattlePyramidLobby/scripts.pory"
-	applymovement LOCALID_ATTENDANT, BattleFrontier_BattlePyramidLobby_Movement_AttendantMoveAside
-# 389 "data/maps/BattleFrontier_BattlePyramidLobby/scripts.pory"
+	applymovement LOCALID_PYRAMID_LOBBY_ATTENDANT, BattleFrontier_BattlePyramidLobby_Movement_AttendantMoveAside
 	waitmovement 0
-# 390 "data/maps/BattleFrontier_BattlePyramidLobby/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, BattleFrontier_BattlePyramidLobby_Movement_PlayerStepOnPanel
-# 391 "data/maps/BattleFrontier_BattlePyramidLobby/scripts.pory"
+	applymovement LOCALID_PLAYER, BattleFrontier_BattlePyramidLobby_Movement_PlayerStepOnPanel
 	waitmovement 0
 # 392 "data/maps/BattleFrontier_BattlePyramidLobby/scripts.pory"
 	return

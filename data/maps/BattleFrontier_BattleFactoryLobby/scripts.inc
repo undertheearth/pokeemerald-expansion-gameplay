@@ -1,12 +1,3 @@
-# 1 "data/maps/BattleFrontier_BattleFactoryLobby/scripts.pory"
-
-# 2 "data/maps/BattleFrontier_BattleFactoryLobby/scripts.pory"
-.set LOCALID_ATTENDANT_SINGLES, 1
-# 3 "data/maps/BattleFrontier_BattleFactoryLobby/scripts.pory"
-.set LOCALID_ATTENDANT_DOUBLES, 6
-# 4 "data/maps/BattleFrontier_BattleFactoryLobby/scripts.pory"
-
-# 5 "data/maps/BattleFrontier_BattleFactoryLobby/scripts.pory"
 BattleFrontier_BattleFactoryLobby_MapScripts::
 # 6 "data/maps/BattleFrontier_BattleFactoryLobby/scripts.pory"
 	map_script MAP_SCRIPT_ON_FRAME_TABLE, BattleFrontier_BattleFactoryLobby_OnFrame
@@ -28,9 +19,7 @@ BattleFrontier_BattleFactoryLobby_OnWarp:
 BattleFrontier_BattleFactoryLobby_EventScript_TurnPlayerNorth::
 # 15 "data/maps/BattleFrontier_BattleFactoryLobby/scripts.pory"
 	setvar VAR_TEMP_1, 1
-# 16 "data/maps/BattleFrontier_BattleFactoryLobby/scripts.pory"
-	turnobject OBJ_EVENT_ID_PLAYER, DIR_NORTH
-# 17 "data/maps/BattleFrontier_BattleFactoryLobby/scripts.pory"
+	turnobject LOCALID_PLAYER, DIR_NORTH
 	end
 # 18 "data/maps/BattleFrontier_BattleFactoryLobby/scripts.pory"
 
@@ -122,7 +111,7 @@ BattleFrontier_BattleFactoryLobby_EventScript_GiveBattlePoints::
 	frontier_checkairshow
 # 62 "data/maps/BattleFrontier_BattleFactoryLobby/scripts.pory"
 	special LoadPlayerParty
-# 63 "data/maps/BattleFrontier_BattleFactoryLobby/scripts.pory"
+	callnative UpdateFollowingPokemon
 	factory_save 0
 # 64 "data/maps/BattleFrontier_BattleFactoryLobby/scripts.pory"
 	playse SE_SAVE
@@ -146,7 +135,7 @@ BattleFrontier_BattleFactoryLobby_EventScript_LostChallenge::
 	frontier_checkairshow
 # 74 "data/maps/BattleFrontier_BattleFactoryLobby/scripts.pory"
 	special LoadPlayerParty
-# 75 "data/maps/BattleFrontier_BattleFactoryLobby/scripts.pory"
+	callnative UpdateFollowingPokemon
 	factory_set FACTORY_DATA_WIN_STREAK_ACTIVE, FALSE
 # 76 "data/maps/BattleFrontier_BattleFactoryLobby/scripts.pory"
 	factory_save 0
@@ -344,9 +333,7 @@ BattleFrontier_BattleFactoryLobby_EventScript_EnterChallenge::
 	call_if_eq VAR_FRONTIER_BATTLE_MODE, FRONTIER_MODE_DOUBLES, BattleFrontier_BattleFactoryLobby_EventScript_TalkedToDoublesAttendant
 # 173 "data/maps/BattleFrontier_BattleFactoryLobby/scripts.pory"
 	applymovement VAR_LAST_TALKED, BattleFrontier_BattleFactoryLobby_Movement_AttendantEnterDoor
-# 174 "data/maps/BattleFrontier_BattleFactoryLobby/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, BattleFrontier_BattleFactoryLobby_Movement_PlayerEnterDoor
-# 175 "data/maps/BattleFrontier_BattleFactoryLobby/scripts.pory"
+	applymovement LOCALID_PLAYER, BattleFrontier_BattleFactoryLobby_Movement_PlayerEnterDoor
 	waitmovement 0
 # 176 "data/maps/BattleFrontier_BattleFactoryLobby/scripts.pory"
 	warp MAP_BATTLE_FRONTIER_BATTLE_FACTORY_PRE_BATTLE_ROOM, 8, 13
@@ -360,17 +347,13 @@ BattleFrontier_BattleFactoryLobby_EventScript_EnterChallenge::
 
 # 181 "data/maps/BattleFrontier_BattleFactoryLobby/scripts.pory"
 BattleFrontier_BattleFactoryLobby_EventScript_TalkedToSinglesAttendant::
-# 182 "data/maps/BattleFrontier_BattleFactoryLobby/scripts.pory"
-	setvar VAR_LAST_TALKED, LOCALID_ATTENDANT_SINGLES
-# 183 "data/maps/BattleFrontier_BattleFactoryLobby/scripts.pory"
+	setvar VAR_LAST_TALKED, LOCALID_FACTORY_ATTENDANT_SINGLES
 	return
 # 184 "data/maps/BattleFrontier_BattleFactoryLobby/scripts.pory"
 
 # 185 "data/maps/BattleFrontier_BattleFactoryLobby/scripts.pory"
 BattleFrontier_BattleFactoryLobby_EventScript_TalkedToDoublesAttendant::
-# 186 "data/maps/BattleFrontier_BattleFactoryLobby/scripts.pory"
-	setvar VAR_LAST_TALKED, LOCALID_ATTENDANT_DOUBLES
-# 187 "data/maps/BattleFrontier_BattleFactoryLobby/scripts.pory"
+	setvar VAR_LAST_TALKED, LOCALID_FACTORY_ATTENDANT_DOUBLES
 	return
 # 188 "data/maps/BattleFrontier_BattleFactoryLobby/scripts.pory"
 
@@ -396,7 +379,7 @@ BattleFrontier_BattleFactoryLobby_EventScript_CancelChallengeSaveFailed::
 BattleFrontier_BattleFactoryLobby_EventScript_LoadPartyAndCancelChallenge::
 # 199 "data/maps/BattleFrontier_BattleFactoryLobby/scripts.pory"
 	special LoadPlayerParty
-# 200 "data/maps/BattleFrontier_BattleFactoryLobby/scripts.pory"
+	callnative UpdateFollowingPokemon
 BattleFrontier_BattleFactoryLobby_EventScript_CancelChallenge::
 # 201 "data/maps/BattleFrontier_BattleFactoryLobby/scripts.pory"
 	msgbox BattleFrontier_BattleFactoryLobby_Text_LookForwardToNextVisit, MSGBOX_DEFAULT

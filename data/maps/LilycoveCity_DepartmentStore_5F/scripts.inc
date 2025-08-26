@@ -1,10 +1,3 @@
-# 1 "data/maps/LilycoveCity_DepartmentStore_5F/scripts.pory"
-
-# 2 "data/maps/LilycoveCity_DepartmentStore_5F/scripts.pory"
-.set LOCALID_WOMAN, 7
-# 3 "data/maps/LilycoveCity_DepartmentStore_5F/scripts.pory"
-
-# 4 "data/maps/LilycoveCity_DepartmentStore_5F/scripts.pory"
 LilycoveCity_DepartmentStore_5F_MapScripts::
 # 5 "data/maps/LilycoveCity_DepartmentStore_5F/scripts.pory"
 	map_script MAP_SCRIPT_ON_WARP_INTO_MAP_TABLE, LilycoveCity_DepartmentStore_5F_OnWarp
@@ -30,11 +23,8 @@ LilycoveCity_DepartmentStore_5F_OnWarp:
 
 # 16 "data/maps/LilycoveCity_DepartmentStore_5F/scripts.pory"
 LilycoveCity_DepartmentStore_5F_EventScript_BlockRoofStairs::
-# 17 "data/maps/LilycoveCity_DepartmentStore_5F/scripts.pory"
-	setobjectxy LOCALID_WOMAN, 16, 2
-# 18 "data/maps/LilycoveCity_DepartmentStore_5F/scripts.pory"
-	turnobject LOCALID_WOMAN, DIR_NORTH
-# 19 "data/maps/LilycoveCity_DepartmentStore_5F/scripts.pory"
+	setobjectxy LOCALID_DEPARTMENT_STORE_STAIRS_WOMAN, 16, 2
+	turnobject LOCALID_DEPARTMENT_STORE_STAIRS_WOMAN, DIR_NORTH
 	end
 # 20 "data/maps/LilycoveCity_DepartmentStore_5F/scripts.pory"
 
@@ -86,13 +76,7 @@ LilycoveCity_DepartmentStore_5F_Pokemart_Dolls:
 	.2byte DECOR_SWABLU_DOLL
 # 44 "data/maps/LilycoveCity_DepartmentStore_5F/scripts.pory"
 	.2byte DECOR_GULPIN_DOLL
-# 45 "data/maps/LilycoveCity_DepartmentStore_5F/scripts.pory"
-	.2byte DECOR_NONE
-# 46 "data/maps/LilycoveCity_DepartmentStore_5F/scripts.pory"
-	release
-# 47 "data/maps/LilycoveCity_DepartmentStore_5F/scripts.pory"
-	end
-# 48 "data/maps/LilycoveCity_DepartmentStore_5F/scripts.pory"
+	pokemartlistend
 
 # 49 "data/maps/LilycoveCity_DepartmentStore_5F/scripts.pory"
 LilycoveCity_DepartmentStore_5F_EventScript_ClerkMidLeft::
@@ -136,13 +120,7 @@ LilycoveCity_DepartmentStore_5F_Pokemart_Cushions:
 	.2byte DECOR_FIRE_CUSHION
 # 69 "data/maps/LilycoveCity_DepartmentStore_5F/scripts.pory"
 	.2byte DECOR_WATER_CUSHION
-# 70 "data/maps/LilycoveCity_DepartmentStore_5F/scripts.pory"
-	.2byte DECOR_NONE
-# 71 "data/maps/LilycoveCity_DepartmentStore_5F/scripts.pory"
-	release
-# 72 "data/maps/LilycoveCity_DepartmentStore_5F/scripts.pory"
-	end
-# 73 "data/maps/LilycoveCity_DepartmentStore_5F/scripts.pory"
+	pokemartlistend
 
 # 74 "data/maps/LilycoveCity_DepartmentStore_5F/scripts.pory"
 LilycoveCity_DepartmentStore_5F_EventScript_ClerkMidRight::
@@ -186,13 +164,7 @@ LilycoveCity_DepartmentStore_5F_Pokemart_Posters:
 	.2byte DECOR_SEA_POSTER
 # 94 "data/maps/LilycoveCity_DepartmentStore_5F/scripts.pory"
 	.2byte DECOR_SKY_POSTER
-# 95 "data/maps/LilycoveCity_DepartmentStore_5F/scripts.pory"
-	.2byte DECOR_NONE
-# 96 "data/maps/LilycoveCity_DepartmentStore_5F/scripts.pory"
-	release
-# 97 "data/maps/LilycoveCity_DepartmentStore_5F/scripts.pory"
-	end
-# 98 "data/maps/LilycoveCity_DepartmentStore_5F/scripts.pory"
+	pokemartlistend
 
 # 99 "data/maps/LilycoveCity_DepartmentStore_5F/scripts.pory"
 LilycoveCity_DepartmentStore_5F_EventScript_ClerkFarRight::
@@ -238,13 +210,7 @@ LilycoveCity_DepartmentStore_5F_Pokemart_Mats:
 	.2byte DECOR_JUMP_MAT
 # 120 "data/maps/LilycoveCity_DepartmentStore_5F/scripts.pory"
 	.2byte DECOR_SPIN_MAT
-# 121 "data/maps/LilycoveCity_DepartmentStore_5F/scripts.pory"
-	.2byte DECOR_NONE
-# 122 "data/maps/LilycoveCity_DepartmentStore_5F/scripts.pory"
-	release
-# 123 "data/maps/LilycoveCity_DepartmentStore_5F/scripts.pory"
-	end
-# 124 "data/maps/LilycoveCity_DepartmentStore_5F/scripts.pory"
+	pokemartlistend
 
 # 125 "data/maps/LilycoveCity_DepartmentStore_5F/scripts.pory"
 LilycoveCity_DepartmentStore_5F_EventScript_PokefanF::
@@ -258,9 +224,7 @@ LilycoveCity_DepartmentStore_5F_EventScript_PokefanF::
 LilycoveCity_DepartmentStore_5F_EventScript_Woman::
 # 130 "data/maps/LilycoveCity_DepartmentStore_5F/scripts.pory"
 	lockall
-# 131 "data/maps/LilycoveCity_DepartmentStore_5F/scripts.pory"
-	applymovement LOCALID_WOMAN, Common_Movement_FacePlayer
-# 132 "data/maps/LilycoveCity_DepartmentStore_5F/scripts.pory"
+	applymovement LOCALID_DEPARTMENT_STORE_STAIRS_WOMAN, Common_Movement_FacePlayer
 	waitmovement 0
 # 133 "data/maps/LilycoveCity_DepartmentStore_5F/scripts.pory"
 	goto_if_eq VAR_SOOTOPOLIS_CITY_STATE, 0, LilycoveCity_DepartmentStore_5F_EventScript_WomanNormal
@@ -290,9 +254,7 @@ LilycoveCity_DepartmentStore_5F_EventScript_WomanLegendaryWeather::
 	msgbox LilycoveCity_DepartmentStore_5F_Text_ClosedRooftopForWeather, MSGBOX_DEFAULT
 # 146 "data/maps/LilycoveCity_DepartmentStore_5F/scripts.pory"
 	closemessage
-# 147 "data/maps/LilycoveCity_DepartmentStore_5F/scripts.pory"
-	applymovement LOCALID_WOMAN, Common_Movement_WalkInPlaceFasterUp
-# 148 "data/maps/LilycoveCity_DepartmentStore_5F/scripts.pory"
+	applymovement LOCALID_DEPARTMENT_STORE_STAIRS_WOMAN, Common_Movement_WalkInPlaceFasterUp
 	waitmovement 0
 # 149 "data/maps/LilycoveCity_DepartmentStore_5F/scripts.pory"
 	releaseall

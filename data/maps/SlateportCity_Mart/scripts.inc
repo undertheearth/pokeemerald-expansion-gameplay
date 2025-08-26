@@ -48,15 +48,7 @@ SlateportCity_Mart_Pokemart:
 	.2byte ITEM_REPEL
 # 25 "data/maps/SlateportCity_Mart/scripts.pory"
 	.2byte ITEM_HARBOR_MAIL
-# 26 "data/maps/SlateportCity_Mart/scripts.pory"
-	.2byte ITEM_MOON_STONE
-# 27 "data/maps/SlateportCity_Mart/scripts.pory"
-	.2byte ITEM_NONE
-# 28 "data/maps/SlateportCity_Mart/scripts.pory"
-	release
-# 29 "data/maps/SlateportCity_Mart/scripts.pory"
-	end
-# 30 "data/maps/SlateportCity_Mart/scripts.pory"
+	pokemartlistend
 
 # 31 "data/maps/SlateportCity_Mart/scripts.pory"
 SlateportCity_Mart_EventScript_BlackBelt::

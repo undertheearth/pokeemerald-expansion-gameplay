@@ -46,33 +46,8 @@ LavaridgeTown_Mart_Pokemart:
 	.2byte ITEM_REVIVE
 # 24 "data/maps/LavaridgeTown_Mart/scripts.pory"
 	.2byte ITEM_SUPER_REPEL
-# 25 "data/maps/LavaridgeTown_Mart/scripts.pory"
-	.2byte ITEM_FIRE_STONE
-# 26 "data/maps/LavaridgeTown_Mart/scripts.pory"
-	.2byte ITEM_WATER_STONE
-# 27 "data/maps/LavaridgeTown_Mart/scripts.pory"
-	.2byte ITEM_THUNDER_STONE
-# 28 "data/maps/LavaridgeTown_Mart/scripts.pory"
-	.2byte ITEM_LEAF_STONE
-# 29 "data/maps/LavaridgeTown_Mart/scripts.pory"
-	.2byte ITEM_SUN_STONE
-# 30 "data/maps/LavaridgeTown_Mart/scripts.pory"
-	.2byte ITEM_MOON_STONE
-# 31 "data/maps/LavaridgeTown_Mart/scripts.pory"
-	.2byte ITEM_SHINY_STONE
-# 32 "data/maps/LavaridgeTown_Mart/scripts.pory"
-	.2byte ITEM_DUSK_STONE
-# 33 "data/maps/LavaridgeTown_Mart/scripts.pory"
-	.2byte ITEM_DAWN_STONE
-# 34 "data/maps/LavaridgeTown_Mart/scripts.pory"
-	.2byte ITEM_ICE_STONE
-# 35 "data/maps/LavaridgeTown_Mart/scripts.pory"
-	.2byte ITEM_NONE
-# 36 "data/maps/LavaridgeTown_Mart/scripts.pory"
-	release
-# 37 "data/maps/LavaridgeTown_Mart/scripts.pory"
-	end
-# 38 "data/maps/LavaridgeTown_Mart/scripts.pory"
+	.2byte ITEM_X_SPEED
+	pokemartlistend
 
 # 39 "data/maps/LavaridgeTown_Mart/scripts.pory"
 LavaridgeTown_Mart_EventScript_ExpertM::

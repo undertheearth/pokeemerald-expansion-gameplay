@@ -1,10 +1,3 @@
-# 1 "data/maps/BattleFrontier_BattleArenaLobby/scripts.pory"
-
-# 2 "data/maps/BattleFrontier_BattleArenaLobby/scripts.pory"
-.set LOCALID_ATTENDANT, 1
-# 3 "data/maps/BattleFrontier_BattleArenaLobby/scripts.pory"
-
-# 4 "data/maps/BattleFrontier_BattleArenaLobby/scripts.pory"
 BattleFrontier_BattleArenaLobby_MapScripts::
 # 5 "data/maps/BattleFrontier_BattleArenaLobby/scripts.pory"
 	map_script MAP_SCRIPT_ON_FRAME_TABLE, BattleFrontier_BattleArenaLobby_OnFrame
@@ -26,9 +19,7 @@ BattleFrontier_BattleArenaLobby_OnWarp:
 BattleFrontier_BattleArenaLobby_EventScript_TurnPlayerNorth::
 # 14 "data/maps/BattleFrontier_BattleArenaLobby/scripts.pory"
 	setvar VAR_TEMP_1, 1
-# 15 "data/maps/BattleFrontier_BattleArenaLobby/scripts.pory"
-	turnobject OBJ_EVENT_ID_PLAYER, DIR_NORTH
-# 16 "data/maps/BattleFrontier_BattleArenaLobby/scripts.pory"
+	turnobject LOCALID_PLAYER, DIR_NORTH
 	end
 # 17 "data/maps/BattleFrontier_BattleArenaLobby/scripts.pory"
 
@@ -154,7 +145,7 @@ BattleFrontier_BattleArenaLobby_EventScript_SaveAfterChallenge::
 	special LoadPlayerParty
 # 78 "data/maps/BattleFrontier_BattleArenaLobby/scripts.pory"
 	special HealPlayerParty
-# 79 "data/maps/BattleFrontier_BattleArenaLobby/scripts.pory"
+	callnative UpdateFollowingPokemon
 	arena_save 0
 # 80 "data/maps/BattleFrontier_BattleArenaLobby/scripts.pory"
 	playse SE_SAVE
@@ -270,7 +261,7 @@ BattleFrontier_BattleArenaLobby_EventScript_TryEnterChallenge::
 	msgbox BattleFrontier_BattleArenaLobby_Text_SelectThreeMons, MSGBOX_DEFAULT
 # 136 "data/maps/BattleFrontier_BattleArenaLobby/scripts.pory"
 	fadescreen FADE_TO_BLACK
-# 137 "data/maps/BattleFrontier_BattleArenaLobby/scripts.pory"
+	callnative RemoveFollowingPokemon
 	call BattleFrontier_EventScript_GetLvlMode
 # 138 "data/maps/BattleFrontier_BattleArenaLobby/scripts.pory"
 	copyvar VAR_0x8004, VAR_RESULT
@@ -392,7 +383,7 @@ BattleFrontier_BattleArenaLobby_EventScript_CancelChallengeSaveFailed::
 BattleFrontier_BattleArenaLobby_EventScript_LoadPartyAndCancelChallenge::
 # 197 "data/maps/BattleFrontier_BattleArenaLobby/scripts.pory"
 	special LoadPlayerParty
-# 198 "data/maps/BattleFrontier_BattleArenaLobby/scripts.pory"
+	callnative UpdateFollowingPokemon
 BattleFrontier_BattleArenaLobby_EventScript_CancelChallenge::
 # 199 "data/maps/BattleFrontier_BattleArenaLobby/scripts.pory"
 	msgbox BattleFrontier_BattleArenaLobby_Text_AwaitAnotherChallenge, MSGBOX_DEFAULT
@@ -406,21 +397,15 @@ BattleFrontier_BattleArenaLobby_EventScript_EndCancelChallenge::
 
 # 204 "data/maps/BattleFrontier_BattleArenaLobby/scripts.pory"
 BattleFrontier_BattleArenaLobby_EventScript_WalkToDoorLv50::
-# 205 "data/maps/BattleFrontier_BattleArenaLobby/scripts.pory"
-	applymovement LOCALID_ATTENDANT, BattleFrontier_BattleArenaLobby_Movement_AttendantWalkToLeftDoor
-# 206 "data/maps/BattleFrontier_BattleArenaLobby/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, BattleFrontier_BattleArenaLobby_Movement_PlayerWalkToLeftDoor
-# 207 "data/maps/BattleFrontier_BattleArenaLobby/scripts.pory"
+	applymovement LOCALID_ARENA_ATTENDANT, BattleFrontier_BattleArenaLobby_Movement_AttendantWalkToLeftDoor
+	applymovement LOCALID_PLAYER, BattleFrontier_BattleArenaLobby_Movement_PlayerWalkToLeftDoor
 	waitmovement 0
 # 208 "data/maps/BattleFrontier_BattleArenaLobby/scripts.pory"
 	opendoor 2, 2
 # 209 "data/maps/BattleFrontier_BattleArenaLobby/scripts.pory"
 	waitdooranim
-# 210 "data/maps/BattleFrontier_BattleArenaLobby/scripts.pory"
-	applymovement LOCALID_ATTENDANT, BattleFrontier_BattleArenaLobby_Movement_AttendantEnterDoor
-# 211 "data/maps/BattleFrontier_BattleArenaLobby/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, BattleFrontier_BattleArenaLobby_Movement_PlayerEnterDoor
-# 212 "data/maps/BattleFrontier_BattleArenaLobby/scripts.pory"
+	applymovement LOCALID_ARENA_ATTENDANT, BattleFrontier_BattleArenaLobby_Movement_AttendantEnterDoor
+	applymovement LOCALID_PLAYER, BattleFrontier_BattleArenaLobby_Movement_PlayerEnterDoor
 	waitmovement 0
 # 213 "data/maps/BattleFrontier_BattleArenaLobby/scripts.pory"
 	closedoor 2, 2
@@ -504,21 +489,15 @@ BattleFrontier_BattleArenaLobby_Movement_PlayerEnterDoor:
 
 # 253 "data/maps/BattleFrontier_BattleArenaLobby/scripts.pory"
 BattleFrontier_BattleArenaLobby_EventScript_WalkToDoorLvOpen::
-# 254 "data/maps/BattleFrontier_BattleArenaLobby/scripts.pory"
-	applymovement LOCALID_ATTENDANT, BattleFrontier_BattleArenaLobby_Movement_AttendantWalkToRightDoor
-# 255 "data/maps/BattleFrontier_BattleArenaLobby/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, BattleFrontier_BattleArenaLobby_Movement_PlayerWalkToRightDoor
-# 256 "data/maps/BattleFrontier_BattleArenaLobby/scripts.pory"
+	applymovement LOCALID_ARENA_ATTENDANT, BattleFrontier_BattleArenaLobby_Movement_AttendantWalkToRightDoor
+	applymovement LOCALID_PLAYER, BattleFrontier_BattleArenaLobby_Movement_PlayerWalkToRightDoor
 	waitmovement 0
 # 257 "data/maps/BattleFrontier_BattleArenaLobby/scripts.pory"
 	opendoor 11, 2
 # 258 "data/maps/BattleFrontier_BattleArenaLobby/scripts.pory"
 	waitdooranim
-# 259 "data/maps/BattleFrontier_BattleArenaLobby/scripts.pory"
-	applymovement LOCALID_ATTENDANT, BattleFrontier_BattleArenaLobby_Movement_AttendantEnterDoor
-# 260 "data/maps/BattleFrontier_BattleArenaLobby/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, BattleFrontier_BattleArenaLobby_Movement_PlayerEnterDoor
-# 261 "data/maps/BattleFrontier_BattleArenaLobby/scripts.pory"
+	applymovement LOCALID_ARENA_ATTENDANT, BattleFrontier_BattleArenaLobby_Movement_AttendantEnterDoor
+	applymovement LOCALID_PLAYER, BattleFrontier_BattleArenaLobby_Movement_PlayerEnterDoor
 	waitmovement 0
 # 262 "data/maps/BattleFrontier_BattleArenaLobby/scripts.pory"
 	closedoor 11, 2

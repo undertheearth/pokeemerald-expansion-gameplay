@@ -1,10 +1,3 @@
-# 1 "data/maps/BattleFrontier_Mart/scripts.pory"
-
-# 2 "data/maps/BattleFrontier_Mart/scripts.pory"
-.set LOCALID_OLD_WOMAN, 2
-# 3 "data/maps/BattleFrontier_Mart/scripts.pory"
-
-# 4 "data/maps/BattleFrontier_Mart/scripts.pory"
 BattleFrontier_Mart_MapScripts::
 # 5 "data/maps/BattleFrontier_Mart/scripts.pory"
 	.byte 0
@@ -60,13 +53,7 @@ BattleFrontier_Mart_Pokemart:
 	.2byte ITEM_CARBOS
 # 31 "data/maps/BattleFrontier_Mart/scripts.pory"
 	.2byte ITEM_HP_UP
-# 32 "data/maps/BattleFrontier_Mart/scripts.pory"
-	.2byte ITEM_NONE
-# 33 "data/maps/BattleFrontier_Mart/scripts.pory"
-	release
-# 34 "data/maps/BattleFrontier_Mart/scripts.pory"
-	end
-# 35 "data/maps/BattleFrontier_Mart/scripts.pory"
+	pokemartlistend
 
 # 36 "data/maps/BattleFrontier_Mart/scripts.pory"
 BattleFrontier_Mart_EventScript_OldMan::
@@ -80,9 +67,7 @@ BattleFrontier_Mart_EventScript_OldMan::
 BattleFrontier_Mart_EventScript_OldWoman::
 # 41 "data/maps/BattleFrontier_Mart/scripts.pory"
 	lock
-# 42 "data/maps/BattleFrontier_Mart/scripts.pory"
-	applymovement LOCALID_OLD_WOMAN, Common_Movement_FaceDown
-# 43 "data/maps/BattleFrontier_Mart/scripts.pory"
+	applymovement LOCALID_FRONTIER_MART_OLD_WOMAN, Common_Movement_FaceDown
 	waitmovement 0
 # 44 "data/maps/BattleFrontier_Mart/scripts.pory"
 	msgbox BattleFrontier_Mart_Text_ProteinMakeNiceGift, MSGBOX_DEFAULT

@@ -1,20 +1,3 @@
-# 1 "data/maps/BattleFrontier_BattleTowerLobby/scripts.pory"
-
-# 2 "data/maps/BattleFrontier_BattleTowerLobby/scripts.pory"
-.set LOCALID_ATTENDANT_SINGLES, 1
-# 3 "data/maps/BattleFrontier_BattleTowerLobby/scripts.pory"
-.set LOCALID_ATTENDANT_DOUBLES, 7
-# 4 "data/maps/BattleFrontier_BattleTowerLobby/scripts.pory"
-.set LOCALID_ATTENDANT_MULTIS, 8
-# 5 "data/maps/BattleFrontier_BattleTowerLobby/scripts.pory"
-.set LOCALID_ATTENDANT_LINK_MULTIS, 9
-# 6 "data/maps/BattleFrontier_BattleTowerLobby/scripts.pory"
-
-# 7 "data/maps/BattleFrontier_BattleTowerLobby/scripts.pory"
-@ Note: LOCALID_BATTLE_TOWER_LOBBY_REPORTER is a local id for this map used elsewhere. It's defined in event_objects.h
-# 8 "data/maps/BattleFrontier_BattleTowerLobby/scripts.pory"
-
-# 9 "data/maps/BattleFrontier_BattleTowerLobby/scripts.pory"
 BattleFrontier_BattleTowerLobby_MapScripts::
 # 10 "data/maps/BattleFrontier_BattleTowerLobby/scripts.pory"
 	map_script MAP_SCRIPT_ON_RESUME, BattleFrontier_BattleTowerLobby_OnResume
@@ -78,9 +61,7 @@ BattleFrontier_BattleTowerLobby_OnWarp:
 BattleFrontier_BattleTowerLobby_EventScript_PlayerFaceNorth::
 # 40 "data/maps/BattleFrontier_BattleTowerLobby/scripts.pory"
 	setvar VAR_TEMP_1, 1
-# 41 "data/maps/BattleFrontier_BattleTowerLobby/scripts.pory"
-	turnobject OBJ_EVENT_ID_PLAYER, DIR_NORTH
-# 42 "data/maps/BattleFrontier_BattleTowerLobby/scripts.pory"
+	turnobject LOCALID_PLAYER, DIR_NORTH
 	end
 # 43 "data/maps/BattleFrontier_BattleTowerLobby/scripts.pory"
 
@@ -194,7 +175,7 @@ BattleFrontier_BattleTowerLobby_EventScript_LookForwardToChallenge::
 	closemessage
 # 98 "data/maps/BattleFrontier_BattleTowerLobby/scripts.pory"
 	setvar VAR_TEMP_CHALLENGE_STATUS, 255
-# 99 "data/maps/BattleFrontier_BattleTowerLobby/scripts.pory"
+	callnative UpdateFollowingPokemon
 	release
 # 100 "data/maps/BattleFrontier_BattleTowerLobby/scripts.pory"
 	end
@@ -232,7 +213,7 @@ BattleFrontier_BattleTowerLobby_EventScript_LostThanksForPlaying::
 	closemessage
 # 117 "data/maps/BattleFrontier_BattleTowerLobby/scripts.pory"
 	setvar VAR_TEMP_CHALLENGE_STATUS, 255
-# 118 "data/maps/BattleFrontier_BattleTowerLobby/scripts.pory"
+	callnative UpdateFollowingPokemon
 	release
 # 119 "data/maps/BattleFrontier_BattleTowerLobby/scripts.pory"
 	end
@@ -404,7 +385,7 @@ BattleFrontier_BattleTowerLobby_EventScript_TryEnterSinglesChallenge::
 	msgbox BattleFrontier_BattleTowerLobby_Text_SelectThreeMons, MSGBOX_DEFAULT
 # 203 "data/maps/BattleFrontier_BattleTowerLobby/scripts.pory"
 	fadescreen FADE_TO_BLACK
-# 204 "data/maps/BattleFrontier_BattleTowerLobby/scripts.pory"
+	callnative RemoveFollowingPokemon
 	call BattleFrontier_EventScript_GetLvlMode
 # 205 "data/maps/BattleFrontier_BattleTowerLobby/scripts.pory"
 	copyvar VAR_0x8004, VAR_RESULT
@@ -530,7 +511,7 @@ BattleFrontier_BattleTowerLobby_EventScript_TryEnterDoublesChallenge::
 	msgbox BattleFrontier_BattleTowerLobby_Text_PleaseSelectFourMons, MSGBOX_DEFAULT
 # 266 "data/maps/BattleFrontier_BattleTowerLobby/scripts.pory"
 	fadescreen FADE_TO_BLACK
-# 267 "data/maps/BattleFrontier_BattleTowerLobby/scripts.pory"
+	callnative RemoveFollowingPokemon
 	call BattleFrontier_EventScript_GetLvlMode
 # 268 "data/maps/BattleFrontier_BattleTowerLobby/scripts.pory"
 	copyvar VAR_0x8004, VAR_RESULT
@@ -658,7 +639,7 @@ BattleFrontier_BattleTowerLobby_EventScript_TryEnterMultisChallenge::
 	msgbox BattleFrontier_BattleTowerLobby_Text_PleaseSelectTwoMons, MSGBOX_DEFAULT
 # 330 "data/maps/BattleFrontier_BattleTowerLobby/scripts.pory"
 	fadescreen FADE_TO_BLACK
-# 331 "data/maps/BattleFrontier_BattleTowerLobby/scripts.pory"
+	callnative RemoveFollowingPokemon
 	call BattleFrontier_EventScript_GetLvlMode
 # 332 "data/maps/BattleFrontier_BattleTowerLobby/scripts.pory"
 	copyvar VAR_0x8004, VAR_RESULT
@@ -784,7 +765,7 @@ BattleFrontier_BattleTowerLobby_EventScript_TryEnterLinkMultisChallenge::
 	msgbox BattleFrontier_BattleTowerLobby_Text_PleaseSelectTwoMons2, MSGBOX_DEFAULT
 # 393 "data/maps/BattleFrontier_BattleTowerLobby/scripts.pory"
 	fadescreen FADE_TO_BLACK
-# 394 "data/maps/BattleFrontier_BattleTowerLobby/scripts.pory"
+	callnative RemoveFollowingPokemon
 	call BattleFrontier_EventScript_GetLvlMode
 # 395 "data/maps/BattleFrontier_BattleTowerLobby/scripts.pory"
 	copyvar VAR_0x8004, VAR_RESULT
@@ -1168,7 +1149,7 @@ BattleFrontier_BattleTowerLobby_EventScript_CancelChallengeSaveFailed::
 BattleFrontier_BattleTowerLobby_EventScript_LoadPartyCancelChallenge::
 # 585 "data/maps/BattleFrontier_BattleTowerLobby/scripts.pory"
 	special LoadPlayerParty
-# 586 "data/maps/BattleFrontier_BattleTowerLobby/scripts.pory"
+	callnative UpdateFollowingPokemon
 BattleFrontier_BattleTowerLobby_EventScript_CancelChallenge::
 # 587 "data/maps/BattleFrontier_BattleTowerLobby/scripts.pory"
 	special CloseLink
@@ -1246,9 +1227,7 @@ BattleFrontier_BattleTowerLobby_EventScript_WalkToElevator::
 	call BattleFrontier_BattleTowerLobby_EventScript_GetDoorXCoord
 # 624 "data/maps/BattleFrontier_BattleTowerLobby/scripts.pory"
 	applymovement VAR_LAST_TALKED, BattleFrontier_BattleTowerLobby_Movement_WalkToElevator
-# 625 "data/maps/BattleFrontier_BattleTowerLobby/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, BattleFrontier_BattleTowerLobby_Movement_WalkToElevator
-# 626 "data/maps/BattleFrontier_BattleTowerLobby/scripts.pory"
+	applymovement LOCALID_PLAYER, BattleFrontier_BattleTowerLobby_Movement_WalkToElevator
 	waitmovement 0
 # 627 "data/maps/BattleFrontier_BattleTowerLobby/scripts.pory"
 	opendoor VAR_0x8004, 1
@@ -1256,9 +1235,7 @@ BattleFrontier_BattleTowerLobby_EventScript_WalkToElevator::
 	waitdooranim
 # 629 "data/maps/BattleFrontier_BattleTowerLobby/scripts.pory"
 	applymovement VAR_LAST_TALKED, BattleFrontier_BattleTowerLobby_Movement_AttendantEnterElevator
-# 630 "data/maps/BattleFrontier_BattleTowerLobby/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, BattleFrontier_BattleTowerLobby_Movement_PlayerEnterElevator
-# 631 "data/maps/BattleFrontier_BattleTowerLobby/scripts.pory"
+	applymovement LOCALID_PLAYER, BattleFrontier_BattleTowerLobby_Movement_PlayerEnterElevator
 	waitmovement 0
 # 632 "data/maps/BattleFrontier_BattleTowerLobby/scripts.pory"
 	closedoor VAR_0x8004, 1
@@ -1384,33 +1361,25 @@ BattleFrontier_BattleTowerLobby_EventScript_SetAttendantTalkedTo::
 
 # 693 "data/maps/BattleFrontier_BattleTowerLobby/scripts.pory"
 BattleFrontier_BattleTowerLobby_EventScript_TalkedToSinglesAttendant::
-# 694 "data/maps/BattleFrontier_BattleTowerLobby/scripts.pory"
-	setvar VAR_LAST_TALKED, LOCALID_ATTENDANT_SINGLES
-# 695 "data/maps/BattleFrontier_BattleTowerLobby/scripts.pory"
+	setvar VAR_LAST_TALKED, LOCALID_TOWER_ATTENDANT_SINGLES
 	return
 # 696 "data/maps/BattleFrontier_BattleTowerLobby/scripts.pory"
 
 # 697 "data/maps/BattleFrontier_BattleTowerLobby/scripts.pory"
 BattleFrontier_BattleTowerLobby_EventScript_TalkedToDoublesAttendant::
-# 698 "data/maps/BattleFrontier_BattleTowerLobby/scripts.pory"
-	setvar VAR_LAST_TALKED, LOCALID_ATTENDANT_DOUBLES
-# 699 "data/maps/BattleFrontier_BattleTowerLobby/scripts.pory"
+	setvar VAR_LAST_TALKED, LOCALID_TOWER_ATTENDANT_DOUBLES
 	return
 # 700 "data/maps/BattleFrontier_BattleTowerLobby/scripts.pory"
 
 # 701 "data/maps/BattleFrontier_BattleTowerLobby/scripts.pory"
 BattleFrontier_BattleTowerLobby_EventScript_TalkedToMultisAttendant::
-# 702 "data/maps/BattleFrontier_BattleTowerLobby/scripts.pory"
-	setvar VAR_LAST_TALKED, LOCALID_ATTENDANT_MULTIS
-# 703 "data/maps/BattleFrontier_BattleTowerLobby/scripts.pory"
+	setvar VAR_LAST_TALKED, LOCALID_TOWER_ATTENDANT_MULTIS
 	return
 # 704 "data/maps/BattleFrontier_BattleTowerLobby/scripts.pory"
 
 # 705 "data/maps/BattleFrontier_BattleTowerLobby/scripts.pory"
 BattleFrontier_BattleTowerLobby_EventScript_TalkedToLinkMultisAttendant::
-# 706 "data/maps/BattleFrontier_BattleTowerLobby/scripts.pory"
-	setvar VAR_LAST_TALKED, LOCALID_ATTENDANT_LINK_MULTIS
-# 707 "data/maps/BattleFrontier_BattleTowerLobby/scripts.pory"
+	setvar VAR_LAST_TALKED, LOCALID_TOWER_ATTENDANT_LINK_MULTIS
 	return
 # 708 "data/maps/BattleFrontier_BattleTowerLobby/scripts.pory"
 
