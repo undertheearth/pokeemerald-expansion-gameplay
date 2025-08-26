@@ -469,6 +469,7 @@ static const u16 sButterfreeTeachableLearnset[] = {
     MOVE_SOLAR_BEAM,
     MOVE_SUNNY_DAY,
     MOVE_THIEF,
+    MOVE_THUNDER,
     MOVE_TOXIC,
     MOVE_DOUBLE_EDGE,
     MOVE_DREAM_EATER,

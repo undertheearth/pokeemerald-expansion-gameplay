@@ -124,13 +124,13 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
     {
         VENUSAUR_MISC_INFO,
         .baseHP        = 80,
-        .baseAttack    = 90,
+        .baseAttack    = 95,
         .baseDefense   = 90,
         .baseSpeed     = 85,
         .baseSpAttack  = 100,
         .baseSpDefense = 100,
         .expYield = 236,
-        .abilities = { ABILITY_GRASSY_SURGE, ABILITY_OVERGROW, ABILITY_CHLOROPHYLL },
+        .abilities = { ABILITY_GRASSY_SURGE, ABILITY_THICK_FAT, ABILITY_CHLOROPHYLL },
         .cryId = CRY_VENUSAUR,
         .height = 20,
         .weight = 1000,
@@ -154,20 +154,21 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .backAnimId = BACK_ANIM_H_SHAKE,
         PALETTES(Venusaur),
         ICON(Venusaur, 4),
+        .evolutions = EVOLUTION({EVO_ITEM, ITEM_LEAF_STONE, SPECIES_VENUSAUR_MEGA}),
     },
 
 #if P_MEGA_EVOLUTIONS
     [SPECIES_VENUSAUR_MEGA] =
     {
         VENUSAUR_MISC_INFO,
-        .baseHP        = 80,
-        .baseAttack    = 105,
-        .baseDefense   = 122,
-        .baseSpeed     = 90,
-        .baseSpAttack  = 128,
-        .baseSpDefense = 120,
+        .baseHP        = 90,
+        .baseAttack    = 100,
+        .baseDefense   = 112,
+        .baseSpeed     = 95,
+        .baseSpAttack  = 118,
+        .baseSpDefense = 100,
         .expYield = 281,
-        .abilities = { ABILITY_THICK_FAT, ABILITY_THICK_FAT, ABILITY_THICK_FAT },
+        .abilities = { ABILITY_GRASSY_SURGE, ABILITY_THICK_FAT, ABILITY_CHLOROPHYLL },
         .cryId = CRY_VENUSAUR_MEGA,
         .height = 24,
         .weight = 1555,
@@ -188,7 +189,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .backAnimId = BACK_ANIM_SHAKE_GLOW_GREEN,
         PALETTES(VenusaurMega),
         ICON(VenusaurMega, 4),
-        .isMegaEvolution = TRUE,
+        .isMegaEvolution = FALSE,
     },
 #endif //P_MEGA_EVOLUTIONS
 
@@ -203,7 +204,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .baseSpAttack  = 100,
         .baseSpDefense = 100,
         .expYield = 236,
-        .abilities = { ABILITY_GRASSY_SURGE, ABILITY_OVERGROW, ABILITY_CHLOROPHYLL },
+        .abilities = { ABILITY_GRASSY_SURGE, ABILITY_THICK_FAT, ABILITY_CHLOROPHYLL },
         .cryId = CRY_VENUSAUR,
         .height = 240,
         .weight = 0,
@@ -349,13 +350,13 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         CHARIZARD_MISC_INFO,
         .baseHP        = 78,
         .baseAttack    = 100,
-        .baseDefense   = 77,
+        .baseDefense   = 82,
         .baseSpeed     = 100,
         .baseSpAttack  = 110,
         .baseSpDefense = 80,
         .types = { TYPE_FIRE, TYPE_FLYING },
         .expYield = 240,
-        .abilities = { ABILITY_AERILATE, ABILITY_BLAZE, ABILITY_SOLAR_POWER },
+        .abilities = { ABILITY_TOUGH_CLAWS, ABILITY_AERILATE, ABILITY_SOLAR_POWER },
         .bodyColor = BODY_COLOR_RED,
         .cryId = CRY_CHARIZARD,
         .height = 17,
@@ -378,6 +379,9 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .backAnimId = BACK_ANIM_SHAKE_GLOW_RED,
         PALETTES(Charizard),
         ICON(Charizard, 0),
+        .evolutions = EVOLUTION({EVO_ITEM, ITEM_DRAGON_SCALE, SPECIES_CHARIZARD_MEGA_X},
+                               {EVO_ITEM, ITEM_FIRE_STONE, SPECIES_CHARIZARD_MEGA_Y}),
+                        
     },
 
 #if P_MEGA_EVOLUTIONS
@@ -392,7 +396,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .baseSpDefense = 85,
         .types = { TYPE_FIRE, TYPE_DRAGON },
         .expYield = 285,
-        .abilities = { ABILITY_TOUGH_CLAWS, ABILITY_TOUGH_CLAWS, ABILITY_TOUGH_CLAWS },
+        .abilities = { ABILITY_TOUGH_CLAWS, ABILITY_AERILATE, ABILITY_SPEED_BOOST},
         .bodyColor = BODY_COLOR_BLACK,
         .cryId = CRY_CHARIZARD_MEGA_X,
         .height = 17,
@@ -414,14 +418,14 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .backAnimId = BACK_ANIM_SHAKE_GLOW_BLUE,
         PALETTES(CharizardMegaX),
         ICON(CharizardMegaX, 0),
-        .isMegaEvolution = TRUE,
+        .isMegaEvolution = FALSE,
     },
 
     [SPECIES_CHARIZARD_MEGA_Y] =
     {
         CHARIZARD_MISC_INFO,
         .baseHP        = 78,
-        .baseAttack    = 104,
+        .baseAttack    = 74,
         .baseDefense   = 88,
         .baseSpeed     = 100,
         .baseSpAttack  = 160,
@@ -451,7 +455,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .backAnimId = BACK_ANIM_SHAKE_GLOW_RED,
         PALETTES(CharizardMegaY),
         ICON(CharizardMegaY, 0),
-        .isMegaEvolution = TRUE,
+        .isMegaEvolution = FALSE,
     },
 #endif //P_MEGA_EVOLUTIONS
 
@@ -513,7 +517,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = { EGG_GROUP_MONSTER, EGG_GROUP_WATER_1 },
-        .abilities = { ABILITY_SHED_SKIN, ABILITY_TORRENT, ABILITY_RAIN_DISH },
+        .abilities = { ABILITY_SHELL_ARMOR, ABILITY_SHED_SKIN, ABILITY_MEGA_LAUNCHER },
         .bodyColor = BODY_COLOR_BLUE,
         .speciesName = _("Squirtle"),
         .cryId = CRY_SQUIRTLE,
@@ -562,7 +566,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = { EGG_GROUP_MONSTER, EGG_GROUP_WATER_1 },
-        .abilities = { ABILITY_SHED_SKIN, ABILITY_TORRENT, ABILITY_RAIN_DISH },
+        .abilities = { ABILITY_SHELL_ARMOR, ABILITY_SHED_SKIN, ABILITY_MEGA_LAUNCHER },
         .bodyColor = BODY_COLOR_BLUE,
         .speciesName = _("Wartortle"),
         .cryId = CRY_WARTORTLE,
@@ -615,13 +619,13 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
     {
         BLASTOISE_MISC_INFO,
         .baseHP        = 100,
-        .baseAttack    = 75,
+        .baseAttack    = 80,
         .baseDefense   = 100,
         .baseSpeed     = 80,
         .baseSpAttack  = 90,
         .baseSpDefense = 100,
         .expYield = 239,
-        .abilities = { ABILITY_SHELL_ARMOR, ABILITY_TORRENT, ABILITY_MEGA_LAUNCHER },
+        .abilities = { ABILITY_SHELL_ARMOR, ABILITY_SHED_SKIN, ABILITY_MEGA_LAUNCHER },
         .cryId = CRY_BLASTOISE,
         .height = 16,
         .weight = 855,
@@ -651,13 +655,13 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
     {
         BLASTOISE_MISC_INFO,
         .baseHP        = 100,
-        .baseAttack    = 100,
+        .baseAttack    = 90,
         .baseDefense   = 110,
         .baseSpeed     = 90,
-        .baseSpAttack  = 145,
-        .baseSpDefense = 100,
+        .baseSpAttack  = 135,
+        .baseSpDefense = 95,
         .expYield = 284,
-        .abilities = { ABILITY_MEGA_LAUNCHER, ABILITY_MEGA_LAUNCHER, ABILITY_MEGA_LAUNCHER },
+        .abilities = { ABILITY_SHELL_ARMOR, ABILITY_SHED_SKIN, ABILITY_MEGA_LAUNCHER },
         .cryId = CRY_BLASTOISE_MEGA,
         .height = 16,
         .weight = 1011,
@@ -679,7 +683,8 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .backAnimId = BACK_ANIM_SHAKE_GLOW_BLUE,
         PALETTES(BlastoiseMega),
         ICON(BlastoiseMega, 2),
-        .isMegaEvolution = TRUE,
+        .isMegaEvolution = FALSE,
+        .evolutions = EVOLUTION({EVO_ITEM, ITEM_WATER_STONE, SPECIES_BLASTOISE_MEGA}),
     },
 #endif //P_MEGA_EVOLUTIONS
 
@@ -724,12 +729,12 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
 #if P_FAMILY_CATERPIE
     [SPECIES_CATERPIE] =
     {
-        .baseHP        = 45,
+        .baseHP        = 50,
         .baseAttack    = 50,
-        .baseDefense   = 45,
-        .baseSpeed     = 45,
-        .baseSpAttack  = 20,
-        .baseSpDefense = 20,
+        .baseDefense   = 50,
+        .baseSpeed     = 40,
+        .baseSpAttack  = 65,
+        .baseSpDefense = 45,
         .types = { TYPE_BUG, TYPE_BUG },
         .catchRate = 255,
         .expYield = 39,
@@ -737,7 +742,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .genderRatio = PERCENT_FEMALE(50),
         .eggCycles = 15,
         .friendship = STANDARD_FRIENDSHIP,
-        .growthRate = GROWTH_MEDIUM_FAST,
+        .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = { EGG_GROUP_BUG, EGG_GROUP_BUG },
         .abilities = { ABILITY_SHIELD_DUST, ABILITY_NONE, ABILITY_RUN_AWAY },
         .bodyColor = BODY_COLOR_GREEN,
@@ -772,11 +777,11 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
 
     [SPECIES_METAPOD] =
     {
-        .baseHP        = 50,
+        .baseHP        = 65,
         .baseAttack    = 60,
         .baseDefense   = 85,
         .baseSpeed     = 50,
-        .baseSpAttack  = 50,
+        .baseSpAttack  = 75,
         .baseSpDefense = 65,
         .types = { TYPE_BUG, TYPE_BUG },
         .catchRate = 120,
@@ -785,7 +790,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .genderRatio = PERCENT_FEMALE(50),
         .eggCycles = 15,
         .friendship = STANDARD_FRIENDSHIP,
-        .growthRate = GROWTH_MEDIUM_FAST,
+        .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = { EGG_GROUP_BUG, EGG_GROUP_BUG },
         .abilities = { ABILITY_SHED_SKIN, ABILITY_NONE },
         .bodyColor = BODY_COLOR_GREEN,
@@ -819,12 +824,12 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
     },
 
 #define BUTTERFREE_MISC_INFO                                                        \
-        .baseHP        = 60,                                                        \
-        .baseAttack    = 45,                                                        \
-        .baseDefense   = 60,                                                        \
-        .baseSpeed     = 100,                                                        \
-        .baseSpDefense = 90,                                                        \
-        .baseSpAttack  = P_UPDATED_STATS >= GEN_6 ? 110 : 80,                        \
+        .baseHP        = 80,                                                        \
+        .baseAttack    = 30,                                                        \
+        .baseDefense   = 65,                                                        \
+        .baseSpeed     = 105,                                                        \
+        .baseSpDefense = 100,                                                        \
+        .baseSpAttack  = P_UPDATED_STATS >= GEN_6 ? 120 : 80,                        \
         .types = { TYPE_BUG, TYPE_FLYING },                                         \
         .catchRate = 45,                                                            \
         .expYield = 178,                                                            \
@@ -834,7 +839,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .genderRatio = PERCENT_FEMALE(50),                                          \
         .eggCycles = 15,                                                            \
         .friendship = STANDARD_FRIENDSHIP,                                          \
-        .growthRate = GROWTH_MEDIUM_FAST,                                           \
+        .growthRate = GROWTH_MEDIUM_SLOW,                                           \
         .eggGroups = { EGG_GROUP_BUG, EGG_GROUP_BUG },                              \
         .abilities = { ABILITY_COMPOUND_EYES, ABILITY_NONE, ABILITY_TINTED_LENS },  \
         .bodyColor = BODY_COLOR_WHITE,                                              \
@@ -908,12 +913,12 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
 #if P_FAMILY_WEEDLE
     [SPECIES_WEEDLE] =
     {
-        .baseHP        = 40,
-        .baseAttack    = 50,
-        .baseDefense   = 40,
+        .baseHP        = 50,
+        .baseAttack    = 65,
+        .baseDefense   = 45,
         .baseSpeed     = 50,
-        .baseSpAttack  = 20,
-        .baseSpDefense = 20,
+        .baseSpAttack  = 40,
+        .baseSpDefense = 50,
         .types = { TYPE_BUG, TYPE_POISON },
         .catchRate = 255,
         .expYield = 39,
@@ -923,7 +928,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = { EGG_GROUP_BUG, EGG_GROUP_BUG },
-        .abilities = { ABILITY_SHIELD_DUST, ABILITY_NONE, ABILITY_RUN_AWAY },
+        .abilities = { ABILITY_SHIELD_DUST, ABILITY_SHIELD_DUST, ABILITY_RUN_AWAY },
         .bodyColor = BODY_COLOR_BROWN,
         .speciesName = _("Weedle"),
         .cryId = CRY_WEEDLE,
@@ -972,7 +977,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = { EGG_GROUP_BUG, EGG_GROUP_BUG },
-        .abilities = { ABILITY_SHED_SKIN, ABILITY_NONE },
+        .abilities = { ABILITY_SHED_SKIN, ABILITY_SHED_SKIN, ABILITY_SHED_SKIN },
         .bodyColor = BODY_COLOR_YELLOW,
         .speciesName = _("Kakuna"),
         .cryId = CRY_KAKUNA,
@@ -1004,7 +1009,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .evolutions = EVOLUTION({EVO_LEVEL, 26, SPECIES_BEEDRILL}),
     },
 
-#define BEEDRILL_ATTACK (P_UPDATED_STATS >= GEN_6 ? 115 : 80)
+#define BEEDRILL_ATTACK (P_UPDATED_STATS >= GEN_6 ? 90 : 80)
 
 #define BEEDRILL_MISC_INFO                                  \
         .types = { TYPE_BUG, TYPE_POISON },                 \
@@ -1030,13 +1035,13 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
     {
         BEEDRILL_MISC_INFO,
         .baseHP        = 70,
-        .baseDefense   = 40,
-        .baseSpeed     = 120,
+        .baseDefense   = 90,
+        .baseSpeed     = 100,
         .baseSpAttack  = 35,
         .baseSpDefense = 70,
         .baseAttack    = BEEDRILL_ATTACK,
         .expYield = 178,
-        .abilities = { ABILITY_LEVITATE, ABILITY_NONE, ABILITY_SNIPER },
+        .abilities = { ABILITY_LEVITATE, ABILITY_ADAPTABILITY, ABILITY_SNIPER },
         .cryId = CRY_BEEDRILL,
         .height = 10,
         .weight = 295,
@@ -1065,14 +1070,14 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
     [SPECIES_BEEDRILL_MEGA] =
     {
         BEEDRILL_MISC_INFO,
-        .baseHP        = 70,
-        .baseAttack    = BEEDRILL_ATTACK + 70,
-        .baseDefense   = 50,
-        .baseSpeed     = 150,
+        .baseHP        = 80,
+        .baseAttack    = BEEDRILL_ATTACK + 60,
+        .baseDefense   = 40,
+        .baseSpeed     = 145,
         .baseSpAttack  = 15,
-        .baseSpDefense = 80,
+        .baseSpDefense = 70,
         .expYield = 223,
-        .abilities = { ABILITY_ADAPTABILITY, ABILITY_ADAPTABILITY, ABILITY_ADAPTABILITY },
+        .abilities = { ABILITY_LEVITATE, ABILITY_ADAPTABILITY, ABILITY_SNIPER },
         .cryId = CRY_BEEDRILL_MEGA,
         .height = 14,
         .weight = 405,
@@ -7159,22 +7164,22 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
 #if P_FAMILY_ONIX
     [SPECIES_ONIX] =
     {
-        .baseHP        = 75,
-        .baseAttack    = 100,
-        .baseDefense   = 140,
-        .baseSpeed     = 80,
-        .baseSpAttack  = 30,
-        .baseSpDefense = 60,
-        .types = { TYPE_ROCK, TYPE_GROUND },
+        .baseHP        = 60,
+        .baseAttack    = 80,
+        .baseDefense   = 130,
+        .baseSpeed     = 70,
+        .baseSpAttack  = 10,
+        .baseSpDefense = 50,
+        .types = { TYPE_ROCK, TYPE_DRAGON },
         .catchRate = 45,
         .expYield = 77,
         .evYield_Defense = 1,
         .genderRatio = PERCENT_FEMALE(50),
         .eggCycles = 25,
         .friendship = STANDARD_FRIENDSHIP,
-        .growthRate = GROWTH_MEDIUM_FAST,
+        .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = { EGG_GROUP_MINERAL, EGG_GROUP_MINERAL },
-        .abilities = { ABILITY_ROCK_HEAD, ABILITY_STURDY, ABILITY_WEAK_ARMOR },
+        .abilities = { ABILITY_ROCK_HEAD, ABILITY_STURDY, ABILITY_STRONG_JAW },
         .bodyColor = BODY_COLOR_GRAY,
         .speciesName = _("Onix"),
         .cryId = CRY_ONIX,
@@ -7202,20 +7207,19 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         ICON(Onix, 2),
         .footprint = gMonFootprint_Onix,
         LEARNSETS(Onix),
-        .evolutions = EVOLUTION({EVO_TRADE_ITEM, ITEM_METAL_COAT, SPECIES_STEELIX},
-                                {EVO_ITEM, ITEM_METAL_COAT, SPECIES_STEELIX}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 35, SPECIES_STEELIX}),
     },
 
 #if P_GEN_2_CROSS_EVOS
 #define STEELIX_MISC_INFO                                       \
-        .types = { TYPE_STEEL, TYPE_GROUND },                   \
+        .types = { TYPE_STEEL, TYPE_DRAGON },                   \
         .catchRate = 25,                                        \
         .evYield_Defense = 2,                                   \
         .itemRare = ITEM_METAL_COAT,                            \
         .genderRatio = PERCENT_FEMALE(50),                      \
         .eggCycles = 25,                                        \
         .friendship = STANDARD_FRIENDSHIP,                      \
-        .growthRate = GROWTH_MEDIUM_FAST,                       \
+        .growthRate = GROWTH_MEDIUM_SLOW,                       \
         .eggGroups = { EGG_GROUP_MINERAL, EGG_GROUP_MINERAL },  \
         .bodyColor = BODY_COLOR_GRAY,                           \
         .speciesName = _("Steelix"),                            \
@@ -7229,14 +7233,14 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
     [SPECIES_STEELIX] =
     {
         STEELIX_MISC_INFO,
-        .baseHP        = 120,
-        .baseAttack    = 95,
-        .baseDefense   = 200,
-        .baseSpeed     = 30,
-        .baseSpAttack  = 55,
-        .baseSpDefense = 75,
+        .baseHP        = 80,
+        .baseAttack    = 100,
+        .baseDefense   = 150,
+        .baseSpeed     = 70,
+        .baseSpAttack  = 20,
+        .baseSpDefense = 80,
         .expYield = 179,
-        .abilities = { ABILITY_ROCK_HEAD, ABILITY_STURDY, ABILITY_SHEER_FORCE },
+        .abilities = { ABILITY_ROCK_HEAD, ABILITY_STURDY, ABILITY_STRONG_JAW },
         .cryId = CRY_STEELIX,
         .height = 92,
         .weight = 4000,
@@ -7261,20 +7265,21 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .backAnimId = BACK_ANIM_V_SHAKE,
         PALETTES(Steelix),
         ICON(Steelix, 0),
+        .evolutions = EVOLUTION({EVO_LEVEL, 55, SPECIES_STEELIX_MEGA}),
     },
 
 #if P_MEGA_EVOLUTIONS
     [SPECIES_STEELIX_MEGA] =
     {
         STEELIX_MISC_INFO,
-        .baseHP        = 85,
-        .baseAttack    = 135,
-        .baseDefense   = 230,
-        .baseSpeed     = 30,
-        .baseSpAttack  = 55,
-        .baseSpDefense = 115,
+        .baseHP        = 100,
+        .baseAttack    = 120,
+        .baseDefense   = 180,
+        .baseSpeed     = 70,
+        .baseSpAttack  = 10,
+        .baseSpDefense = 95,
         .expYield = 214,
-        .abilities = { ABILITY_SAND_FORCE, ABILITY_SAND_FORCE, ABILITY_SAND_FORCE },
+        .abilities = { ABILITY_ROCK_HEAD, ABILITY_STURDY, ABILITY_STRONG_JAW },
         .cryId = CRY_STEELIX_MEGA,
         .height = 105,
         .weight = 7400,

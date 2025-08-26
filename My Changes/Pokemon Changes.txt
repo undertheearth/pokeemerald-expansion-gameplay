@@ -1,55 +1,116 @@
 GEN 1
+
+	Starters now evolve into their Mega with elemental stones, +50 BST
 Bulbasaur + Ivysaur - Ability Change: Pickup
-Venusaur - Ability Change: Grassy Surge - BST = 545
-	Attack: 82 - 95
-	Defence: 83 - 90
-	Speed: 80 - 85
+Venusaur - Ability Change: Grassy Surge - BST = 550
+	HP: 80
+	Attack: 95
+	Defence: 90
+	Sp.Atk: 100
+	Sp.Def: 100
+	Speed: 85
+Mega-Venusaur - BST = 615 - Evolves with Leaf Stone
+	HP: 90
+	Attack: 100
+	Defence: 112
+	Sp.Atk: 118
+	Sp.Def: 100
+	Speed: 95	
 
-Charmander + Charmeleon - Ability Change: Tough Claws - BST = 545
-Charizard - Ability Change: Aerialate
-	Attack: 84 - 100
-	Defence: 78 - 77
-	Sp.Atk: 109 - 110
-	Sp.Def: 85 - 80
+	    .abilities = { ABILITY_TOUGH_CLAWS, ABILITY_BLAZE, ABILITY_SOLAR_POWER },
+Charizard - Blaze - Airilate
+	HP: 78
+	Attack: 100
+	Defence: 82
+	Sp.Atk: 110
+	Sp.Def: 80
+	Speed: 100
+CharizardMegaX - Ability Change HA: Speed Boost - BST = 615 - Dragon Scale evo
+	HP: 78
+	Attack: 136
+	Defence: 111
+	Sp.Atk: 100
+	Sp.Def: 85
+	Speed: 105
+CharizardMegaY - All abilities = Drought - BST = 615 - Fire Stone evo
+	HP: 78
+	Attack: 74
+	Defence: 88
+	Sp.Atk: 160
+	Sp.Def: 115
+	Speed: 100
 
-Squirtle + Wartortle = Ability Change: Shed Skin
+	    .abilities = { ABILITY_SHELL_ARMOR, ABILITY_SHED_SKIN, ABILITY_MEGA_LAUNCHER },
 Wartortle - Type Added: Steel
-Blastoise - Ability Change: Shell Armour - BST = 540 Type Added: Steel | Ability Change HA: Mega Launcher
-	HP: 79 - 100
-	Attack: 83 - 75
-	Sp.Atk: 85 - 90
-	Sp.Def: 105 - 100
+Blastoise - Ability Change: Shell Armour - BST = 550 Type Added: Steel | Ability Change 2: Shed Skin | Ability Change HA: Mega Launcher
+	HP: 100
+	Attack: 80
+	Defence: 100
+	Sp.Atk: 90
+	Sp.Def: 100
+	Speed: 80
+BlastoiseMega
+	HP: 100
+	Attack: 90
+	Defence: 110
+	Sp.Atk: 135
+	Sp.Def: 95
+	Speed: 90
 
-Caterpie - Level 16 Evo - BST = 195
-	Attack: 35 - 50
-	Defence: 35 - 45	
-Metapod - Level 26 Evo - BST = 340
-	Attack: 20 - 60
-	Defence: 55 - 85
-	Speed: 30 - 50
-	Sp.Atk: 25 - 50
-	Sp.Def: 25 - 65
-Buterfree  - BST = 450
-	Defence: 50 - 60
-	Sp.Def: 80 - 90
-	Speed: 70 - 100
-	Sp.Atk: 90 - 110
+	Whole family - medium slow level group
+Caterpie - Level 16 Evo - BST = 300
+	HP: 50
+	Attack: 50
+	Defence: 50
+	Sp.Atk: 65
+	Sp.Def: 45
+	Speed: 40
+Metapod - Level 28 Evo - BST = 400
+	HP: 65
+	Attack: 60
+	Defence: 85
+	Sp.Atk: 75
+	Sp.Def: 65
+	Speed: 50
+Buterfree  - BST = 500
+	HP: 80
+	Attack: 30
+	Defence: 65
+	Sp.Atk: 120
+	Sp.Def: 100
+	Speed: 105
 
-Weedle - Level 16 Evo - BST = 195
-	Attack: 35 - 50
-	Defence: 30 - 40
-Kakuna - Level 28 Evo - BST = 340
+Weedle - Level 16 Evo - BST = 300
+	HP: 50
+	Attack: 65
+	Defence: 45
+	Sp.Atk: 40
+	Sp.Def: 50
+	Speed: 50
+Kakuna - Level 24 Evo - BST = 400
 	HP - 45 - 50
 	Attack: 25 - 65
 	Defence: 45 - 80
 	Speed: 35 - 54
 	Sp.Atk: 25 - 45
 	Sp.Def: 25 - 60
-Beedrill - Ability Change: Levitate (Why is bro walking) - BST = 450 - More switch in opportunity
-	HP: 65 - 70
-	Attack: 90 - 115
-	Speed: 75 - 120
-
+Beedrill - Ability Change: Levitate (Why is bro walking) - BST = 450 - Razor Fang evo to mega
+	HP: 70
+	Attack: 90
+	Defence: 40 
+	Sp.Atk: 35
+	Sp.Def: 70
+	Speed: 100
+        .abilities = { ABILITY_LEVITATE, ABILITY_ADAPTABILITY, ABILITY_SNIPER },
+Beedrill-Mega - 500 
+	HP: 80
+	Attack: 150
+	Defence: 40 
+	Sp.Atk: 15
+	Sp.Def: 70
+	Speed: 145
+	    .abilities = { ABILITY_LEVITATE, ABILITY_ADAPTABILITY, ABILITY_SNIPER },
+		
 Pidgey/Pidgeoto/Pidgeot - Ability Changed 2: No Guard
 Pidgeot - BST = 500
 	Attack: 80 - 91
@@ -256,18 +317,28 @@ Dewgong
 Cloyster
 	Sp.Def: 45 - 65
 	
-Onix - Dragon Dance
-	HP: 35 - 75
-	Attack: 45 - 100
-	Defence: 160 - 140
-	Sp.Def: 45 - 60
-	Speed: 70 - 80
-Learns Dragon Dance at lvl.35
-	
-Steelix
-	HP - 75 - 120
-	Attack: 85 - 95
-	Sp.Def: 65 - 75
+OVERHAULED - .abilities = { ABILITY_ROCK_HEAD, ABILITY_STURDY, ABILITY_STRONG_JAW }, - Medium Slow level group
+Onix - New Typing - Rock/Dragon - BST = 400
+	HP: 60
+	Attack: 80
+	Defence: 130
+	Sp.Atk: 10
+	Sp.Def: 50
+	Speed: 70
+Steelix - New Typing - Dragon/Steel - BST = 500 - Evo level 35
+	HP - 80
+	Attack: 100
+	Defence: 150
+	Sp.Atk: 20
+	Sp.Def: 80
+	Speed: 70
+Levels into Mega-Steelix at level 55 - BST = 575
+	HP: 100
+	Attack: 120
+	Defence: 180
+	Sp.Atk: 10
+	Sp.Def: 95
+	Speed: 70
 	
 Hypno
 	Sp.Atk: 73 - 115
