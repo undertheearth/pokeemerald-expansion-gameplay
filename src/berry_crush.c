@@ -914,7 +914,7 @@ static const u8 *const sResultsTexts[] =
     [RESULTS_PAGE_POWER + NUM_RESULTS_PAGES]       = gText_PressingPowerRankings,
 };
 
-static u32 (*const sBerryCrushCommands[])(struct BerryCrushGame * game, u8 *data) =
+static u32 (*const sBerryCrushCommands[])(struct BerryCrushGame *game, u8 *data) =
 {
     [CMD_NONE]             = NULL,
     [CMD_FADE]             = Cmd_BeginNormalPaletteFade,
@@ -1373,7 +1373,6 @@ static void CreateBerrySprites(struct BerryCrushGame *game, struct BerryCrushGam
     u8 spriteId;
     s16 distance, var1;
     s16 *data;
-    s32 amplitude;
     s16 speed;
     u32 var2;
 
@@ -1395,11 +1394,7 @@ static void CreateBerrySprites(struct BerryCrushGame *game, struct BerryCrushGam
         sYAccel = 32;
         sBitfield = 112; // Setting bits in MASK_TARGET_Y
         distance = gfx->playerCoords[i]->berryXDest - gfx->playerCoords[i]->berryXOffset;
-        amplitude = distance;
-        if (distance < 0)
-            amplitude += 3;
-
-        sAmplitude = amplitude >> 2;
+        sAmplitude = distance / 4;
         distance *= 128;
         var2 = speed + 32;
         var2 = var2 / 2;
@@ -1595,14 +1590,14 @@ static void PrintTextCentered(u8 windowId, u8 left, u8 colorId, const u8 *string
     AddTextPrinterParameterized3(windowId, FONT_SHORT, left, 0, sTextColorTable[colorId], 0, string);
 }
 
-static void PrintResultsText(struct BerryCrushGame * game, u8 page, u8 sp14, u8 baseY)
+static void PrintResultsText(struct BerryCrushGame *game, u8 page, u8 sp14, u8 baseY)
 {
     u8 i, j;
     u8 playerId = 0;
     u8 ranking = 0;
     s32 x;
     u8 stat;
-    struct BerryCrushGame_Results * results = &game->results;
+    struct BerryCrushGame_Results *results = &game->results;
     u32 xOffset;
     s32 y;
 
@@ -1946,12 +1941,10 @@ static void DrawPlayerNameWindows(struct BerryCrushGame *game)
 // Each player name window border uses a color that corresponds to a slot of the crusher lid
 static void CopyPlayerNameWindowGfxToBg(struct BerryCrushGame *game)
 {
-    u8 i = 0;
-    u8 *windowGfx;
+    s32 i;
+    u8 *windowGfx = malloc_and_decompress(gBerryCrush_TextWindows_Tilemap, NULL);
 
-    LZ77UnCompWram(gBerryCrush_TextWindows_Tilemap, gDecompressionBuffer);
-
-    for (windowGfx = gDecompressionBuffer; i < game->playerCount; i++)
+    for (i = 0; i < game->playerCount; i++)
     {
         CopyToBgTilemapBufferRect(
             3,
@@ -1963,6 +1956,8 @@ static void CopyPlayerNameWindowGfxToBg(struct BerryCrushGame *game)
         );
     }
     CopyBgTilemapBufferToVram(3);
+
+    Free(windowGfx);
 }
 
 static void CreateGameSprites(struct BerryCrushGame *game)
@@ -3403,7 +3398,9 @@ static u32 Cmd_StopGame(struct BerryCrushGame *game, u8 *args)
         break;
     case 2:
         if (game->gfx.counter != 0)
+        {
             game->gfx.counter--;
+        }
         else
         {
             RunOrScheduleCommand(CMD_CLOSE_LINK, SCHEDULE_CMD, NULL);

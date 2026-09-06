@@ -1,7 +1,7 @@
 #ifndef GUARD_ITEM_CONSTANTS_H
 #define GUARD_ITEM_CONSTANTS_H
 
-// These constants are used in gItems
+// These constants are used in gItemsInfo
 #define POCKET_NONE        0
 #define POCKET_ITEMS       1
 #define POCKET_POKE_BALLS  2
@@ -21,5 +21,7 @@
 #define REPEL_LURE_STEPS(var)   (var & (REPEL_LURE_MASK - 1))
 #define LURE_STEP_COUNT         (IS_LAST_USED_LURE(VarGet(VAR_REPEL_STEP_COUNT)) ? REPEL_LURE_STEPS(VarGet(VAR_REPEL_STEP_COUNT)) : 0)
 #define REPEL_STEP_COUNT        (!IS_LAST_USED_LURE(VarGet(VAR_REPEL_STEP_COUNT)) ? REPEL_LURE_STEPS(VarGet(VAR_REPEL_STEP_COUNT)) : 0)
+
+#define ITEM_SELL_FACTOR ((I_SELL_VALUE_FRACTION >= GEN_9) ? 4 : 2)
 
 #endif // GUARD_ITEM_CONSTANTS_H

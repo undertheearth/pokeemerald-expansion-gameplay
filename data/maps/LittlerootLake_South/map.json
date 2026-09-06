@@ -129,9 +129,7 @@
       "dest_warp_id": "0"
     }
   ],
-  "coord_events": [
-
-  ],
+  "coord_events": [],
   "bg_events": [
     {
       "type": "sign",
@@ -171,6 +169,14 @@
       "y": 28,
       "elevation": 0,
       "item": "ITEM_LOVE_BALL",
+      "flag": "FLAG_TEMP_1"
+    },
+    {
+      "type": "hidden_item",
+      "x": 12,
+      "y": 18,
+      "elevation": 0,
+      "item": "ITEM_BIG_NUGGET",
       "flag": "FLAG_TEMP_1"
     }
   ]

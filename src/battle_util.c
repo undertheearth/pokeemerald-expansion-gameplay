@@ -8438,10 +8438,6 @@ static inline u32 CalcMoveBasePowerAfterModifiers(struct DamageCalculationData *
         if (IsBitingMove(move))
            modifier = uq4_12_multiply(modifier, UQ_4_12(1.5));
         break;
-    case ABILITY_TRICKSTER:
-        if (gBattleMoves[move].bitingMove)
-           modifier = uq4_12_multiply(modifier, UQ_4_12(1.5));
-        break;
     case ABILITY_MEGA_LAUNCHER:
         if (IsPulseMove(move))
            modifier = uq4_12_multiply(modifier, UQ_4_12(1.5));
@@ -8452,10 +8448,6 @@ static inline u32 CalcMoveBasePowerAfterModifiers(struct DamageCalculationData *
         break;
     case ABILITY_STEELWORKER:
         if (moveType == TYPE_STEEL)
-           modifier = uq4_12_multiply(modifier, UQ_4_12(1.5));
-        break;
-    case ABILITY_AIR_FORCE:
-        if (moveType == TYPE_FLYING)
            modifier = uq4_12_multiply(modifier, UQ_4_12(1.5));
         break;
     case ABILITY_PIXILATE:
@@ -9752,17 +9744,6 @@ static inline uq4_12_t CalcTypeEffectivenessMultiplierInternal(u32 move, u32 mov
         }
     }    
     else if (moveType == TYPE_GROUND && !IsBattlerGrounded2(battlerDef, TRUE) && !(gBattleMoves[move].ignoreTypeIfFlyingAndUngrounded))
-    {
-        modifier = UQ_4_12(0.0);
-        if (recordAbilities && defAbility == ABILITY_AIR_FORCE)
-        {
-            gLastUsedAbility = ABILITY_AIR_FORCE;
-            gMoveResultFlags |= (MOVE_RESULT_MISSED | MOVE_RESULT_DOESNT_AFFECT_FOE);
-            gLastLandedMoves[battlerDef] = 0;
-            gBattleCommunication[MISS_TYPE] = B_MSG_GROUND_MISS;
-            RecordAbilityBattle(battlerDef, ABILITY_AIR_FORCE);
-        }
-    }
     else if (B_SHEER_COLD_IMMUNITY >= GEN_7 && move == MOVE_SHEER_COLD && IS_BATTLER_OF_TYPE(battlerDef, TYPE_ICE))
     {
         modifier = UQ_4_12(0.0);
@@ -11124,13 +11105,12 @@ bool8 CanMonParticipateInSkyBattle(struct Pokemon *mon)
     u16 monAbilityNum = GetMonData(mon, MON_DATA_ABILITY_NUM, NULL);
 
     bool8 hasLevitateAbility = gSpeciesInfo[species].abilities[monAbilityNum] == ABILITY_LEVITATE;
-    bool8 hasAirForceAbility = gSpeciesInfo[species].abilities[monAbilityNum] == ABILITY_AIR_FORCE;
     bool8 isFlyingType = gSpeciesInfo[species].types[0] == TYPE_FLYING || gSpeciesInfo[species].types[1] == TYPE_FLYING;
     bool8 monIsValidAndNotEgg = GetMonData(mon, MON_DATA_SANITY_HAS_SPECIES) && !GetMonData(mon, MON_DATA_IS_EGG);
 
     if (monIsValidAndNotEgg)
     {
-        if ((hasLevitateAbility || isFlyingType || hasAirForceAbility) && !IsMonBannedFromSkyBattles(species))
+        if ((hasLevitateAbility || isFlyingType) && !IsMonBannedFromSkyBattles(species))
             return TRUE;
     }
     return FALSE;
